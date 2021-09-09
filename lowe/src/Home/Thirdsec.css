@@ -1,0 +1,55 @@
+.Mainpage_Third_section {
+    width:100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.container {
+    overflow: hidden;
+  }
+  .panel {
+    height: 100vh;
+    width: 100%;
+    line-height: 100vh;
+  }
+  
+  .panel img {
+    position: relative;
+    overflow: visible;
+    font-size: 80px;
+  }
+  
+  .panel.blue {
+    background-color: #3883d8;
+    z-index: -3;
+  }
+  
+  .panel.turqoise {
+    background-color: #38ced7;
+    z-index: -2;
+  }
+  
+  .panel.green {
+    background-color: #22d659;
+    z-index: -1;
+  }
+
+  /* @media screen and (max-width:  600px) {
+    .container {
+        overflow: hidden;
+      }
+      .panel {
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+      }
+      
+      .panel span {
+        position: relative;
+        display: block;
+        overflow: visible;
+        top: 50%;
+        font-size: 80px;
+      }
+  } */

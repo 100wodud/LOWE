@@ -1,5 +1,7 @@
 import { Component } from "react";
 import Firstsec from "./Firstsec";
+import Secondsec from "./Secondsec";
+import Thirdsec from "./Thirdsec";
 
 class Mainpage extends Component {
   constructor(props) {
@@ -11,17 +13,11 @@ class Mainpage extends Component {
 
   render() {
     return (
-      <div>
-          <section>
-              <Firstsec />
-          </section>
-          <section>
-            <a href="/request">양식작성으로 가기</a>
-          </section>
-          <section>
-            <a href="/info">정보보기</a>
-          </section>
-      </div>
+      <>
+          <Firstsec />
+          <Secondsec />
+          <Thirdsec />
+      </>
     )
   }
 }
