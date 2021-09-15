@@ -10,23 +10,37 @@ class D_Mainpage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        location: ''
+        location: '',
+        clickloc: ''
     };
   }
   
   kakaoMap = () => {
     let container = document.getElementById('map');
-    let options = {
-      center: new kakao.maps.LatLng(37.55217036753169, 126.92538807699239),
-      level: 6,
-      draggable: false,
-      disableDoubleClickZoom: true
-    };
-    let map = new kakao.maps.Map(container, options);
-    let mapTypeControl = new kakao.maps.MapTypeControl();
+    let options = {};
+    if(this.state.clickloc === '신촌점'){
+      options = {
+        center: new kakao.maps.LatLng(37.55603234734332, 126.93504930518148),
+        level: 1,
+      };
+    } else if(this.state.clickloc === '홍대점'){
+      options = {
+        center: new kakao.maps.LatLng(37.55041175644609, 126.92279833510501),
+        level: 1,
+      };      
+    } else if(this.state.clickloc === '합정점'){
+      options = {
+        center: new kakao.maps.LatLng(37.5503158455698, 126.9158487203200),
+        level: 1,
+      };      
+    } else {
+      options = {
+        center: new kakao.maps.LatLng(37.55217036753169, 126.92538807699239),
+        level: 7,
+      };
+    }
 
-// 지도 타입 컨트롤을 지도에 표시합니다
-    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+    let map = new kakao.maps.Map(container, options);
 
     let positions = [
         {
@@ -39,21 +53,22 @@ class D_Mainpage extends Component {
         },
         {
             title: '합정점', 
-            latlng: new kakao.maps.LatLng(37.5503258405698, 126.91573972032567)
+            latlng: new kakao.maps.LatLng(37.5503158455698, 126.9158487203200)
         },
 
     ];
 
     let imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
-        
+    
+
     for (let i = 0; i < positions.length; i ++) {
         
         // 마커 이미지의 이미지 크기 입니다
         let imageSize = new kakao.maps.Size(24, 35); 
         
         // 마커 이미지를 생성합니다    
-        let markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
-        
+        let markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);  
+
         // 마커를 생성합니다
         let marker = new kakao.maps.Marker({
             map: map, // 마커를 표시할 지도
@@ -61,43 +76,48 @@ class D_Mainpage extends Component {
             title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
             image : markerImage // 마커 이미지 
         });
+
+        marker.setClickable(true);
         marker.setMap(map);
             // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
         let iwContent = positions[i].title; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        // iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+        // let iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+
 
         // 인포윈도우를 생성합니다
-        // let infowindow = new kakao.maps.InfoWindow({
-        //     content : iwContent,
-        //     removable : iwRemoveable
-        // });
-        kakao.maps.event.addListener(marker, 'click', function() {
-            // 마커 위에 인포윈도우를 표시합니다
-            // infowindow.open(map, marker);
-            let message = iwContent
-            var resultDiv = document.getElementById('loc'); 
-            resultDiv.innerHTML = message;
+        let infowindow = new kakao.maps.InfoWindow({
+            content : iwContent,
+        });
+        kakao.maps.event.addListener(marker, 'mouseover', function() {
+          // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+            infowindow.open(map, marker);
+        });
+        
+        // 마커에 마우스아웃 이벤트를 등록합니다
+        kakao.maps.event.addListener(marker, 'mouseout', function() {
+            // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+            infowindow.close();
+        });
+
+        kakao.maps.event.addListener(marker, 'click', () => {
+          // 마커 위에 인포윈도우를 표시합니다
+          // infowindow.open(map, marker);
+          this.setState({location: iwContent})
         })
-    }
+      }
   } 
 
-  clickLocation = (e) =>{
-    e.preventDefault()
-    if(document.getElementById('loc').outerText === '신촌점'){
-      this.setState({location: '신촌점'})
-    } else if (document.getElementById('loc').outerText === '홍대점'){
-      this.setState({location: '홍대점'})
-    } else if (document.getElementById('loc').outerText === '합정점'){
-      this.setState({location: '합정점'})
-    }
+   onClicklocation = (value) => () => {
+    this.setState({location: value, clickloc: value}, ()=>this.kakaoMap())
   }
-  
 
   render() {
+    console.log(this.state.clickloc)
     return (
       <div className="Info_main">
         <div className="Info_top_sec">
-          <Firstsec kakaoMap={this.kakaoMap} clickLocation={this.clickLocation} />
+          <Firstsec kakaoMap={this.kakaoMap} onClicklocation={this.onClicklocation} />
           <Secondsec location={this.state.location} />
         </div>
         <div className="Info_bottom_sec">

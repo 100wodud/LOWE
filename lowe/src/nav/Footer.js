@@ -13,7 +13,7 @@ class Footer extends Component {
     clickAccordion = () => {
         this.setState({accordion: !this.state.accordion})
     }
-
+    
   render() {
     let accordion = this.state.accordion ? "accordion_desc" : "accordion_incr";
     return (
@@ -23,7 +23,7 @@ class Footer extends Component {
                     <div className="accordion_title">
                         <span className="span">(주)벤틀스페이스 사업자 정보</span>
                         <div className="img_span">
-                            <img src="image/nav/foo_arr.png" alt="아래방향 화살표" className="img" onClick={this.clickAccordion} />
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/foo_arr.png"} alt="아래방향 화살표" className="img" onClick={this.clickAccordion} />
                         </div>
                     </div>
                     <div className={accordion}>
@@ -72,17 +72,17 @@ class Footer extends Component {
                     <div className="sns_warp">
                         <div className="insta_box img_box">
                             <a href="https://www.instagram.com/lo__we__/?hl=ko" target="blank" className="link">
-                                <img src="image/nav/insta_icon.png" alt="인스타그램모양 아이콘" className="img" />
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/insta_icon.png"} alt="인스타그램모양 아이콘" className="img" />
                             </a>
                         </div>
                         <div className="blog_box img_box">
-                            <a href="https://blog.naver.com/bentlespace" target="blank" className="link">
-                                <img src="image/nav/blog_icon.png" alt="네이버 블로그 모양 아이콘" className="img" />
+                            <a href="https://blog.Naver.com/bentlespace" target="blank" className="link">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/blog_icon.png"} alt="네이버 블로그 모양 아이콘" className="img" />
                             </a>
                         </div>
                         <div className="youtue_box img_box">
                             <a href="https://www.youtube.com/channel/UC68a6jlJDg0cy6_bL8udLig" target="blank" className="link">
-                                <img src="image/nav/youtube_icon.png" alt="유튜브 모양 아이콘" className="img" />
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/youtube_icon.png"} alt="유튜브 모양 아이콘" className="img" />
                             </a>
 						</div>
 					</div>

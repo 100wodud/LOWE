@@ -15,7 +15,7 @@ class I_Designer extends Component {
       <div className="designer_information" key={this.props.e.id}>
         <div className="designer_picture_div" >
           <a target="_blank" rel="noreferrer" href={this.props.e.instagram}>
-            <img className="designer_picture" src={`image/Designers/${this.props.loc}/${this.props.e.eng}.jpeg`} alt="img" />
+            <img className="designer_picture" src={`${process.env.PUBLIC_URL}/image/Designers/${this.props.loc}/${this.props.e.eng}.jpeg`} alt={`${this.props.e.name} 디자이너 사진`} />
           </a>
         </div>
         <div className="designer_name_div">

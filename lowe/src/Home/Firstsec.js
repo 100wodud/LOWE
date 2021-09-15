@@ -30,14 +30,14 @@ class Firstsec extends Component {
         <Slider {...settings}>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_text">안녕하세요</div>
-            <img className="Mainpage_banner_img" src="image/mainpage/main1_1.jpeg" alt="main" />
+            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_1.jpeg"} alt="main" />
           </div>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_text">로위 입니다.</div>
-            <img className="Mainpage_banner_img" src="image/mainpage/main1_2.jpeg" alt="main" />
+            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_2.jpeg"} alt="main" />
           </div>
           <div className="Mainpage_banner_div">
-            <video autoPlay muted loop className="Mainpage_banner_video" src="image/mainpage/main1_3.mp4" alt="main" />
+            <video autoPlay muted loop className="Mainpage_banner_video" src={process.env.PUBLIC_URL + "/image/mainpage/main1_3.mp4"} alt="main" />
           </div>
         </Slider>
       </section>
