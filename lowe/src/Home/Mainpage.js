@@ -23,8 +23,3 @@ class Mainpage extends Component {
 }
 
 export default Mainpage;
-
-
-
-
-

@@ -20,7 +20,7 @@ class Header extends Component {
       <header id="scroll" className="smooth">
         <a href="/">
           <div className="logo">
-            <img src="image/Nav/logo.png" className="logoView" alt="logo"></img> 
+            <img src={process.env.PUBLIC_URL + "/image/Nav/logo.png"} className="logoView" alt="logo"></img> 
           </div>
         </a>
         <div className="menu-wrap">
@@ -39,7 +39,7 @@ class Header extends Component {
                     <a href="/request">신청양식</a>
                   </li>
                   <li>
-                    <div onClick={() => { alert("준비중 입니다") }}>옵션1</div>
+                    <a href="/events">이벤트</a>
                   </li>
                   <li>
                     <a href="/testserver">테스트</a>

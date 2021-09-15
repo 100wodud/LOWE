@@ -15,11 +15,11 @@ class Secondsec extends Component {
     return (
           <section className="Mainpage_second_section">
             <div data-aos="fade-up" data-aos-duration="3000">
-              <img className="section_img" src="image/mainpage/main2_1.jpeg" alt="main2_1" />
+              <img className="section_img" src={process.env.PUBLIC_URL + "/image/mainpage/main2_1.jpeg"} alt="main2_1" />
             </div>
             <div data-aos="fade-zoom-in" data-aos-duration="3000"
      data-aos-delay="1000">
-              <img className="section_img" src="image/mainpage/main2_1.jpeg" alt="main2_1" />
+              <img className="section_img" src={process.env.PUBLIC_URL + "/image/mainpage/main2_1.jpeg"} alt="main2_1" />
             </div>
           </section>
     )

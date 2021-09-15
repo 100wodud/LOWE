@@ -1,0 +1,9 @@
+.Eventpage_first_section {
+    background-position: center;
+    height: 50vh;
+    width: 100% ;
+}
+/* 
+video::-webkit-media-controls-fullscreen-button { 
+    display: none ; 
+} */

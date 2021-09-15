@@ -22,17 +22,17 @@ class Thirdsec extends Component {
                 <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
                     <Scene pin>
                         <div className="panel blue">
-                        <img className="section_img" src="image/mainpage/main3_1.jpeg" alt="main3_1" />
+                        <img className="section_img" src={process.env.PUBLIC_URL + "/image/mainpage/main3_1.jpeg"} alt="main3_1" />
                         </div>
                     </Scene>
                     <Scene pin>
                         <div className="panel turqoise">
-                        <img className="section_img" src="image/mainpage/main3_2.jpeg" alt="main3_2" />
+                        <img className="section_img" src={process.env.PUBLIC_URL + "/image/mainpage/main3_2.jpeg"} alt="main3_2" />
                         </div>
                     </Scene>
                     <Scene pin>
                         <div className="panel green">
-                        <img className="section_img" src="image/mainpage/main3_3.jpeg" alt="main3_3" />
+                        <img className="section_img" src={process.env.PUBLIC_URL + "/image/mainpage/main3_3.jpeg"} alt="main3_3" />
                         </div>
                     </Scene>
                 </Controller>

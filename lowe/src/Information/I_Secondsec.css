@@ -1,26 +1,18 @@
 .sec_section {
-    border: 3px double black;
-    float: right;
-    margin-right: 10px;
-    margin-left: 12px;
-    line-height: 400px;
-    height: 400px;
-    width: 44%;
-    
-}
-
-#loc {
-    height: 20px;
+    float: right; 
+    height: 330px;
+    width: 46%;
+    line-height: 330px;
 }
 
 @media screen and (max-width:  600px){
     .sec_section {
-        border: 3px double black;
         margin-bottom: 10px;
-        height: 400px;
+        height: 330px;
         width: 100%;
         float: none;
         margin: 0 auto;
         text-align: center;
+        line-height: 330px;
     }
 }

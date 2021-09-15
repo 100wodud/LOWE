@@ -100,7 +100,7 @@
     }  
 
     .footer_wrap {
-        max-width: 250px; 
+        max-width: 310px; 
         margin-bottom: 50px;
     }
 
@@ -109,16 +109,16 @@
         padding-bottom: 8px;
     }
     .footer .dt {
-        font-size: 10px; 
+        font-size: 12px; 
         line-height: 1.0; 
         letter-spacing: -1px;
-        width: 60px; 
+        width: 70px; 
     }
 
     .footer .dd {
-        font-size: 10px; 
+        font-size: 12px; 
         line-height: 1.0; 
         letter-spacing: -1.05px; 
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
