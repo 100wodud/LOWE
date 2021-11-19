@@ -1,0 +1,89 @@
+.M_modalBody {
+    z-index: 150;  
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 0;
+}
+   .M_modalInner {
+        position: relative;
+        width: 375px;
+        margin-top: 60px;
+        margin-left: 0;
+        background: #ffffff;
+        height: fit-content;
+    }
+    
+   .M_modalClose {
+        float: right;
+        position: absolute;
+        right: 0;
+        width: 60px;
+        cursor: pointer;
+        
+    }
+    
+   .M_modalInner > div{
+        width: 100%;
+        float: left;
+    }
+    
+   .M_modal_icons {
+        width: 85%;
+        text-align: right;
+        position: absolute;
+        margin-top: -65px;
+    }
+    
+   .M_modal_icons > a {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+   .M_modal_icons > a >img {
+    width: 40px;
+}
+    
+   .M_modalInner div {
+        font: bold 17px "Montserrat";
+    
+    }
+    
+   .M_modal_Slide_img {
+        width: 100%;
+        height: 400px;
+        object-fit:cover;
+    }
+
+    .M_modal_comments {
+        line-height: 22px;
+        width: 327px;  
+        font-family: "Montserrat";
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+.M_modalBody .slick-dots {
+    bottom: 15px;
+  }
+  
+ .M_modalBody .slick-dots li.slick-active button:before {
+    color: transparent;
+  }
+  
+ .M_modalBody .slick-dots li button:before { 
+    width: 4px; 
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: transparent;
+  } 

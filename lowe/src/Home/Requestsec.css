@@ -1,0 +1,60 @@
+.Mainpage_Request_section {
+    width:100%;
+    display: inline-block;
+    z-index: -100;
+}
+
+.Mainpage_Request_section > div {
+    width: 100%;
+    background-image: url("./request.png");
+    padding: 150px 0 150px 0;
+    text-align: center;
+    color: #333333;
+}
+
+#Mainpage_request_button {
+    background-color: #333333;
+    margin: 0 auto;
+    width: 320px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#Mainpage_request_button > a {
+    font: bold 24px "Noto Sans";
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:  1000px) {
+    .Mainpage_Request_section {
+        width:100%;
+        display: inline-block;
+        z-index: -100;
+    }
+    
+    .Mainpage_Request_section > div {
+        width: 100%;
+        background-image: url("./request.png");
+        padding: 15.666vw 0 15.666vw 0;
+        text-align: center;
+        color: #333333;
+    }
+
+    .Mainpage_Request_section > div >div {
+        line-height: 5.6vw;
+    }
+    
+    #Mainpage_request_button {
+        background-color: #333333;
+        margin: 0 auto;
+        width: 64vw;
+        height: 12.26666vw;
+        line-height: 12.26666vw;
+    }
+    
+    #Mainpage_request_button > a {
+        font: bold 3.7333vw "Noto Sans";
+        color: #FFFFFF;
+    }
+}

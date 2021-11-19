@@ -1,0 +1,46 @@
+.request_nav {
+    position: fixed;
+    width: 100%;
+    top: 85%;
+    z-index: 3;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.requestBtn{
+    width: 160px;
+    height: 60px;
+}
+.banner_request_button{
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    
+}
+
+
+@media screen and (max-width:  1000px) {
+    .request_nav {
+        position: fixed;
+        top: 83%;
+        z-index: 3;
+        vertical-align: middle;
+        text-align: center;
+        right: 0;
+        margin-right: 25px;
+    }
+    
+    .requestBtn{
+        width: 68px;
+        height: 68px;
+    }
+    .banner_request_button{
+        position: absolute;
+        text-align: center;
+        width: 68px;
+        
+    }
+}

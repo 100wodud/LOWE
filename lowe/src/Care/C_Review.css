@@ -1,0 +1,55 @@
+.Care_review {
+    width:100%;
+    display: inline-block;
+}
+
+.Care_review  > div {
+    width: 100%;
+    padding-top: 6.145833vw;
+    padding-bottom: 6.145833vw;
+    background-image: url("./review.png");
+    text-align: center;
+    color: #333333;
+}
+
+#Care_review_button {
+    background-color: #333333;
+    margin: 0 auto;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#Care_review_button > a {
+    font: bold 24px "Noto Sans";
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:  1000px) {
+    .Care_review  > div {
+        width: 100%;
+        padding-top: 16vw;
+        padding-bottom: 16vw;
+        background-image: url("./review.png");
+        text-align: center;
+        color: #333333;
+    }
+    
+    #Care_review_button {
+        background-color: #333333;
+        margin: 0 auto;
+        width: 69.3333vw;
+        height: 12.26666vw;
+        line-height: 12.26666vw;
+        display: inline-block;
+    }
+    
+    #Care_review_button > a {
+        font: bold 3.73333vw "Noto Sans";
+        color: #FFFFFF;
+        vertical-align: middle;
+    }
+    
+
+}

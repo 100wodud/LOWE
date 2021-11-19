@@ -1,0 +1,320 @@
+.Request_section{
+    width:100%;
+    padding-top: 13.02vw;
+    background-color: #FDFCF8;
+}
+
+.Request_section > div {
+    width: 62.5%;
+    margin: 0 auto;
+}
+.Request_tour, .request_route{
+    width: 100%;
+    margin-left: -12px;
+    margin-bottom: 100px;
+}
+.Request_title {
+    font: bold 40px "Noto Sans";
+    text-align: center;
+    color: #333333;
+    padding-bottom: 80px;
+}
+.Request_subtitle{
+    font: bold 20px "Noto Sans";
+    margin-bottom: 25px;
+    width: 580px;
+}
+
+.Request_tour_content, .Request_route_content {
+    width: 370px;
+    border: 1px solid #DDDDDD;
+    margin: 12px;
+    left:0;
+    display: inline-block;
+}
+
+.Request_content input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+
+.Request_checkbox {
+    position: relative;
+    cursor: pointer;
+    display:inline-block;
+    height: fit-content;
+    width: 100%;
+    padding: 19px 0 19px 0;
+    font: 500 18px "Montserrat";
+    text-align: center;
+}
+
+#tour1:checked~.Request_checkbox,#tour2:checked~.Request_checkbox,#tour3:checked~.Request_checkbox,#tour4:checked~.Request_checkbox,#tour5:checked~.Request_checkbox {
+    background-color: #0e7043;
+    font: bold 18px "Montserrat";
+    color: #ffffff;
+}
+
+#route1:checked~.Request_checkbox,#route2:checked~.Request_checkbox,#route3:checked~.Request_checkbox,#route4:checked~.Request_checkbox,#route5:checked~.Request_checkbox {
+    background-color: #0e7043;
+    font: bold 18px "Montserrat";
+    color: #ffffff;
+}
+
+.Request_content_section {
+    width: 100%;
+} 
+
+.Request_contents_box {
+    width: 580px;
+    margin-bottom: 37px;
+    float: left;
+}
+
+.Request_content_input {
+    height: 45px;
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #DDDDDD;
+    background-color: #FDFCF8;
+    font: 500 18px "Montserrat";
+}
+
+.Request_content_input:focus{
+    outline: none;
+    border-bottom: 2px solid #0e7043;   
+}
+
+.Request_content_input::placeholder{
+    color: #ADADAD;
+}
+
+.Request_content_textarea::placeholder{
+    color: #ADADAD;
+}
+
+.Request_contents_areabox{
+    margin-bottom: 37px;
+}
+
+.Request_content_textarea {
+    height: 145px;
+    width: 98%;
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+    background-color: #FDFCF8;
+    font: 500 18px "Montserrat";
+}
+
+.Request_content_textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #0e7043;  
+}
+
+.Request_agree{
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
+
+.Request_agree_text{
+    font: bold 20px "Noto Sans";
+}
+
+.Request_submitbtn{
+    border: 2px solid #0e7043;
+    width: 384px;
+    height: 64px;
+    background-color: #FDFCF8;
+    font: bold 24px "Noto Sans";
+    color: #0e7043;
+}
+
+.Request_agree[type="checkbox"]:checked {
+    background: #0e7043;
+  }
+
+
+
+@media screen and (max-width:  1000px) {
+    .Request_section{
+        width:100%;
+        padding-top: 16.26666vw;
+        background-color: #FDFCF8;
+    }
+    
+    .Request_section > div {
+        width: 86.6666%;
+        margin: 0 auto;
+    }
+    .Request_tour, .request_route{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 13.3333vw;
+    }
+    .Request_title {
+        font: bold 5.866666vw "Noto Sans";
+        text-align: center;
+        color: #333333;
+        margin: 16.26666vw 0 12.26666vw 0;
+        padding: 0;
+    }
+    .Request_subtitle{
+        font: bold 4.26666vw "Noto Sans";
+        margin-bottom: 4.2666vw;
+        width: 100%;
+    }
+    
+    .Request_tour_content, .Request_route_content {
+        width: 41vw;
+        border: 1px solid #DDDDDD;
+        margin: 0 1.6vw 2.6666vw 0;
+        left:0;
+        display: inline-block;
+        height: 21.333vw;
+        line-height: 21.333vw;
+    }
+    
+    .Request_content input[type="checkbox"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        border: 0;
+    }
+    
+    .Request_checkbox {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: table-cell;
+        width: 41vw;
+        height: 21.333vw;
+        padding: 0;
+        vertical-align: middle;
+        font: 500 4.26666vw "Montserrat";
+        text-align: center;
+    }
+    
+    .Request_checkbox > div {
+        color: #A7A7A7;
+        font-size: 3.733333vw;
+        
+    }
+
+    .checkbox_div {
+        font-weight: bold;
+        color: #333333;
+    }
+
+    #tour1:checked~.Request_checkbox,#tour2:checked~.Request_checkbox,#tour3:checked~.Request_checkbox,#tour4:checked~.Request_checkbox,#tour5:checked~.Request_checkbox {
+        background-color: #0e7043;
+        font: bold 4.26666vw "Montserrat";
+        color: #ffffff;
+    }
+    
+    #route1:checked~.Request_checkbox,#route2:checked~.Request_checkbox,#route3:checked~.Request_checkbox,#route4:checked~.Request_checkbox,#route5:checked~.Request_checkbox {
+        background-color: #0e7043;
+        font: bold 4.26666vw "Montserrat";
+        color: #ffffff;
+    }
+
+
+    #tour1:checked~.Request_checkbox>div,#tour2:checked~.Request_checkbox > div,#tour3:checked~.Request_checkbox > div,#tour4:checked~.Request_checkbox > div,#tour5:checked~.Request_checkbox > .checkbox_div {
+        background-color: #0e7043;
+        font: bold 3.733333vw "Montserrat";
+        color: #ffffff;
+    }
+    
+    #route1:checked~.Request_checkbox > div,#route2:checked~.Request_checkbox > div,#route3:checked~.Request_checkbox > div,#route4:checked~.Request_checkbox > div,#route5:checked~.Request_checkbox > div {
+        background-color: #0e7043;
+        font: bold 3.733333vw "Montserrat";
+        color: #ffffff;
+    }
+    
+    .Request_content_section {
+        width: 100%;
+    } 
+    
+    .Request_contents_box {
+        width: 100%;
+        margin-bottom: 10.93333333vw;
+        float: none;
+    }
+    
+    .Request_content_input {
+        height: 9.0666vw;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #DDDDDD;
+        background-color: #FDFCF8;
+        font: 500 3.73333vw "Montserrat";
+    }
+    
+    .Request_content_input:focus{
+        outline: none;
+        border-bottom: 2px solid #0e7043; 
+    }
+
+
+    .Request_content_input::placeholder{
+        color: #ADADAD;
+        font-size: 3.73333vw;
+    }
+    
+    .Request_contents_areabox{
+        margin-bottom: 37px;
+    }
+    
+    .Request_content_textarea {
+        height: 33.3333vw;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #DDDDDD;
+        background-color: #FDFCF8;
+        font: 500 3.73333vw "Montserrat";
+    }
+    
+    .Request_content_textarea:focus{
+        outline: none;
+        border-bottom: 2px solid #0e7043; 
+    }
+
+
+    .Request_content_textarea::placeholder{
+        color: #ADADAD;
+        font-size: 3.73333vw;
+    }
+    
+    .Request_agree{
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 6px;
+    }
+    
+    .Request_agree_text{
+        font: bold 4.2666666vw "Noto Sans";
+    }
+    
+    .Request_submitbtn{
+        border: 2px solid #0e7043;
+        width: 100%;
+        height: 14.93333vw;
+        background-color: #FDFCF8;
+        font: bold 4.8vw "Noto Sans";
+        color: #0e7043;
+    }
+    
+    .Request_agree[type="checkbox"]:checked {
+        background: #0e7043;
+      }
+    
+    }

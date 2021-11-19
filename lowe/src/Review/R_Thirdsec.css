@@ -1,0 +1,144 @@
+.R_Third_section{
+    width:100%;
+    padding: 9.8958333vw 0 9.8958333vw 0;
+    display: inline-block;
+     
+}
+      
+.R_Third_section > div{
+    width: 62.5%;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .R_Third_section_title {
+    font: bold 1.25vw "Montserrat";
+    color: #333333;
+    margin-bottom: 3.125vw;
+
+  }
+
+  .R_Third_Slide_div{
+    position: relative;
+    text-align: center;
+    width: 80% ;
+  }
+  
+  
+  .R_Third_Slide_img{
+    width: 95%;
+    margin-right: 1.25vw;
+    margin-bottom: 1.7708333vw;
+  }
+
+  .R_Third_Slide_content{
+    width: 100%;
+    margin-bottom: 1.97916vw;
+  }
+  .R_Third_Slide_content > div {
+    float: left;
+  }
+  
+  .R_Third_Slide_content > div >div {
+    text-align: left;
+    width: 100%;
+  }
+  .R_Third_Slide_name {
+    color: #333333;
+    font: 500 1.0416666vw "Noto Sans";
+    height: fit-content;
+  }
+  .R_Third_Slide_content_name {
+    font: bold 1.22541666vw "Noto Sans";
+    color: #333333;
+    vertical-align: middle;
+  }
+.R_Third_btn {
+    position: absolute;
+    top: 9.7vw;
+}
+  .R_Third_left {
+      position: absolute;
+      left: 0;
+      z-index: 2;
+  }
+  .R_Third_left > img, .R_Third_right > img {
+    width: 3.125vw;
+    cursor: pointer;
+
+  }
+  .R_Third_right {
+      position: absolute;
+      z-index: 2;
+      left: 58.325vw;
+      width: 3.125vw;
+  }
+
+  @media screen and (max-width:  1000px) {
+    .R_Third_section{
+      width:100%;
+      padding: 20vw 0 32vw 0;
+      display: inline-block;
+       
+  }
+        
+  .R_Third_section > div{
+    width: 87%;
+      margin: 0 auto;
+      align-content: center;
+      position: relative;
+      text-align: center;
+    }
+  
+    .R_Third_section_title {
+      font: bold 4.53333vw "Montserrat";
+      color: #333333;
+      margin-bottom: 9.6vw;
+  
+    }
+  
+    .R_Third_Slide_div{
+      position: relative;
+      text-align: center;
+      width: 100% ;
+    }
+    
+    
+    .R_Third_Slide_img{
+      width: 100%;
+      margin-bottom: 5.333333vw;
+    }
+  
+    .R_Third_Slide_content{
+      text-align: left;
+      margin-bottom: 1.97916vw;
+    }
+    .R_Third_Slide_name {
+      color: #333333;
+      font: 500 4vw "Noto Sans";
+      height: fit-content;
+      margin-bottom: 16.8vw;
+    }
+    .R_Third_Slide_content > div {
+      float: none;
+      height: 16vw;
+    }
+    
+    .R_Third_Slide_content_name {
+      font: bold 4.8vw  "Noto Sans";
+      color: #333333;
+      vertical-align: middle;
+    }
+  
+    .R_show_btn{
+      width: fit-content;
+      padding: 4.8vw 23.2vw 4.8vw 23.2vw;
+      text-align: center;
+      border: 2px solid #333333;
+      color: #333333;
+      margin: auto;
+      font: bold 4.2666666vw "Montserrat"
+    }
+}

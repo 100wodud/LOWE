@@ -1,40 +1,81 @@
-.first_section {
+
+.Info_first_section{
+    width:100vw;
+    display: inline-block;
+    margin-bottom: 8.802vw;
+}
+
+.Info_first_section > div {
+    margin-left: 18.75%;
+    margin-top: 12.24vw;
+    width: 81.25%;
+}
+
+.Info_first_title{
+    margin-bottom: 3.125vw;
+    font: bold 1.5625vw "Noto Sans";
+    color: #333333;
+}
+
+.Info_first_section img {
+    width: 100%;
+    height: 25vw;
+    object-fit: fill;
+    margin-bottom: 4.16667vw;
+}
+
+.Info_first_text > div{
     float: left;
-    height: 350px;
-    width: 46%;
+    margin-right: 16.51vw;
 }
 
-#map {
-    width: 100%;
-    height: 300px;
-}
-.first_section > table {
-    width: 100%;
-}
-.first_section > table > thead > tr {
-    width: 100%;
-}
-.location_button {
-    cursor: pointer;
-    width: 24%;
-    height: 50px;
-    color: black;
-    padding-top: 30px;
-    padding: 10px
-}
-.location_button:hover{
-    color: gray;
+.Info_first_text > div > div {
+    font-family: "Noto Sans";
+    color: #333333;
 }
 
-@media screen and (max-width:  600px){
-    .first_section {
-        text-align: center;
-        margin-bottom: 10px;
-        height: 350px;
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        text-align: center;
+
+
+
+@media screen and (max-width:  1000px) {
+
+    .Info_first_section{
+        width:100vw;
+        display: inline-block;
+        margin-bottom: 21.6vw;
     }
-}
+        
+    .Info_first_section > div {
+        margin-left: 6.6666vw;
+        margin-top: 30.4vw;
+        width: 93.3334vw;
+    }
+    
+    .Info_first_title{
+        margin-bottom: 10.133333vw;
+        font: bold 6.4vw "Noto Sans";
+        color: #333333;
+    }
+
+    .Info_first_title > div > div{
+        line-height: 6.4vw;
+    }
+    
+    .Info_first_section img {
+        width: 100%;
+        object-fit: fill;
+        margin-bottom: 10.133333vw;
+        height: 28.8vw;
+    }
+    
+    .Info_first_text > div{
+        float: left;
+        margin-right: 16.51vw;
+        color: #333333;
+        font: 500 4.26666vw "Noto Sans";
+        text-align: left;
+        width: 100%;
+        line-height: 6.4vw;
+    }
+
+    }

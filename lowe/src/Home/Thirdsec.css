@@ -1,55 +1,151 @@
 .Mainpage_Third_section {
     width:100%;
-    padding-top: 50px;
+    padding-top: 18.23vw;
+    display: inline-block;
+  }
+  
+  #Third_section_content{
+    width: 62.5%;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* 재돌려쓰기 */
+  #Third_Section_title_text{
+    width: 58%;
+    margin-bottom: 5.208333vw;
+    margin-right: 0.2vw;
+    float: left;
+  }
+  
+  .Third_Section_title_text{
+    font: normal 2.1875vw "Noto Sans";
+    color: #333333;
+    text-align: left;
+  }
+  
+  .Third_Section_title_text_bold{
+    font: bold 2.1875vw "Noto Sans";
+    text-align: left;
+    color: #333333;
+  }
+
+#Third_Section_title_content{
+    width: 39%;
+    float: left;
+}
+
+#Third_Section_title_content > div {
+    text-align: left;
+    font: normal 1.145833vw "Noto Sans";
+    color: #333333;
+    line-height: 160%;
+    word-break: keep-all;
+}
+
+  
+  /* */
+  
+  .Third_Section_div {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 4.947916vw;
+}
+
+.Third_Section_content {
+    width: 100%;
+    float: left;
     text-align: center;
 }
 
+.nomalhair {
+    font: 500 19px "Montserrat";
+    letter-spacing: 0px;
+    color: #818181;
+}
 
-.container {
-    overflow: hidden;
-  }
-  .panel {
-    height: 100vh;
-    width: 100%;
-    line-height: 100vh;
-  }
-  
-  .panel img {
-    position: relative;
-    overflow: visible;
-    font-size: 80px;
-  }
-  
-  .panel.blue {
-    background-color: #3883d8;
-    z-index: -3;
-  }
-  
-  .panel.turqoise {
-    background-color: #38ced7;
-    z-index: -2;
-  }
-  
-  .panel.green {
-    background-color: #22d659;
-    z-index: -1;
-  }
+.Third_section_chart {
+  width: 100%;
+}
 
-  /* @media screen and (max-width:  600px) {
-    .container {
-        overflow: hidden;
-      }
-      .panel {
-        height: 100vh;
-        width: 100vw;
-        text-align: center;
-      }
-      
-      .panel span {
-        position: relative;
-        display: block;
-        overflow: visible;
-        top: 50%;
-        font-size: 80px;
-      }
-  } */
+
+@media screen and (max-width:  1000px) {
+  .Mainpage_Third_section {
+  width:100%;
+  padding-top: 36.8vw;
+  display: inline-block;
+}
+
+#Third_section_content{
+  width: 86.5%;
+  margin: 0 auto;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+
+/* 재돌려쓰기 */
+#Third_Section_title_text{
+  width: 100%;
+  float: none;
+  margin-bottom: 4.2666vw;
+  margin-right: 0;
+}
+
+.Third_Section_title_text{
+  font: normal 7.46666vw "Noto Sans";
+  color: #333333;
+  text-align: left;
+}
+
+.Third_Section_title_text_bold{
+  font: bold 7.46666vw "Noto Sans";
+  color: #333333;
+  text-align: left;
+}
+
+#Third_Section_title_content{
+  width: 100%;
+  margin-bottom: 12.8vw;
+}
+
+#Third_Section_title_content > div {
+  text-align: left;
+  font: 500 4.53333vw "Noto Sans";
+  color: #333333;
+  line-height: 6.4vw;
+  float: none;
+}
+
+
+/* */
+
+.Third_Section_div {
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 4.947916vw;
+}
+
+.Third_Section_content {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.nomalhair {
+  font: 500 19px "Montserrat";
+  letter-spacing: 0px;
+  color: #818181;
+}
+
+.Third_section_chart {
+width: 100%;
+}
+
+
+
+}
