@@ -1,0 +1,79 @@
+
+.Designer_first_section{
+    width:100vw;
+    display: inline-block;
+    margin-bottom: 8.854166vw;
+}
+
+.Designer_first_section > div {
+    margin-left: 18.75%;
+    margin-top: 12.24vw;
+    width: 81.25%;
+}
+
+.Designer_first_title{
+    margin-bottom: 3.125vw;
+    font: bold 1.5625vw "Noto Sans";
+    color: #333333;
+}
+
+.Designer_first_section img {
+    width: 100%;
+    height: 25vw;
+    object-fit: fill;
+    margin-bottom: 4.16667vw;
+}
+
+.Designer_first_text > div{
+    float: left;
+    margin-right: 16.51vw;
+    font-family: "Noto Sans";
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+
+@media screen and (max-width:  1000px) {
+
+.Designer_first_section{
+    width:100vw;
+    display: inline-block;
+    margin-bottom: 4vw;
+}
+
+.Designer_first_section > div {
+    margin-left: 6.6666vw;
+    margin-top: 30.4vw;
+    width: 93.3334vw;
+}
+
+.Designer_first_title{
+    margin-bottom: 10.133333vw;
+    font: bold 6.933333vw "Noto Sans";
+    color: #333333;
+}
+
+.Designer_first_section img {
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 10.133333vw;
+    height: 28.8vw;
+}
+
+.Designer_first_text > div{
+    float: left;
+    margin-right: 16.51vw;
+    color: #333333;
+    font: 500 4.26666vw "Noto Sans";
+    text-align: left;
+    line-height: 6.4vw;
+}
+
+.Designer_first_text {
+    width: 60.9333vw;
+    margin-bottom: 33.6vw;
+}
+}

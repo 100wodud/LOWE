@@ -1,0 +1,31 @@
+.designers_info {
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-top: 7.291666vw;
+  width: 64%;
+  padding-left: 1.5%;
+}
+
+.designers_store{
+  text-align: left;
+  font: bold 40px "Noto Sans";
+  color: #333333;
+  margin-bottom: 135px;
+  position: relative;
+}
+
+@media screen and (max-width:  1000px) {
+  .designers_info {
+    height: auto;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .designers_store{
+    display: none;
+  }
+  
+}

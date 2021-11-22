@@ -1,0 +1,136 @@
+.Member_Third_section {
+    width:100%;
+    display: inline-block;
+  }
+
+  .Member_Third_section > div {
+    width: 62.5%;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+  }
+
+  .Member_Third_content {
+      margin-top: 8.3333333vw;
+  }
+
+  .Member_Third_title{
+    font: bold 0.6770833vw "Montserrat";
+    color: #333333;
+    margin-bottom: 1.30208333vw;
+  }
+
+  .Member_Third_title_text {
+    font: bold 1.145833vw "Noto Sans";
+    color: #333333;
+  }
+
+  .Member_Third_content_title {
+    font: bold 1.04166667vw "Montserrat";
+    color: #333333;
+    line-height: 150%;
+    margin-bottom: 1.6666667vw;
+  }
+
+  .Member_Third_content_text {
+    font: 500 1.04166667vw "Montserrat";
+    color: #333333;
+    line-height: 150%;
+    margin-bottom: 7.8125vw;
+  }
+
+  .Member_wrap {
+    margin-left: -18.75vw;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    -webkit-scrolling: touch;
+  }
+  .Third_section_img {
+      height: 33.3333333vw;
+      padding-left: 3vw;
+      animation: horizontal 40s ease-in-out infinite;
+  }
+
+
+
+  @keyframes horizontal {
+    0% {
+      margin-left: -19.75vw;
+    }
+    100% {
+      margin-left: -209.75vw;
+    }
+  }
+
+@media screen and (max-width:  1000px) {
+  .Member_Third_section {
+  width:100%;
+  display: inline-block;
+  margin-bottom: 16vw;
+}
+
+  .Member_Third_section > div {
+    width: 87%;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+  }
+
+  .Member_Third_content {
+      margin-top: 16vw;
+  }
+
+  .Member_Third_title{
+    font: bold 3.2vw "Montserrat";
+    color: #333333;
+    margin-bottom: 3.2vw;
+  }
+
+  .Member_Third_title_text {
+    font: bold 5.6vw "Noto Sans";
+    color: #333333;
+  }
+
+  .Member_Third_content_title {
+    font: bold 4vw "Montserrat";
+    color: #333333;
+    line-height: 150%;
+    margin-bottom: 1.6666667vw;
+  }
+
+  .Member_Third_content_text {
+    font: 500 4vw "Montserrat";
+    color: #333333;
+    line-height: 150%;
+    margin-bottom: 6.4vw;
+  }
+
+  .Member_wrap {
+    margin-left: 0;
+    width: 93vw;
+    overflow-x: scroll;
+  }
+  .Third_section_img {
+      height: 85.33333vw;
+      margin-left: -50.75vw;
+      animation: horizontal 50s ease-in-out infinite;
+  }
+
+
+  @keyframes horizontal {
+    0% {
+      margin-left: -50.75vw;
+    }
+    100% {
+      margin-left: -650.8vw;
+    }
+  }
+
+
+  .Member_wrap::-webkit-scrollbar {
+    display: none;
+} 
+
+
+}

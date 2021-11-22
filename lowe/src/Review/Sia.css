@@ -1,0 +1,70 @@
+.Sia_section {
+    width:100%;
+    display: inline-block;
+    background-color: #FDFCF8;
+  }
+
+.Sia_section > div {
+    padding-top: 9.375vw;
+    width: 62.5%;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+.Sia_title{
+    font: normal 2.08333vw "Noto Sans";
+    margin-bottom: 5.7291666vw;
+}
+
+.Sia_section img {
+    width: 100%;
+}
+
+.Sia_contents_title {
+    font: bold 1.66666666vw "Noto Sans";
+    margin-bottom: 2.0833vw;
+}
+
+.Sia_contents {
+    font: 500 1.0416666vw "Noto Sans";
+    line-height: 180%;
+    word-break: keep-all;
+
+}
+
+
+@media screen and (max-width:  1000px) {
+
+
+    .Sia_section > div {
+            padding-top: 10.9333333vw;
+            width: 87%;
+            margin: 0 auto;
+            position: relative;
+            text-align: left;
+            word-break: keep-all;
+        }
+    
+    
+    .Sia_title{
+        font: normal 4.8vw "Noto Sans";
+        margin-bottom: 11.466666vw;
+        width: 100%;
+        float: none;
+    }
+    
+    .Sia_contents_title {
+        font: bold 5.06666666vw "Noto Sans";
+        margin-bottom: 5.33333vw;
+        width: 100%;
+    }
+    
+    .Sia_contents {
+        font: 500 4vw "Noto Sans";
+        line-height: 6.4vw;
+        word-break: keep-all;
+    
+    }
+        
+    }

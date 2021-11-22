@@ -1,0 +1,139 @@
+.Mainpage_Sixth_section {
+    width:100%;
+    padding-top: 18.23vw;
+    display: inline-block;
+  }
+  
+  #Sixth_section_content{
+    width: 62.5%;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* 재돌려쓰기 */
+  .Sixth_Section_title{
+    font: bold 1vw "Montserrat";
+    color: #333333;
+    text-align: left;
+    margin-bottom: 25px;
+  
+  }
+  #Sixth_Section_title_text{
+    width: 40%;
+    margin-bottom: 100px;
+    margin-right: 0.2vw;
+    float: left;
+  }
+  
+  .Sixth_Section_title_text{
+    font: normal 2.1875vw "Noto Sans";
+    color: #333333;
+    text-align: left;
+  }
+  
+  .Sixth_Section_title_text_bold{
+    font: bold 2.1875vw "Noto Sans";
+    text-align: left;
+    color: #333333;
+  }
+  
+  /* */
+  
+
+  .Sixth_Section_interview {
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Sixth_Section_interview_text {
+    text-align: left;
+    font: bold 1.666667vw "Noto Sans";
+    line-height: 60%;
+    color: #333333;
+    padding-bottom: 1vw;
+    height: fit-content;
+  }
+
+  .Sixth_Section_interview_text > p {
+    margin: 0 0 1.4vw 0; 
+  }
+
+  .More_view {
+    float: right;
+  }
+
+
+@media screen and (max-width:  1000px) {
+  .Mainpage_Sixth_section {
+    width:100%;
+    padding-top: 36.8vw;
+    display: inline-block;
+  }
+  
+  #Sixth_section_content{
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* 재돌려쓰기 */
+  .Sixth_Section_title{
+    font: bold 3.2vw "Montserrat";
+    color: #333333;
+    text-align: left;
+    margin-bottom: 2.6666vw;
+  
+  }
+  #Sixth_Section_title_text{
+    width: 100%;
+    float: none;
+    margin-bottom: 4.2666vw;
+    margin-right: 0;
+  }
+  
+  .Sixth_Section_title_text{
+    font: normal 7.46666vw "Noto Sans";
+    color: #333333;
+    text-align: left;
+  }
+  
+  .Sixth_Section_title_text_bold{
+    font: bold 7.46666vw "Noto Sans";
+    text-align: left;
+    color: #333333;
+    margin-bottom: 12.8vw;
+  }
+  
+  /* */
+  
+
+  .Sixth_Section_interview {
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Sixth_Section_interview_text {
+    text-align: left;
+    font: bold 4.8vw "Noto Sans";
+    line-height: 6.03333vw;
+    margin-bottom: 3vw;
+    color: #333333;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .Sixth_Section_interview_text > p {
+    margin: 0 0 1.4vw 0; 
+  }
+
+  .More_view {
+    float: right;
+  }
+
+}

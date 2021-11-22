@@ -1,0 +1,23 @@
+.Lowe5th_section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    margin-top: 4.427083vw;
+    margin-bottom: -3px;
+}
+
+.Lowe5th_section img {
+    width: 100vw;
+    margin-top: -4px;
+    padding: 0;
+}
+
+
+@media screen and (max-width:  1000px) {
+    .Lowe5th_section {
+        margin-top: 60px;
+    }
+    
+
+}

@@ -1,0 +1,49 @@
+.goto_nav {
+    position: absolute;
+    left: 80%;
+    height: 50px;
+}
+
+
+
+.goto_button{
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    bottom: 0 ;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:  1364px) {
+    .goto_button{
+        text-align: center;
+        position: absolute;
+        width: 50px;
+        bottom: -200px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:  1000px) {
+    .goto_nav {
+        position: absolute;
+        left: 80%;
+        height: 38px;
+    }
+    
+    
+    
+    .goto_button{
+        text-align: center;
+        position: absolute;
+        width: 38px;
+        bottom: 110% ;
+        height: 38px;
+        cursor: pointer;
+        z-index: 0;
+    }
+    
+    
+}
