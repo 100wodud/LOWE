@@ -9,7 +9,10 @@ class Banner extends Component {
         };
     }
     clickBanner = () => {
-        navigator.clipboard.writeText("FALLINLOWE");
+        navigator.clipboard.writeText("LOWEWINTER")
+        .then(() => {
+            alert("할인 코드가 클립보드에 복사되었습니다");
+        })
     }
     componentDidMount = () => {
 
@@ -21,8 +24,8 @@ class Banner extends Component {
 
     render() {
         return (
-            <div className="toast-banner" id="toast-banner" onClick={()=>alert("할인 코드가 클립보드에 복사되었습니다")}>
-                <img src={process.env.PUBLIC_URL + "/image/reservation/discount-banners.png"} onClick={this.clickBanner} alt="로위 1만원 할인 코드 : FALLINLOWE" />
+            <div className="toast-banner" id="toast-banner" onClick={this.clickBanner} >
+                <img src={process.env.PUBLIC_URL + "/image/reservation/discount-banners.png"}  alt="로위 1만원 할인 코드 : LOWEWINTER" />
             </div>
         )
     }

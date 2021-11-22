@@ -227,12 +227,14 @@ class Header extends Component {
                   <ul className="menuList">
                     <div className="menuLisk_black">
                       <a href="/" style={{ width: "100%", height: "60px", paddingLeft: "12px" }}>
-                        <img style={{ marginTop: "9px", width: "40px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
+                        <img style={{ marginTop: "14px", width: "32px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
                       </a>
-                      <div style={{ color: "#ffffff", fontSize: "16px", textAlign: "center", marginTop: "27px", fontWeight: "500" }}>
-                        <div style={{ marginBottom: "50px", marginLeft: "-36px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                        <a href="/request"   style={{ color: "#ffffff", padding: "15px 65px 13px 65px", backgroundColor: "#008b53" }}>
+                      <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
+                        <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
+                        <a href="/request" style={{ color: "#ffffff", textAlign: "center"}} >
+                        <div style={{width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center"}}>
                           <span style={{ fontWeight: 'bold', fontSize:"16px"}}>입점문의하기</span>
+                        </div>
                         </a>
                       </div>
                     </div>

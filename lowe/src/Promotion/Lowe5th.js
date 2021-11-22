@@ -30,7 +30,10 @@ class Lowe5th extends Component {
                     <img src={process.env.PUBLIC_URL + "/image/promotion/lowe5th.png"} alt="로위 5호점 강남" />
                 </Desktop>
                 <Mobile>
-                    <img src={process.env.PUBLIC_URL + "/image/promotion/M_lowe5th.png"} alt="로위 5호점 강남" />
+                    <img src={process.env.PUBLIC_URL + "/image/promotion/M_lowe5th1.png"} alt="로위 5호점 강남" />
+                    <img src={process.env.PUBLIC_URL + "/image/promotion/M_lowe5th2.png"} alt="로위 5호점 강남" />
+                    <img src={process.env.PUBLIC_URL + "/image/promotion/M_lowe5th3.png"} alt="로위 5호점 강남" />
+                    <img src={process.env.PUBLIC_URL + "/image/promotion/M_lowe5th4.png"} alt="로위 5호점 강남" />
                 </Mobile>
             </section>
         )

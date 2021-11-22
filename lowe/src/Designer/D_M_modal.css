@@ -11,6 +11,7 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.7); 
     padding: 0;
+    overflow: scroll;
 }
    .M_modalInner {
         position: relative;
@@ -19,6 +20,8 @@
         margin-left: 0;
         background: #ffffff;
         height: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
     }
     
    .M_modalClose {
@@ -27,7 +30,6 @@
         right: 0;
         width: 60px;
         cursor: pointer;
-        
     }
     
    .M_modalInner > div{
@@ -87,3 +89,25 @@
     border-radius: 50%;
     color: transparent;
   } 
+
+
+@media screen and (max-width:  375px) {
+    .M_modalInner {
+         position: relative;
+         width: 290px;
+         margin-top: 60px;
+         margin-left: 0;
+         background: #ffffff;
+         height: fit-content;
+         margin: 0 auto;
+         margin-top: 50px;
+     }
+
+    .M_modal_comments {
+        line-height: 22px;
+        width: 250px;  
+        font-family: "Montserrat";
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

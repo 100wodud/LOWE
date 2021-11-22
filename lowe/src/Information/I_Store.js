@@ -1,6 +1,18 @@
 import { Component } from "react";
 import Slider from "react-slick";
 import "./I_Store.css";
+import { useMediaQuery } from 'react-responsive'
+
+
+const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 1000 })
+    return isDesktop ? children : null
+}
+const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 999 })
+    return isMobile ? children : null
+}
+
 
 
 class I_Store extends Component {
@@ -72,7 +84,12 @@ class I_Store extends Component {
                 </div>
                 <div className="store_info_content_button">
                     <a href="/info" >
-                        <img src={process.env.PUBLIC_URL + `/image/info/${this.props.data.eng}_button.png`} alt="로위 예약하기" />
+                        <Desktop>
+                            <img src={process.env.PUBLIC_URL + `/image/info/${this.props.data.eng}_button.png`} alt="로위 예약하기" />
+                        </Desktop>
+                        <Mobile>
+                            <img src={process.env.PUBLIC_URL + `/image/info/M_${this.props.data.eng}_button.png`} alt="로위 예약하기" />
+                        </Mobile>
                     </a>
                 </div>
             </div>

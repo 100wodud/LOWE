@@ -241,8 +241,8 @@ header > div > div > div > div > ul >li >p >a:hover {
         float: right;
         z-index: 2;
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 58px;
+        height: 58px;
         opacity: 0;
         right: 0;
         background: #FFFFFF;
@@ -253,31 +253,30 @@ header > div > div > div > div > ul >li >p >a:hover {
         top: 0;
         right: 0;
         z-index: 1;
-        width: 35px;
-        height: 35px;
+        width: 18px;
+        height: 21px;
         background: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 12px;
+        padding: 20px;
     }
     
     .menu-wrap .hamburger > div {
         position: relative;
         flex: none;
         height: 2px;
-        width: 35px;
+        width: 18px;
         background: #FFFFFF;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.4s ease;
     }
     .add-background > .menu-wrap .hamburger > div,
     .add-background > .menu-wrap .hamburger > div::before,
     .add-background > .menu-wrap .hamburger > div::after {
       background: #333333;
-      width: 35px;
+      width: 18px;
     }
     
     /* Hamburger Lines - Top & Bottom */
@@ -286,19 +285,20 @@ header > div > div > div > div > ul >li >p >a:hover {
         content: '';
         position: absolute;
         z-index: 1;
-        top: -10px;
-        width: 35px;
+        top: -6px;
+        width: 18px;
         height: 2px;
         background: #FFFFFF;
     }
     
     /* Moves Line Down */
     .menu-wrap .hamburger > div::after {
-        top: 10px;
+        top: 6px;
     }
     
     /* Toggler Animation */
       .menu-wrap .toggler:checked + .hamburger > div {
+        width: 23.5px;
         transform: rotate(135deg);
         background: #FFFFFF;
     }
@@ -306,17 +306,12 @@ header > div > div > div > div > ul >li >p >a:hover {
     /* Turns Lines Into X */
       .menu-wrap .toggler:checked + .hamburger > div:before,
       .menu-wrap .toggler:checked + .hamburger > div:after {
+        width: 23.5px;
         top: 0;
         transform: rotate(90deg);
         background: #FFFFFF;
     }
     
-    /* Rotate On Hover When Checked */
-      .menu-wrap .toggler:checked:hover + .hamburger > div {
-        transform: rotate(225deg);
-        background: #FFFFFF;
-  
-    }
     
     /* Show Menu */
       .menu-wrap .toggler:checked ~ .menu {
@@ -324,13 +319,12 @@ header > div > div > div > div > ul >li >p >a:hover {
     }
     
       .menu-wrap .toggler:checked ~ .menu > div {
-        animation-duration: 1.5s;
+        animation-duration: 0s;
         
     }
     
       .menu-wrap .toggler:checked ~ .menu > div > div {
         opacity: 1;
-        transition:  opacity 0.4s ease 0.4s;
     }
     
       .menu-wrap .menu {
@@ -354,7 +348,6 @@ header > div > div > div > div > ul >li >p >a:hover {
         justify-content: right;
         height: fit-content;
         min-height: 100vh;
-        transition: all 0.2s ease;
         right: 0;
         top:0;
         display: inline-block;

@@ -134,10 +134,10 @@ class Firstsec extends Component {
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
               <div className="Mainpage_banner_text" >
-                <div>로위 5호점</div>
-                <div>2021 하반기 OPEN</div>
+                <div>로위 강남점</div>
+                <div>2022년 1월 OPEN</div>
                 <div className="Mainpage_banner_button">
-                  <a href="/request" >사전예약하기</a>
+                  <a href="/request" >투어신청하기</a>
                 </div>
               </div>
             </div>
@@ -196,10 +196,10 @@ class Firstsec extends Component {
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
               <div className="Mainpage_banner_text" >
-                <div>로위 5호점</div>
-                <div>2021 하반기 OPEN</div>
+                <div>로위 강남점</div>
+                <div>2022년 1월 OPEN</div>
                 <div className="Mainpage_banner_button">
-                  <a href="/request" >사전예약하기</a>
+                  <a href="/request" >투어신청하기</a>
                 </div>
               </div>
             </div>

@@ -91,8 +91,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/" onClick={()=>alert("11월 19일 18시 오픈 예정")}>
-                                        {/* <a href="/promotion/lowe5th" > */}
+                                        <a href="/promotion/lowe5th" >
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -201,8 +200,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/" onClick={()=>alert("11월 19일 18시 오픈 예정")}>
-                                        {/* <a href="/promotion/lowe5th" > */}
+                                        <a href="/promotion/lowe5th" >
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>

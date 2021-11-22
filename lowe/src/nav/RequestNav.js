@@ -51,7 +51,7 @@ class RequestNav extends Component {
                         {this.props.request ?
                             this.props.request === "promtion" ?
                             <a href="/request" className="requestBtn" >
-                                <img src={process.env.PUBLIC_URL + "/image/Nav/M_promotion.png"} alt="request_button" /> 
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/M_promotion.svg"} alt="request_button" /> 
                             </a> :
                             <div>
                                 <img onClick={this.gotoTop} src={process.env.PUBLIC_URL + "/image/Nav/M_gotoup.svg"} alt="request_button" /> 

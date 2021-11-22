@@ -83,6 +83,21 @@ class Request extends Component {
             }).catch(err => {
                 this.setState({ error: "동일한 전화번호가 있습니다" })
             })
+
+            axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
+                body: `[[입점문의]](http://http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/) ${this.state.full_name}`,
+                connectColor: "#FAC11B",
+                connectInfo: [{
+                    title: `입점문의 ${this.state.full_name}`,
+                    description: "새로운 입점문의 입니다.",
+                    imageUrl: "http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/"
+                }]
+            }).then(() => {
+                window.alert("입점문의가 성공적으로 접수되었습니다.\n로위에 문의주셔서 감사드리며 작성하신 번호로 곧 답변드리겠습니다.")
+                window.location.href = "/"
+            }).catch(err => {
+                this.setState({ error: "동일한 전화번호가 있습니다" })
+            })
         }
     }
 
@@ -98,27 +113,27 @@ class Request extends Component {
                                 <div className="Request_tour">
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour1" value="1" />
-                                        <label htmlFor="tour1" className="Request_checkbox">1호점(홍대점) <span style={{color: "#e6e6e6"}}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour1" className="Request_checkbox">1호점(홍대점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
-                                        <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <span style={{color: "#e6e6e6"}}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour3" value="3" />
-                                        <label htmlFor="tour3" className="Request_checkbox">3호점(합정점) <span style={{color: "#e6e6e6"}}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour3" className="Request_checkbox">3호점(합정점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour4" value="4" />
-                                        <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <span style={{color: "#e6e6e6"}}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{fontWeight: "bold"}}>5호점(강남점) <span style={{color: "#e6e6e6", fontWeight:"500"}}>|</span><span> 사전입점신청 중</span></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 사전입점신청 중</span></label>
                                     </div>
                                 </div>
 
@@ -237,7 +252,7 @@ class Request extends Component {
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
                                         <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <div>전석 입점 완료</div></label>
-                                       
+
                                     </div>
 
                                     <div className="Request_tour_content">
@@ -250,9 +265,9 @@ class Request extends Component {
                                         <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <div>전석 입점 완료</div></label>
                                     </div>
 
-                                    <div className="Request_tour_content" style={{width: "84.5vw"}}>
+                                    <div className="Request_tour_content" style={{ width: "84.5vw" }}>
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{width: "84.5vw" ,fontWeight: "bold"}}>5호점(로위 강남점) <div className="checkbox_div">사전입점신청 중</div></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ width: "84.5vw", fontWeight: "bold" }}>5호점(로위 강남점) <div className="checkbox_div">사전입점신청 중</div></label>
                                     </div>
                                 </div>
 
@@ -325,7 +340,7 @@ class Request extends Component {
                                         <div className="Request_route_content">
                                             <input name="route" type="checkbox" id="route2" value="2" />
                                             <label htmlFor="route2" className="Request_checkbox">검색<div>(네이버,구글)</div></label>
-                                           
+
                                         </div>
 
                                         <div className="Request_route_content">
