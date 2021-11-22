@@ -1,0 +1,39 @@
+
+.Eventpage_banner_div{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 50vh;
+}
+.Eventpage_banner_img{    
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+    margin: 0 auto;
+    height: 50vh;
+    width: 100%;
+}
+
+.Eventpage_banner_video{
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+    margin: 0 auto;
+    height: 50vh;
+
+}
+
+.Eventpage_banner_btn{
+    position: absolute;
+    cursor: pointer;
+    top: 80%;
+    left: 50%;
+    font-size: 20px;
+    color:white;
+    background-color: black;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+}

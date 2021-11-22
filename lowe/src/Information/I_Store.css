@@ -1,0 +1,107 @@
+.store_info {
+    width: 100%;
+    padding-bottom: 12.5vw;
+}
+
+.store_info_img{
+    width: 41.25vw;
+    height: 23.958333vw;
+}
+.store_info_content{
+    margin-top: 6vw;
+    width: 100%;
+    display: inline-block;
+
+}
+.store_info_content_info{
+    float: left;
+    margin-right: 3.8vw;
+}
+
+
+.store_info_content_info div {
+    font: 500 1.04166vw "Noto Sans";
+    color: #333333;
+    line-height: 150%;
+}
+
+.store_info_content_title{
+    margin-bottom: 0.9vw;
+    font: bold 0.833333vw "Noto Sans";
+    color: #7C7C7C;
+}
+
+.store_info a {
+    float: right;
+    margin-right: 18.75vw;
+}
+
+.store_info .slick-list {
+    overflow-x: scroll;
+}
+
+.store_info .slick-slide div:focus {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent
+}
+
+.store_info .slick-list::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+.store_info .slick-list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: inherit;
+    height: 2px;
+}
+.store_info .slick-list::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #a3a3a3;
+}
+
+
+@media screen and (max-width:  1000px) {
+    .store_info {
+        width: 93.6vw;
+        padding-bottom: 12.5vw;
+    }
+    
+    .store_info_img{
+        width:82vw;
+        height: auto;
+        margin-right: 0;
+    }
+    .store_info_content{
+        margin-top: 6vw;
+        width: 100%;
+        display: inline-block;
+    
+    }
+    .store_info_content_info{
+        float: none;
+        margin-bottom: 10.6666vw;
+    }
+    
+    
+    .store_info_content_info div {
+        font: 500 4vw "Noto Sans";
+        color: #333333;
+        line-height: 150%;
+        width: 90%;
+    }
+    
+    .store_info_content_title{
+        margin-bottom: 3.2vw;
+        font: bold 4vw "Noto Sans";
+        color: #7C7C7C;
+    }
+    
+    .store_info a {
+        float: none;
+        margin-right: 0vw;
+    }
+    .store_info_content_button{
+        margin-top: 5.6vw;
+        margin-bottom: 19.5vw;
+    }
+
+}

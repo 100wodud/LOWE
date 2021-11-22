@@ -1,0 +1,154 @@
+.Mainpage_Fourth_section{
+    width:100%;
+    padding-top: 18.23vw;
+    display: inline-block;
+}
+
+#Fourth_section_content{
+    width: 62.5%;
+    margin: 0 auto;
+    align-content: center;
+    position: relative;
+    text-align: center;
+}
+
+/* 재돌려쓰기 */
+
+#Fourth_Section_title_text{
+    width: 40%;
+    float: left;
+    margin-bottom: 5.9895833vw;
+    margin-right: 0.2vw;
+}
+
+.Fourth_Section_title_text_bold{
+    font: bold 1.875vw "Noto Sans";
+    text-align: left;
+    color: #333333;
+}
+
+#Fourth_Section_title_content{
+    width: 58%;
+    float: left;
+}
+
+#Fourth_Section_title_content > div {
+    text-align: left;
+    font: normal 1.145833vw "Noto Sans";
+    color: #333333;
+    line-height: 160%;
+}
+
+/* */
+.Fourth_Section_div {
+    width: 100%;
+    display:inline-block;
+}
+
+.Fourth_Section_content {
+    width: 14.58333333vw;
+    float: left;
+    margin-right: 1.035vw;
+    
+}
+
+.Fourth_Section_content_img {
+    width: 100%;
+}
+
+.Fourth_Section_content_text {
+    text-align: center;
+    padding: 0 0 2.08333vw 0px; 
+    word-break: keep-all;
+}
+
+.Fourth_Section_content_text_content{
+    font: 500 1.041667vw "Noto Sans";
+    color: #707070;
+    line-height: 1.5625vw;
+}
+
+
+@media screen and (max-width:  1000px) {
+    .Mainpage_Fourth_section{
+        width:100%;
+        padding-top: 36.8vw;
+        display: inline-block;
+    }
+    
+    #Fourth_section_content{
+        width: 90%;
+        margin: 0 auto;
+        align-content: center;
+        position: relative;
+        text-align: center;
+    }
+    
+    /* 재돌려쓰기 */
+    
+    #Fourth_Section_title_text{
+        width: 100%;
+        float: none;
+        margin-bottom: 4.2666vw;
+        margin-right: 0;
+    }
+    
+    .Fourth_Section_title_text{
+        font: normal 7.46666vw "Noto Sans";
+        color: #333333;
+        text-align: left;
+    } 
+    .Fourth_Section_title_text_bold{
+        font: bold 7.46666vw "Noto Sans";
+        color: #333333;
+        text-align: left;
+    }
+    
+    #Fourth_Section_title_content{
+        width: 100%;
+        margin-bottom: 12.8vw;
+    }
+    
+    #Fourth_Section_title_content > div {
+        text-align: left;
+        font: 500 4.53333vw "Noto Sans";
+        color: #333333;
+        float: none;
+        line-height: 6.6666vw;
+    }
+    
+    /* */
+    .Fourth_Section_div {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    .Fourth_Section_content {
+        position: relative;
+        width: 100vw;
+        margin-left: -5vw;
+        float: none;
+        text-align: center;
+        
+    }
+    
+    .Fourth_Section_content_img {
+        width: 100%;
+    }
+    
+    .Fourth_Section_content_text {
+        text-align: center;
+        padding: 0; 
+        width: 100%;
+        margin-bottom: 13.8666vw;
+    }
+    
+    .Fourth_Section_content_text_content{
+        font: 500 4vw "Noto Sans";
+        color: #707070;
+        line-height: 5.86666vw;
+    }
+    
+}

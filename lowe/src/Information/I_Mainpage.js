@@ -1,116 +1,136 @@
+/* eslint-disable no-loop-func */
 import { Component } from "react";
 import Firstsec from "./I_Firstsec";
+import Map from "./I_Map";
 import Secondsec from "./I_Secondsec";
-import Thirdsec from "./I_Thirdsec";
-import "./I_Mainpage.css";
+import Header from "../nav/SubHeader";
+import Footer from "../nav/Footer";
+import { Helmet } from 'react-helmet';
 
 const { kakao } = window;
 
-class D_Mainpage extends Component {
+class I_Mainpage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        location: ''
+      location: '',
+      clickloc: ''
     };
   }
-  
+
   kakaoMap = () => {
     let container = document.getElementById('map');
-    let options = {
-      center: new kakao.maps.LatLng(37.55217036753169, 126.92538807699239),
-      level: 6,
-      draggable: false,
-      disableDoubleClickZoom: true
-    };
-    let map = new kakao.maps.Map(container, options);
-    let mapTypeControl = new kakao.maps.MapTypeControl();
+    let options = {}
+    if (window.innerWidth > 1000) {
+      options = {
+        center: new kakao.maps.LatLng(37.55377036753169, 126.92538807699239),
+        level: 4,
+        disableDoubleClickZoom: true,
+        draggable: false
+      };
+    } else {
+      options = {
+        center: new kakao.maps.LatLng(37.55377036753169, 126.92538807699239),
+        level: 6,
+        disableDoubleClickZoom: true,
+        draggable: false
+      };
 
-// 지도 타입 컨트롤을 지도에 표시합니다
-    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+    }
 
     let positions = [
-        {
-            title: '신촌점', 
-            latlng: new kakao.maps.LatLng(37.55603234734332, 126.93504930518148)
-        },
-        {
-            title: '홍대점', 
-            latlng: new kakao.maps.LatLng(37.55041175644609, 126.92279833510501)
-        },
-        {
-            title: '합정점', 
-            latlng: new kakao.maps.LatLng(37.5503258405698, 126.91573972032567)
-        },
+      {
+        title: '신촌점',
+        latlng: new kakao.maps.LatLng(37.55603234734332, 126.93504930518148)
+      },
+      {
+        title: '홍대점',
+        latlng: new kakao.maps.LatLng(37.55451175644609, 126.92030633510501)
+      },
+      {
+        title: '합정점',
+        latlng: new kakao.maps.LatLng(37.5503158455698, 126.9158487203200)
+      }
+    ], selectedMarker = null;
 
-    ];
+    let map = new kakao.maps.Map(container, options);
+    let normal = process.env.PUBLIC_URL + "/image/info/map_white.png";
+    let click = process.env.PUBLIC_URL + "/image/info/map_black.png";
 
-    let imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
-        
-    for (let i = 0; i < positions.length; i ++) {
-        
-        // 마커 이미지의 이미지 크기 입니다
-        let imageSize = new kakao.maps.Size(24, 35); 
-        
-        // 마커 이미지를 생성합니다    
-        let markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
-        
-        // 마커를 생성합니다
-        let marker = new kakao.maps.Marker({
-            map: map, // 마커를 표시할 지도
-            position: positions[i].latlng, // 마커를 표시할 위치
-            title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-            image : markerImage // 마커 이미지 
-        });
-        marker.setMap(map);
-            // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
-        let iwContent = positions[i].title; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        // iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
-        // 인포윈도우를 생성합니다
-        // let infowindow = new kakao.maps.InfoWindow({
-        //     content : iwContent,
-        //     removable : iwRemoveable
-        // });
-        kakao.maps.event.addListener(marker, 'click', function() {
-            // 마커 위에 인포윈도우를 표시합니다
-            // infowindow.open(map, marker);
-            let message = iwContent
-            var resultDiv = document.getElementById('loc'); 
-            resultDiv.innerHTML = message;
-        })
-    }
-  } 
+    for (let i = 0; i < positions.length; i++) {
 
-  clickLocation = (e) =>{
-    e.preventDefault()
-    if(document.getElementById('loc').outerText === '신촌점'){
-      this.setState({location: '신촌점'})
-    } else if (document.getElementById('loc').outerText === '홍대점'){
-      this.setState({location: '홍대점'})
-    } else if (document.getElementById('loc').outerText === '합정점'){
-      this.setState({location: '합정점'})
+      // 마커 이미지의 이미지 크기 입니다
+      let imageSize = new kakao.maps.Size(66, 66);
+
+      // 마커 이미지를 생성합니다    
+      let NormalmarkerImage = new kakao.maps.MarkerImage(normal, imageSize);
+      let ClickmarkerImage = new kakao.maps.MarkerImage(click, imageSize);
+
+      // 마커를 생성합니다
+      let marker = new kakao.maps.Marker({
+        map: map, // 마커를 표시할 지도
+        position: positions[i].latlng, // 마커를 표시할 위치
+        title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image: NormalmarkerImage // 마커 이미지 
+      });
+
+      marker.NormalmarkerImage = NormalmarkerImage;
+
+      marker.setClickable(true);
+      marker.setMap(map);
+      let iwContent = positions[i].title;
+
+      kakao.maps.event.addListener(marker, 'mouseover', function () {
+        // 클릭된 마커가 없고, mouseover된 마커가 클릭된 마커가 아니면
+        // 마커의 이미지를 오버 이미지로 변경합니다
+        if (!selectedMarker || selectedMarker !== marker) {
+          marker.setImage(NormalmarkerImage);
+        }
+      });
+
+
+      kakao.maps.event.addListener(marker, 'mouseout', () => {
+
+        if (!selectedMarker || selectedMarker !== marker) {
+          marker.setImage(NormalmarkerImage);
+        }
+      });
+
+      kakao.maps.event.addListener(marker, 'click', () => {
+        if (!selectedMarker || selectedMarker !== marker) {
+          !!selectedMarker && selectedMarker.setImage(selectedMarker.NormalmarkerImage);
+          marker.setImage(ClickmarkerImage);
+        }
+
+        selectedMarker = marker;
+        this.setState({ location: iwContent })
+      })
     }
   }
-  
+
+  onClicklocation = (value) => () => {
+    this.setState({ location: value, clickloc: value }, () => this.kakaoMap())
+  }
 
   render() {
     return (
-      <div className="Info_main">
-        <div className="Info_top_sec">
-          <Firstsec kakaoMap={this.kakaoMap} clickLocation={this.clickLocation} />
-          <Secondsec location={this.state.location} />
-        </div>
-        <div className="Info_bottom_sec">
-          <Thirdsec location={this.state.location} />
-        </div>
-      </div>
+      <>
+        <Helmet>
+          <title>국내 대표 공유미용실 로위(LOWE) - 지점 위치 소개</title>
+          <meta charSet="utf-8" />
+          <meta property="og:title" content="국내 대표 공유미용실 로위(LOWE) - 지점 위치 소개" />
+          <meta property="og:url" content="https://lo-we.kr/info" />
+        </Helmet>
+        <div id="header_trigger" />
+        <Header navColor={true} />
+        <Firstsec />
+        <Map kakaoMap={this.kakaoMap} />
+        <Secondsec location={this.state.location} onClicklocation={this.onClicklocation} />
+        <Footer />
+      </>
     )
   }
 }
 
-export default D_Mainpage;
-
-
-
-
-
+export default I_Mainpage;

@@ -1,0 +1,98 @@
+.R_modalBody {
+    z-index: 150;  
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000D9; 
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.R_modalBody::-webkit-scrollbar{ display:none; }
+
+
+.modalclick {
+
+    z-index: 150;  
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.R_modalInner {
+    width: 55.7291666vw;
+    margin: auto;
+    color: #ffffff;
+    font: 500 1.04166666vw "Noto Sans";
+    z-index: 1;
+}
+
+
+.R_modalClose {
+    top: 6.25vw;
+    display: inline-block;
+    right: 18.5%;
+    position: absolute;
+    width: 40px;
+    cursor: pointer;
+    
+}
+
+
+.R_Modal_Title{
+    padding-top: 12.5vw;
+    font: bold 2.083333vw "Noto Sans";
+    padding-bottom: 1.6666666vw;
+    border-bottom: 1px solid #4B4B4B;
+}
+
+.R_Modal_content {
+    margin-top: 4.166666666vw;
+}
+
+.R_Modal_content > ul > li {
+    line-height: 150%;
+}
+
+
+@media screen and (max-width:  1000px) {
+
+.R_Modal_Title{
+    padding-top: 17.5vw;
+    font: bold 5.866666vw "Noto Sans";
+    padding-bottom: 1.6666666vw;
+    border-bottom: 1px solid #4B4B4B;
+}
+    .R_modalInner {
+        width: 86.4%;
+        margin: auto;
+        color: #ffffff;
+        font: 500 3.73333333vw "Noto Sans";
+    }
+
+    .R_modalClose {
+        top: 6.25vw;
+        display: inline-block;
+        right: 6.8%;
+        position: fixed;
+        width: 40px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .R_modalBody div {
+        line-height: 170%;
+    }
+    
+}

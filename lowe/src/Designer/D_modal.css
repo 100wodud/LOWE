@@ -1,0 +1,101 @@
+.modalBody {
+    z-index: 150;  
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.modalclick {
+
+    z-index: 150;  
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.modalInner {
+    width: 972px;
+    height: 760px;
+    margin: auto;
+    background: #000000;
+    z-index: 1;
+}
+
+.modalClose {
+    float: right;
+    margin-right: -40px;
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    
+}
+
+.modalInner > div{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.modal_icons {
+    width: 415px;
+    position: absolute;
+    top: 80%;
+    text-align: right;
+}
+.modal_icons img{
+    width: 60px;
+}
+
+.modal_icons > a {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.modalInner div {
+    font: bold 26px "Montserrat";
+
+}
+
+.modalInner pre {
+    font: bold 26px "Montserrat";
+    margin-left: 0;
+
+}
+
+.modal_Slide_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.modalBody .slick-dots {
+    bottom: 30px;
+  }
+  
+ .modalBody .slick-dots li.slick-active button:before {
+    color: transparent;
+  }
+  
+ .modalBody .slick-dots li button:before { 
+    width: 8px; 
+    height: 8px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: transparent;
+  } 
