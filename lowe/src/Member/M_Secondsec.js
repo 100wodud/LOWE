@@ -45,7 +45,7 @@ class M_Secondsec extends Component {
                                     <div>보다 더 많은 고객이 찾아올 수 있도록 다양한 정보 제공을 목표로 합니다.</div>
                                 </div>
                                 <div>
-                                    <a href="https://lo-we.kr/reservation/yujine/">
+                                    <a href="https://lo-we.kr/reservation/yujine">
                                         <img src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
                                     </a>
                                 </div>

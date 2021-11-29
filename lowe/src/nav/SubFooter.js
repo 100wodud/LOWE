@@ -31,7 +31,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <Desktop>
-                    <div style={{ width: "fit-content", float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
+                    <div style={{ width: "430px", marginRight: "120px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
                         <div id="store">
                             <div className="footer_title">
                                 로위 지점 정보
@@ -55,7 +55,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "fit-content", float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
+                    <div style={{ width: "fit-content", float: "left", paddingLeft: "2.7vw", paddingTop: "100px" }}>
                         <div id="company">
                             <div className="footer_title">
                                 벤틀스페이스 사업자 정보
@@ -88,7 +88,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "fit-content", float: "left", paddingLeft: "20vw", paddingTop: "64px" }}>
+                    <div style={{ width: "550px", float: "left", paddingLeft: "20vw", paddingTop: "64px" }}>
                         <div id="follow">
                             <div className="follow_title">
                                 follow us
@@ -111,6 +111,19 @@ class Footer extends Component {
                                 </span>
                             </div>
                         </div>
+                    </div>
+                    <div style={{ width: "403px", float: "left", paddingLeft: "2.7vw", paddingTop: "50px" }}>
+                        {/* <div id="about">
+                            <div className="footer_title" style={{ fontFamily: "Montserrat", marginBottom: "30px" }}>
+                                About us
+                            </div>
+                            <div>
+                                <dl className="dl">
+                                    <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans" }} href="/">회사 소개</a></span>
+                                    <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans", marginLeft: "80px" }} href="/">인재채용</a></span>
+                                </dl>
+                            </div>
+                        </div> */}
                     </div>
                 </Desktop>
                 <Mobile>
@@ -167,6 +180,11 @@ class Footer extends Component {
                                 <dt className="dt">홍대입구역점</dt>
                                 <dd className="dd"> 02-332-2922 | 마포구 양화로 125 경남관광빌딩 4층</dd>
                             </dl>
+                            {/* <div style={{ float: "left", marginleft: "0px", paddingTop: "30px", paddingBottom: "28px" }}>
+                                <span><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", marginLeft: "40px", width: "fit-content" }} href="/">인재채용</a></span>
+                                <span><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", width: "fit-content" , marginLeft: "0px"}} href="/">회사 소개</a></span>
+                            </div> */}
+
                             <span className="span copy_text eng">© Copyright BENTLESPACE All rights reserved.</span>
 
                             <div className="sns_warp">

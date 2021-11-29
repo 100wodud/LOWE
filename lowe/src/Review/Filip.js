@@ -28,8 +28,8 @@ class Filip extends Component {
                     <div>
                         <div>
                             <div className="Filip_title">
-                                <div>홍대입구점</div>
-                                <div style={{ fontWeight: "bold" }}>원장 필립</div>
+                                <div>홍대입구역점</div>
+                                <div style={{ fontWeight: "bold" }}>원장 권필립</div>
                             </div>
                             <div style={{ float: "left", marginRight: "6.77083333vw", paddingBottom: "2vw" }}>
                                 <div style={{ width: "25.3125vw" }}>
@@ -92,8 +92,8 @@ class Filip extends Component {
                     <div>
                         <div>
                             <div className="Filip_title">
-                                <div>홍대입구점</div>
-                                <div style={{ fontWeight: "bold" }}>원장 필립</div>
+                                <div>홍대입구역점</div>
+                                <div style={{ fontWeight: "bold" }}>원장 권필립</div>
                             </div>
                             <div>
                                 <div className="Filip_contents_title">

@@ -65,7 +65,7 @@ class Seventhsec extends Component {
                                 <li style={{ borderBottom: "1px solid #DDDDDD" }}>
                                     <a href="/review/filip">
                                         <div className="Seventh_review_designer">
-                                            <div>홍대입구역점 <span style={{ fontWeight: "bold" }}>원장 필립</span></div>
+                                            <div>홍대입구역점 <span style={{ fontWeight: "bold" }}>원장 권필립</span></div>
                                         </div>
                                         <div className="Seventh_review_content">디자이너로서 더 발전하고 즐기면서 일할 수 있는 환경이라 생각해요</div>
 
@@ -122,7 +122,7 @@ class Seventhsec extends Component {
                                 <li style={{ borderBottom: "1px solid #DDDDDD" }}>
                                     <a href="/review/filip">
                                         <div className="Seventh_review_designer">
-                                            홍대입구역점 <span style={{ fontWeight: "bold" }}>원장 필립</span>
+                                            홍대입구역점 <span style={{ fontWeight: "bold" }}>원장 권필립</span>
                                         </div>
                                         <div className="Seventh_review_content">디자이너로서 더 발전하고 즐기면서 일할 수 있는 환경이라 생각해요</div>
 

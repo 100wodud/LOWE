@@ -137,7 +137,7 @@ class Firstsec extends Component {
                 <div>로위 강남점</div>
                 <div>2022년 1월 OPEN</div>
                 <div className="Mainpage_banner_button">
-                  <a href="/request" >투어신청하기</a>
+                  <a href="/request" >입점투어신청</a>
                 </div>
               </div>
             </div>
