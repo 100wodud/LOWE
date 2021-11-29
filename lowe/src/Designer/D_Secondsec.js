@@ -28,7 +28,7 @@ class D_Secondsec extends Component {
                     <button className="Designer_second_button" onClick={this.onClickNav("합정점")}>
                         합정점
                     </button>
-                    <button className="Designer_second_button" onClick={this.onClickNav("홍대입구점")}>
+                    <button className="Designer_second_button" onClick={this.onClickNav("홍대입구역점")}>
                         홍대입구역점
                     </button>
                 </div>

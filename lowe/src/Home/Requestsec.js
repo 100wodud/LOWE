@@ -26,7 +26,7 @@ class Requestsec extends Component {
         <Desktop>
         <div>
             <div style={{fontFamily:"Montserrat", fontSize: "20px", fontWeight: "bold", marginBottom:"12px"}}>Contact us</div>
-            <div style={{fontFamily:"Noto Sans", fontSize: "46px", fontWeight: "normal", marginBottom:"36px"}}>로위에 <span style={{fontWeight: "bold"}}>입점 문의 신청</span>
+            <div style={{fontFamily:"Noto Sans", fontSize: "46px", fontWeight: "normal", marginBottom:"36px"}}>로위에 <span style={{fontWeight: "bold"}}>입점 문의 </span>
                 해보세요
             </div>
             <div style={{fontFamily:"Noto Sans", fontSize: "22px", fontWeight: "normal", marginBottom:"80px"}}>
@@ -34,7 +34,7 @@ class Requestsec extends Component {
                 <div>로위는 미용인 여러분들께 항상 열려있습니다. 아래버튼을 눌러 신청해주세요.</div>
             </div>
             <div id="Mainpage_request_button">
-                <a href="/request" >입점문의 신청하기</a>
+                <a href="/request" >입점문의하기</a>
             </div>
         </div>
         </Desktop>
@@ -47,7 +47,7 @@ class Requestsec extends Component {
                 <div>아래 버튼을 클릭하여 신청해 주세요!</div>
             </div>
             <div id="Mainpage_request_button">
-                <a href="/request" >입점문의 신청하기</a>
+                <a href="/request" >입점문의하기</a>
             </div>
         </div>
         </Mobile>

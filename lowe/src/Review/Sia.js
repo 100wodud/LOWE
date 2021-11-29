@@ -29,7 +29,7 @@ class Sia extends Component {
                         <div>
                             <div>
                                 <div className="Sia_title">
-                                    <div>홍대입구점</div>
+                                    <div>홍대입구역점</div>
                                     <div style={{ fontWeight: "bold" }}>원장 도림, 시아</div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ class Sia extends Component {
                     <div>
                         <div>
                             <div className="Sia_title">
-                                <div>홍대입구점</div>
+                                <div>홍대입구역점</div>
                                 <div style={{ fontWeight: "bold" }}>원장 도림, 시아</div>
                             </div>
                             <div>
