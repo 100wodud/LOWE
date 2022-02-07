@@ -18,6 +18,26 @@ body img {
   image-rendering: -webkit-optimize-contrast;
 }
 
+body .Lowe5th_slider li {
+  width: 2px;
+}
+body .Lowe5th_slider .slick-dots li button:before { 
+  color: #ffffff;
+ opacity: 1;
+ line-height: 40px;
+ width: 10px;
+ content: '·';
+ font-size: 40px;
+} 
+
+body .Lowe5th_slider li.slick-active button:before { 
+  color: #c2c7a9;
+ opacity: 1;
+ width: 10px;
+ font-size: 40px;
+ content: '·';
+} 
+
 @media screen and (max-width:  1000px) {
 
   body .modalBody .slick-dots {

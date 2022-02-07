@@ -78,6 +78,7 @@
 .Fifth_Slide_img{
   width: 98%;
   margin-right: 50px;
+  object-fit: cover;
 }
 .Fifth_Slide_content{
   width: 98%;

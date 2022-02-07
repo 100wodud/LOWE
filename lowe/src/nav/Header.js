@@ -90,7 +90,7 @@ class Header extends Component {
                       <p style={{fontSize: "0.72916vw", paddingTop: "0.37vw"}}>멤버 혜택</p>
                     </li>
                     <li style={{ marginRight: "2.34375vw" }}>
-                      <p><a style={{fontSize: "0.72916vw" }} href="/exclusive">익스클루시브 혜택</a></p>
+                      <p><a style={{fontSize: "0.72916vw" }} href="/careplus">로위케어 +</a></p>
                     </li>
                     <li>
                       <p><a style={{fontSize: "0.72916vw" }} href="/care">로위케어</a></p>
@@ -259,7 +259,7 @@ class Header extends Component {
                       {this.state.member ?
                         <div className="nav_bottom">
                           <div>
-                            <a className="changeColor" href="/exclusive">익스클루시브 혜택</a>
+                            <a className="changeColor" href="/careplus">로위케어 +</a>
                           </div>
                           <div>
                             <a className="changeColor" href="/care">로위케어</a>

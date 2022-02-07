@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import Hongdae from "./Hongdae";
 import Hapjeong from "./Hapjeong";
 import Shinchon from "./Shinchon";
-import Banner from "./Banner";
+// import Banner from "./Banner";
 import reservation from "../data/reservation";
 
 class Reservation extends Component {
@@ -163,17 +163,26 @@ class Reservation extends Component {
                             </ul>
                         </section>
                         <div className="floating-buttons">
+                            { this.state.data.name !== "민선" ?
+                            <>
                             <a className="button" href={this.state.data.question}>
                                 {this.state.data.name} <strong>1:1 문의</strong>
                             </a>
                             <a className="button is-green" href={this.state.data.reservation}>
                                 {this.state.data.name} <strong>예약</strong>
                             </a>
+                            </> :
+                            <>
+                            <a className="button" style={{width: "100%"}} href={this.state.data.question}>
+                                {this.state.data.name} <strong>1:1 문의</strong>
+                            </a>
+                            </> 
+                            }
                         </div>
-                        {
+                        {/* {
                             this.state.lowe ?
                                 <Banner /> : null
-                        }
+                        } */}
                     </>
                     : null}
             </div>

@@ -9,7 +9,7 @@ export default (
           <Route path="/request" />
           <Route path="/care" />
           <Route path="/info" />
-          <Route path="/exclusive" />
+          <Route path="/careplus" />
           <Route path="/events" />
           <Route path="/testserver" />
           <Route path="/designers" />

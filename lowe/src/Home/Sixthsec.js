@@ -184,7 +184,7 @@ class Sixthsec extends Component {
             </div>
             <div data-aos="fade-up" data-aos-duration="3000"  className="Sixth_Section_interview">
               <div className="Sixth_Section_interview_text">
-                <p>“&lt; 내가 주체가 되는 삶&gt;</p>
+                <p>“&lt;내가 주체가 되는 삶&gt;</p>
                 <p>로위에서 할 수 있었죠”</p>
               </div>
               <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_3.png"} style={{ width: "100%" }} alt="도위 인터뷰" >

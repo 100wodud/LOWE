@@ -41,7 +41,7 @@ class App extends Component {
           <Route path="/request" component={Request} />
           <Route path="/care" component={Care} />
           <Route path="/info" component={Info} />
-          <Route path="/exclusive" component={Member} />
+          <Route path="/careplus" component={Member} />
           <Route path="/events" component={Events} />
           <Route path="/testserver" component={Owner} />
           <Route path="/designers" component={Designer} />

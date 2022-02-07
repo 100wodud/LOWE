@@ -24,6 +24,11 @@
     margin-bottom: 25px;
     width: 580px;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .Request_tour_content, .Request_route_content {
     width: 370px;

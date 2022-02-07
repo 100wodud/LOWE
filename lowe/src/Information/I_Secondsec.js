@@ -16,7 +16,10 @@ class I_Secondsec extends Component {
     return (
       <section className="Info_second_section">
         <div className="Info_second_section_div">
-          <button className="Info_second_button" autoFocus onClick={this.props.onClicklocation("신촌점")}>
+          <button className="Info_second_button" autoFocus onClick={this.props.onClicklocation("강남점")}>
+            강남점
+          </button>
+          <button className="Info_second_button" onClick={this.props.onClicklocation("신촌점")}>
             신촌점
           </button>
           <button className="Info_second_button" onClick={this.props.onClicklocation("합정점")}>
@@ -28,14 +31,13 @@ class I_Secondsec extends Component {
         </div>
         {this.props.location === '신촌점' ?
           <IStore data={store[0]} /> :
-
           this.props.location === '홍대점' ?
             <IStore data={store[1]} /> :
-
             this.props.location === '합정점' ?
               <IStore data={store[2]} /> :
-
-              <IStore data={store[0]} />
+              this.props.location === '강남점' ?
+                <IStore data={store[3]} /> :
+                <IStore data={store[3]} />
         }
       </section>
     )

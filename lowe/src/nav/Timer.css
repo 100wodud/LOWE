@@ -1,0 +1,24 @@
+.timer_nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 80px;
+}
+
+.timer_nav span {
+    color: #ffffff;
+    font: 700 17px "Montserrat"
+}
+
+.timer_nav a {
+    float: none;
+    color: #e0ed7a;
+    font: 700 20px "Montserrat"
+}
+
+.timer_nav a:hover {
+    color:#e0ed7a;
+}
