@@ -82,8 +82,8 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">5호점 오픈예정</span>
-                                            <span className="Fifth_Slide_content_span">사전예약 중</span>
+                                            <span className="Fifth_Slide_content_name">강남점</span>
+                                            <span className="Fifth_Slide_content_span">사전 모집중</span>
                                         </div>
                                     </div>
                                     <div>
@@ -133,7 +133,7 @@ class Fifthsec extends Component {
                                 <div key={4} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">홍대입구점</span>
+                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
                                             <span className="Fifth_Slide_content_span">모집완료</span>
                                         </div>
                                     </div>
@@ -191,8 +191,8 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">5호점 오픈예정</span>
-                                            <span className="Fifth_Slide_content_span">사전예약 중</span>
+                                            <span className="Fifth_Slide_content_name">강남점</span>
+                                            <span className="Fifth_Slide_content_span">사전 모집중</span>
                                         </div>
                                     </div>
                                     <div>
@@ -242,7 +242,7 @@ class Fifthsec extends Component {
                                 <div key={4} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">홍대입구점</span>
+                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
                                             <span className="Fifth_Slide_content_span">모집완료</span>
                                         </div>
                                     </div>

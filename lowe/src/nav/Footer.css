@@ -1,9 +1,13 @@
 .footer {
-    width:100%; 
+    width: fit-content; 
     background:#333333; 
     padding: 0 0 100px 0;
-    display: inline-block;
     z-index: -2;
+    overflow: scroll;
+}
+
+.footer a {
+    text-decoration:none
 }
 
 .footer_title{
@@ -26,7 +30,7 @@
 }
 #store .dt {
     width: 84px; 
-    font: bold 15px "Noto Sans";
+    font: normal 15px "Noto Sans";
     color: #FFFFFF;
 }
 
@@ -36,13 +40,13 @@
     padding-bottom: 6px;
 }
 #company .dd {
-    font: normal 14px "Montserrat";
+    font: normal 15px "Montserrat";
     color: #FFFFFF;
     margin-left: 40px;
 }
 #company .dt {
     width: 101px; 
-    font: bold 15px "Noto Sans";
+    font: normal 15px "Noto Sans";
     color: #FFFFFF;
 }
 
@@ -67,7 +71,7 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  1200px) {
     .footer {
         width:100vw; 
         background:#333333; 

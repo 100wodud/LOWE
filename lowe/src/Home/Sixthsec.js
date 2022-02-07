@@ -107,7 +107,7 @@ class Sixthsec extends Component {
                 </img>
                 <div style={{ marginTop: "1.3vw" }}>
                   <div style={{ float: "left", fontSize: "1.354167vw", fontFamily: "Noto Sans" }}>
-                    신촌점 <span style={{ fontWeight: "bold" }}>원장 해리</span>
+                    합정점 <span style={{ fontWeight: "bold" }}>원장 서해리</span>
                   </div>
                   <a className="More_view" href="https://www.youtube.com/watch?v=em7FoOXS8zU">
                     <img style={{ width: "5.8333vw" }} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe moreview" />
@@ -175,7 +175,7 @@ class Sixthsec extends Component {
               </img>
               <div style={{ marginTop: "4.2666vw", marginBottom: "35.3vw" }}>
                 <div style={{ float: "left", fontSize: "4.26666vw", fontFamily: "Noto Sans" }}>
-                  합정점 <span style={{ fontWeight: "bold" }}>원장 해리</span>
+                  합정점 <span style={{ fontWeight: "bold" }}>원장 서해리</span>
                 </div>
                 <a className="More_view" href="https://www.youtube.com/watch?v=em7FoOXS8zU">
                   <img style={{ width: "21.8666vw", marginTop: "-1vw" }} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe moreview" />
@@ -184,7 +184,7 @@ class Sixthsec extends Component {
             </div>
             <div data-aos="fade-up" data-aos-duration="3000"  className="Sixth_Section_interview">
               <div className="Sixth_Section_interview_text">
-                <p>“&lt; 내가 주체가 되는 삶&gt;</p>
+                <p>“&lt;내가 주체가 되는 삶&gt;</p>
                 <p>로위에서 할 수 있었죠”</p>
               </div>
               <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_3.png"} style={{ width: "100%" }} alt="도위 인터뷰" >

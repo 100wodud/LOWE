@@ -30,25 +30,25 @@ class Hongdae extends Component {
                         <div id="shopSlider">
                             <Slider {...settings} >
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_01.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_01.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_02.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_02.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_03.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_03.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_04.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_04.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_05.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_05.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_06.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_06.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                                 <div className="slide-item">
-                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_07.jpg"} alt="로위 홍대입구점" />
+                                    <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/shop-image_07.jpg"} alt="로위 홍대입구역점" />
                                 </div>
                             </Slider>
                         </div>
@@ -63,7 +63,7 @@ class Hongdae extends Component {
                 <section id="location">
                     <h3 className="section-title">위치</h3>
                     <div className="map-wrapper">
-                        <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/location@2x.jpg"} alt="로위 홍대입구점 지도" />
+                        <img src={process.env.PUBLIC_URL + "/image/reservation/hongdae/location@2x.jpg"} alt="로위 홍대입구역점 지도" />
                         <a href="https://map.naver.com/v5/search/%EB%A1%9C%EC%9C%84%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD%EC%A0%90/place/1054345463?c=14128654.3465961,4516756.5618350,17,0,0,0,dh" className="map-link">
                             <strong>네이버 지도</strong> 열기
                         </a>

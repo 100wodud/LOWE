@@ -15,9 +15,9 @@
 #Care_review_button {
     background-color: #333333;
     margin: 0 auto;
-    width: 280px;
-    height: 50px;
-    line-height: 50px;
+    width: 320px;
+    height: 60px;
+    line-height: 60px;
 }
 
 #Care_review_button > a {
@@ -31,7 +31,7 @@
         width: 100%;
         padding-top: 16vw;
         padding-bottom: 16vw;
-        background-image: url("./review.png");
+        background-image: url("./M_review.png");
         text-align: center;
         color: #333333;
     }
@@ -39,10 +39,9 @@
     #Care_review_button {
         background-color: #333333;
         margin: 0 auto;
-        width: 69.3333vw;
+        width: 64vw;
         height: 12.26666vw;
         line-height: 12.26666vw;
-        display: inline-block;
     }
     
     #Care_review_button > a {

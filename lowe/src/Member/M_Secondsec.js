@@ -28,7 +28,7 @@ class M_Secondsec extends Component {
                     <div>
                         <div className="Member_second_content">
                             <div style={{ float: "left", marginRight: "20.3125vw" }}>
-                                <div className="Member_second_title">EXCLUSIVE 01</div>
+                                <div className="Member_second_title">CARE + 01</div>
                                 <div className="Member_second_title_text">
                                     <div >디자이너</div>
                                     <div>프로필 페이지</div>
@@ -45,7 +45,7 @@ class M_Secondsec extends Component {
                                     <div>보다 더 많은 고객이 찾아올 수 있도록 다양한 정보 제공을 목표로 합니다.</div>
                                 </div>
                                 <div>
-                                    <a href="https://lo-we.kr/reservation/yujine/">
+                                    <a href="https://lo-we.kr/reservation/yujine">
                                         <img src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
                                     </a>
                                 </div>
@@ -56,7 +56,7 @@ class M_Secondsec extends Component {
                         </div>
                         <div className="Member_second_content" >
                             <div style={{ float: "left", marginRight: "7.8125vw" }}>
-                                <div className="Member_second_title">EXCLUSIVE 02</div>
+                                <div className="Member_second_title">CARE + 02</div>
                                 <div className="Member_second_title_text" style={{ marginBottom: "5.2083333vw" }}>
                                     <div>로위 몰(LOWE mall)</div>
                                 </div>
@@ -86,7 +86,7 @@ class M_Secondsec extends Component {
 
                         <div className="Member_second_content" style={{ marginBottom: "18.75vw" }}>
                             <div style={{ float: "left", marginRight: "16.3125vw" }}>
-                                <div className="Member_second_title">EXCLUSIVE 03</div>
+                                <div className="Member_second_title">CARE + 03</div>
                                 <div className="Member_second_title_text">
                                     <div>로위 자체</div>
                                     <div>미용재료 발주페이지</div>
@@ -113,7 +113,7 @@ class M_Secondsec extends Component {
                     <div>
                         <div className="Member_second_content">
                             <div style={{ float: "left", marginRight: "20.3125vw", marginBottom: "15vw", marginTop: "15vw" }}>
-                                <div className="Member_second_title">exclusive 01</div>
+                                <div className="Member_second_title">CARE + 01</div>
                                 <div className="Member_second_title_text">
                                     <div style={{ fontWeight: "normal" }}>디자이너</div>
                                     <div>프로필 페이지</div>
@@ -137,7 +137,7 @@ class M_Secondsec extends Component {
                         </div>
                         <div className="Member_second_content" >
                             <div style={{ float: "left" }}>
-                                <div className="Member_second_title">exclusive 02</div>
+                                <div className="Member_second_title">CARE + 02</div>
                                 <div className="Member_second_title_text" style={{ marginBottom: "5.2083333vw" }}>
                                     <div>로위 몰(LOWE mall)</div>
                                 </div>
@@ -162,7 +162,7 @@ class M_Secondsec extends Component {
 
                         <div className="Member_second_content">
                             <div style={{ float: "left" }}>
-                                <div className="Member_second_title">exclusive 03</div>
+                                <div className="Member_second_title">CARE + 03</div>
                                 <div className="Member_second_title_text" style={{ marginBottom: "6.93333vw" }}>
                                     <div>미용재료 발주</div>
                                 </div>

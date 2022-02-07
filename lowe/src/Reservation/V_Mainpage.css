@@ -67,16 +67,21 @@ h2, h3 {
 #recommend .section-title strong { font-weight: 700; }
 #recommend .recommend-item { position: relative; overflow: hidden; }
 #recommend .slick-dots {
-    bottom: -20px;
+    bottom: -26px;
+}
+#recommend .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 0px;
   }
-  
  #recommend .slick-dots li.slick-active button:before {
     color: transparent;
   }
   
  #recommend .slick-dots li button:before { 
-    width: 8px; 
-    height: 8px;
+    width: 4px;
+    height: 4px;
     background-color: #333333;
     border-radius: 50%;
     color: transparent;

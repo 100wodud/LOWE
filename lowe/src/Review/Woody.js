@@ -133,7 +133,7 @@ class Woody extends Component {
                             </div>
                             <div>
                                 <div style={{ width: "100%", marginBottom: "10.6667vw" }}>
-                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/01.png"} alt="필립 디자이너" />
+                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/01.png"} alt="우디 디자이너" />
                                 </div>
                             </div>
                             <div>
@@ -154,7 +154,7 @@ class Woody extends Component {
                             </div>
                             <div className="Woody_contents">
                                 <div style={{ width: "100%", marginBottom: "10.6667vw" }}>
-                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/02.png"} alt="필립 디자이너" />
+                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/02.png"} alt="우디 디자이너" />
                                 </div>
                             </div>
                             <div>
@@ -169,7 +169,7 @@ class Woody extends Component {
                             </div>
                             <div>
                                 <div style={{ width: "100%", marginBottom: "10.6667vw" }}>
-                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/03.png"} alt="필립 디자이너" />
+                                    <img src={process.env.PUBLIC_URL + "/image/Review/Woody/03.png"} alt="우디 디자이너" />
                                 </div>
                             </div>
 

@@ -30,7 +30,7 @@ class M_Thirdsec extends Component {
                 <div>
                     <div className="Member_Third_content" style={{ marginBottom: "12.23958vw" }}>
                         <div style={{ float: "left", marginRight: "5.20833vw" }}>
-                            <div className="Member_Third_title">EXCLUSIVE 04</div>
+                            <div className="Member_Third_title">CARE + 04</div>
                             <div className="Member_Third_title_text">
                                 <div >천만클럽</div>
                             </div>
@@ -53,7 +53,7 @@ class M_Thirdsec extends Component {
                 <div>
                     <div className="Member_Third_content" style={{ marginBottom: "12.23958vw" }}>
                         <div style={{ float: "left", marginRight: "5.20833vw" }}>
-                            <div className="Member_Third_title">EXCLUSIVE 04</div>
+                            <div className="Member_Third_title">CARE + 04</div>
                             <div className="Member_Third_title_text" style={{marginBottom: "6.93333vw"}}>
                                 <div >천만클럽</div>
                             </div>
