@@ -27,17 +27,17 @@ class M_Firstsec extends Component {
                 <Desktop>
                     <div>
                         <div className="Member_first_title" >
-                            <div>익스클루시브 혜택</div>
+                            <div>로위케어 +</div>
                         </div>
                         <img src={process.env.PUBLIC_URL + "/image/member/member1_1.png"} alt="lowe Member" />
                         <div className="Member_first_text">
-                            <div style={{ fontSize: "1.25vw", fontWeight: "bold", lineHeight: "150%" }}>
+                            <div style={{ fontSize: "1.25vw", fontWeight: "bold", lineHeight: "1.875vw" }}>
                                 <div>로위 멤버들을 위한,</div>
-                                <div>로위만의 익스클루시브 혜택</div>
+                                <div>로위만의 로위케어 + 혜택</div>
                             </div>
-                            <div style={{ fontSize: "1.041667vw", fontWeight: "500", lineHeight: "136%" }}>
+                            <div style={{ fontSize: "1.041667vw", fontWeight: "500", lineHeight: "1.875vw" }}>
                                 <div>로위 멤버가 되신 것을 진심으로 환영합니다.</div>
-                                <div>로위만의 특별한 혜택, 로위 익스클루시브 혜택을 만나보세요.</div>
+                                <div>로위만의 특별한 혜택, 로위 로위케어 플러스 혜택을 만나보세요.</div>
                             </div>
                         </div>
                     </div>
@@ -46,8 +46,7 @@ class M_Firstsec extends Component {
                     <div>
                         <div className="Member_first_title" >
                             <div style={{ float: "left", height: "12.2666666vw", marginRight: "14.93333vw" }}>
-                                <div>익스클루시브</div>
-                                <div>혜택</div>
+                                <div>로위 케어 +</div>
                             </div>
                             <div style={{ fontSize: "4.2666666vw", lineHeight: "6.4vw" }}>
                                 <div>로위 디자이너를 위한</div>

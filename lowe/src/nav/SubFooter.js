@@ -113,17 +113,18 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div style={{ width: "403px", float: "left", paddingLeft: "2.7vw", paddingTop: "50px" }}>
-                        {/* <div id="about">
+                        
+                    <div id="about">
                             <div className="footer_title" style={{ fontFamily: "Montserrat", marginBottom: "30px" }}>
                                 About us
                             </div>
                             <div>
                                 <dl className="dl">
-                                    <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans" }} href="/">회사 소개</a></span>
-                                    <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans", marginLeft: "80px" }} href="/">인재채용</a></span>
+                                    {/* <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans" }} href="/">회사 소개</a></span> */}
+                                    <span><a style={{ color: "white", fontSize: "15px", fontWeight: "bold", fontFamily: "Noto Sans"}} href="https://www.notion.so/lowelab/Join-Bentlespace-74c8124e3eba48588fbf4baf59a99061">인재채용</a></span>
                                 </dl>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </Desktop>
                 <Mobile>
@@ -180,10 +181,11 @@ class Footer extends Component {
                                 <dt className="dt">홍대입구역점</dt>
                                 <dd className="dd"> 02-332-2922 | 마포구 양화로 125 경남관광빌딩 4층</dd>
                             </dl>
-                            {/* <div style={{ float: "left", marginleft: "0px", paddingTop: "30px", paddingBottom: "28px" }}>
-                                <span><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", marginLeft: "40px", width: "fit-content" }} href="/">인재채용</a></span>
-                                <span><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", width: "fit-content" , marginLeft: "0px"}} href="/">회사 소개</a></span>
-                            </div> */}
+                            <div style={{ float: "left", marginleft: "0px", paddingTop: "30px", paddingBottom: "28px" ,width: "92%", borderTop: "1px solid #575757"}}>
+                                <span style={{ float: "left", color: "white", fontSize: "14px", fontWeight: "bold", fontFamily: "Montserrat",}}>About us</span>
+                                <span style={{ float: "left" }}><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", width: "fit-content", marginLeft: "40px" }} href="https://www.notion.so/lowelab/Join-Bentlespace-74c8124e3eba48588fbf4baf59a99061">인재채용</a></span>
+                                {/* <span><a style={{ color: "white", fontSize: "12px", fontWeight: "bold", fontFamily: "Noto Sans", width: "fit-content" , marginLeft: "0px"}} href="/">회사 소개</a></span> */}
+                            </div>
 
                             <span className="span copy_text eng">© Copyright BENTLESPACE All rights reserved.</span>
 

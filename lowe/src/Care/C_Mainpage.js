@@ -7,6 +7,7 @@ import Fourthsec from "./C_Fourthsec";
 import Fifthsec from "./C_Fifthsec";
 import Sixthsec from "./C_Sixthsec";
 import Seventhsec from "./C_Seventhsec";
+import RequestNav from "../nav/RequestNav";
 import Review from "./C_Review";
 import Footer from "../nav/Footer";
 import "./C_Mainpage.css"
@@ -23,6 +24,7 @@ class Mainpage extends Component {
     return (
       <>
         <Header />
+        <RequestNav />
         <Firstsec />
         <Secondsec />
         <Thirdsec />

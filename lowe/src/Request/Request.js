@@ -62,10 +62,9 @@ class Request extends Component {
         });
 
         this.setState({ error: "" });
-
         if (this.state.full_name === '' || this.state.phone === '' || this.state.instagram === '' || this.state.agree === false || this.state.salary === '' || this.state.custom === '' || tour === "" || route === "") {
             window.alert("하나 이상의 필드에 오류가 있습니다. 재확인 후 다시 시도하세요")
-        } else {
+        } else {  
             axios.post("https://d34jcju4l30cic.cloudfront.net/designer", {
                 tour: tour,
                 full_name: this.state.full_name,
@@ -79,7 +78,7 @@ class Request extends Component {
                 question: this.state.question,
             }).then(() => {
                 let t = '';
-                t.split("").map((element) => (
+                tour.split("").map((element) => (
                     element === "1" ? t = t + " 1호점 " :
                     element === "2" ? t = t + " 2호점 " :
                     element === "3" ? t = t + " 3호점 ":
@@ -119,7 +118,16 @@ class Request extends Component {
                     this.setState({ error: "에러" })
                 })
             }).catch(err => {
-                window.alert( "동일한 전화번호로 이미 등록을 하였습니다" )
+                window.alert( "" )
+            })
+
+
+            axios.post("https://d34jcju4l30cic.cloudfront.net/alimtalk", {
+                phone: this.state.phone
+            }).then(() => {
+              
+            }).catch(err => {
+              
             })
 
         }
@@ -135,11 +143,6 @@ class Request extends Component {
                             <div className="Request_content">
                                 <div className="Request_subtitle">투어를 원하시는 지점을 선택해주세요.<span style={{ color: "#0e7043" }}>*</span></div>
                                 <div className="Request_tour">
-                                    <div className="Request_tour_content">
-                                        <input name="tour" type="checkbox" id="tour1" value="1" />
-                                        <label htmlFor="tour1" className="Request_checkbox">1호점(홍대점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
-                                    </div>
-
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
                                         <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
@@ -157,7 +160,7 @@ class Request extends Component {
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 사전입점신청 중</span></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 입점 문의 중</span></label>
                                     </div>
                                 </div>
 
@@ -172,7 +175,7 @@ class Request extends Component {
                                     <div className="Request_contents_box">
                                         <div className="Request_subtitle">연락처<span style={{ color: "#0e7043" }}>*</span></div>
                                         <div>
-                                            <input type="text" className="Request_content_input" placeholder="연락처를 입력해주세요. (ex.01011112222)" onChange={this.handleInputValue("phone")} />
+                                            <input type="number" className="Request_content_input" placeholder="연락처를 입력해주세요. (ex.01011112222)" onChange={this.handleInputValue("phone")} />
                                         </div>
                                     </div>
 
@@ -269,11 +272,6 @@ class Request extends Component {
                                 <div className="Request_subtitle">투어를 원하시는 지점을 선택해주세요.<span style={{ color: "#0e7043" }}>*</span></div>
                                 <div className="Request_tour">
                                     <div className="Request_tour_content">
-                                        <input name="tour" type="checkbox" id="tour1" value="1" />
-                                        <label htmlFor="tour1" className="Request_checkbox">1호점(홍대점) <div>전석 입점 완료</div></label>
-                                    </div>
-
-                                    <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
                                         <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <div>전석 입점 완료</div></label>
 
@@ -288,10 +286,9 @@ class Request extends Component {
                                         <input name="tour" type="checkbox" id="tour4" value="4" />
                                         <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <div>전석 입점 완료</div></label>
                                     </div>
-
-                                    <div className="Request_tour_content" style={{ width: "84.5vw" }}>
+                                    <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ width: "84.5vw", fontWeight: "bold" }}>5호점(로위 강남점) <div className="checkbox_div">사전입점신청 중</div></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(로위 강남점) <div>입점 모집 중</div></label>
                                     </div>
                                 </div>
 
@@ -306,7 +303,7 @@ class Request extends Component {
                                     <div className="Request_contents_box">
                                         <div className="Request_subtitle">연락처<span style={{ color: "#0e7043" }}>*</span></div>
                                         <div>
-                                            <input type="text" className="Request_content_input" placeholder="연락처를 입력해주세요. (ex.01011112222)" onChange={this.handleInputValue("phone")} />
+                                            <input type="number" className="Request_content_input" placeholder="연락처를 입력해주세요. (ex.01011112222)" onChange={this.handleInputValue("phone")} />
                                         </div>
                                     </div>
 

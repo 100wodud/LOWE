@@ -82,7 +82,7 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">강남점 오픈예정(22년 1월)</span>
+                                            <span className="Fifth_Slide_content_name">강남점</span>
                                             <span className="Fifth_Slide_content_span">사전 모집중</span>
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">강남점 오픈예정(22년 1월)</span>
+                                            <span className="Fifth_Slide_content_name">강남점</span>
                                             <span className="Fifth_Slide_content_span">사전 모집중</span>
                                         </div>
                                     </div>

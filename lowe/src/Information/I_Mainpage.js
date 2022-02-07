@@ -23,22 +23,26 @@ class I_Mainpage extends Component {
     let options = {}
     if (window.innerWidth > 1000) {
       options = {
-        center: new kakao.maps.LatLng(37.55377036753169, 126.92538807699239),
-        level: 4,
+        center: new kakao.maps.LatLng(37.52777036753169, 126.975538807699239),
+        level: 8,
         disableDoubleClickZoom: true,
-        draggable: false
+        draggable: true
       };
     } else {
       options = {
-        center: new kakao.maps.LatLng(37.55377036753169, 126.92538807699239),
-        level: 6,
+        center: new kakao.maps.LatLng(37.52777036753169, 126.975538807699239),
+        level: 8,
         disableDoubleClickZoom: true,
-        draggable: false
+        draggable: true
       };
 
     }
 
     let positions = [
+      {
+        title: '강남점',
+        latlng: new kakao.maps.LatLng(37.49203234734332, 127.031030518148)
+      },
       {
         title: '신촌점',
         latlng: new kakao.maps.LatLng(37.55603234734332, 126.93504930518148)
@@ -54,8 +58,8 @@ class I_Mainpage extends Component {
     ], selectedMarker = null;
 
     let map = new kakao.maps.Map(container, options);
-    let normal = process.env.PUBLIC_URL + "/image/info/map_white.png";
-    let click = process.env.PUBLIC_URL + "/image/info/map_black.png";
+    let normal = process.env.PUBLIC_URL + "/image/info/map_black.png";
+    let click = process.env.PUBLIC_URL + "/image/info/map_green.png";
 
 
     for (let i = 0; i < positions.length; i++) {

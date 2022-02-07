@@ -3,7 +3,7 @@ import Header from "../nav/SubHeader";
 import Lowe5th from "./Lowe5th";
 import Footer from "../nav/Footer";
 import Request from "../Home/Requestsec";
-import RequestNav from "../nav/RequestNav";
+import Timer from "../nav/Timer";
 
 
 class P_Mainpage extends Component {
@@ -18,10 +18,10 @@ class P_Mainpage extends Component {
         return (
             <>
                 <Header />
-                <RequestNav request="promtion" />
                 <Lowe5th />
                 <Request />
                 <Footer />
+                <Timer date="2022-01-18T00:00:00" />
             </>
         )
     }

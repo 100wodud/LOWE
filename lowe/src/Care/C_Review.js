@@ -24,33 +24,32 @@ class C_Review extends Component {
         return (
             <section className="Care_review">
                 <Desktop>
-                <div>
-                    <div style={{ fontFamily: "Noto Sans", fontSize: "22px", fontWeight: "normal", marginBottom: "20px" }}>
-                        <div>로위 디자이너를 가장 잘 아는 로위팀이 제공하는 로위 케어,</div>
+                    <div>
+                        <div style={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Contact us</div>
+                        <div style={{ fontFamily: "Noto Sans", fontSize: "46px", fontWeight: "normal", marginBottom: "36px" }}>로위에 <span style={{ fontWeight: "bold" }}>입점 문의 </span>
+                            해보세요
+                        </div>
+                        <div style={{ fontFamily: "Noto Sans", fontSize: "22px", fontWeight: "normal", marginBottom: "80px" }}>
+                            <div>공유미용실 로위를 더 자세히 알고 싶으신가요?</div>
+                            <div>로위는 미용인 여러분들께 항상 열려있습니다. 아래버튼을 눌러 신청해주세요.</div>
+                        </div>
+                        <div id="Care_review_button">
+                            <a href="/request">입점문의하기</a>
+                        </div>
                     </div>
-                    <div style={{ fontFamily: "Noto Sans", fontSize: "32px", fontWeight: "normal", marginBottom: "45px" }}>
-                        직접 경험한 <span style={{ fontWeight: "bold" }}>로위 디자이너의 솔직한 리뷰</span>
-                        를 들어보세요!
-                    </div>
-                    <div id="Care_review_button">
-                        <a href="/review/yujine">리뷰 보러가기</a>
-                    </div>
-                </div>
                 </Desktop>
                 <Mobile>
-                <div>
-                    <div style={{ fontFamily: "Noto Sans", fontSize: "5.86666vw", fontWeight: "normal", width: "70.6vw", margin: "auto", marginBottom: "3.2vw" ,lineHeight: "8.5vw" }}>
-                        직접 경험한 <span style={{ fontWeight: "bold" }}>로위 디자이너의 솔직한 리뷰</span>
-                        를 들어보세요!
+                    <div>
+                        <div style={{ fontFamily: "Montserrat", fontSize: "3.4666vw", fontWeight: "bold", marginBottom: "1.1vw" }}>Contact us</div>
+                        <div style={{ fontFamily: "Noto Sans", fontSize: "5.33333vw", fontWeight: "bold", marginBottom: "3.4666vw" }}>입점 문의</div>
+                        <div style={{ fontFamily: "Noto Sans", fontSize: "3.7333vw", fontWeight: "normal", marginBottom: "7.4666vw" }}>
+                            <div>로위는 미용인 여러분들께 항상 열려있습니다. </div>
+                            <div>아래 버튼을 클릭하여 신청해 주세요!</div>
+                        </div>
+                        <div id="Care_review_button">
+                            <a href="/request">입점문의하기</a>
+                        </div>
                     </div>
-                    <div style={{ fontFamily: "Noto Sans", fontSize: "4vw", fontWeight: "normal", width: "70.86vw", margin: "auto", marginBottom: "8.8vw",lineHeight: "5.8444vw" }}>
-                        <div>로위 디자이너를 가장 잘 아는</div>
-                        <div>로위팀이 제공하는 로위 케어,</div>
-                    </div>
-                    <div id="Care_review_button">
-                        <a href="/review/yujine">리뷰 보러가기</a>
-                    </div>
-                </div>
                 </Mobile>
             </section>
         )
