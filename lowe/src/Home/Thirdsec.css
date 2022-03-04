@@ -14,34 +14,35 @@
   
   /* 재돌려쓰기 */
   #Third_Section_title_text{
-    width: 58%;
+    width: 55%;
     margin-bottom: 5.208333vw;
     margin-right: 0.2vw;
     float: left;
   }
   
   .Third_Section_title_text{
-    font: normal 2.1875vw "Noto Sans";
+    font: normal 1.875vw "Noto Sans";
     color: #333333;
-    text-align: left;
+    text-align: left;  
+    line-height: 1.33;
   }
   
   .Third_Section_title_text_bold{
-    font: bold 2.1875vw "Noto Sans";
+    font: bold 1.875vw "Noto Sans";
     text-align: left;
-    color: #333333;
+    color: #333333;  
+    line-height: 1.33;
   }
 
 #Third_Section_title_content{
-    width: 39%;
-    float: left;
+    float: left;  
 }
 
 #Third_Section_title_content > div {
     text-align: left;
     font: normal 1.145833vw "Noto Sans";
     color: #333333;
-    line-height: 160%;
+    line-height: 1.64;
     word-break: keep-all;
 }
 

@@ -6,6 +6,7 @@ import Hapjeong from "./Hapjeong";
 import Shinchon from "./Shinchon";
 // import Banner from "./Banner";
 import reservation from "../data/reservation";
+import Gangnam from "./Gangnam";
 
 class Reservation extends Component {
     constructor(props) {
@@ -65,7 +66,7 @@ class Reservation extends Component {
                             <ul>
                                 <li><a href="#recommend" data-scroll="">추천시술</a></li>
                                 <li><a href="#sns" data-scroll="">SNS</a></li>
-                                <li><a href="#review" data-scroll="">리뷰</a></li>
+                                {/* <li><a href="#review" data-scroll="">리뷰</a></li> */}
                                 <li><a href="#shop-info" data-scroll="">매장안내</a></li>
                                 <li><a href="#location" data-scroll="">위치</a></li>
                                 <li><a href="#detail" data-scroll="">정보</a></li>
@@ -112,7 +113,7 @@ class Reservation extends Component {
                                     <span className="text">{this.state.data.youtube[1]}</span>
                                 </a></div>
                         </section>
-                        <section id="review">
+                        {/* <section id="review">
                             <h3 className="section-title">Review</h3>
                             <div className="review-wrap custom-scroll">
                                 {this.state.data.review.map((review) => (
@@ -126,12 +127,14 @@ class Reservation extends Component {
                                     </div>
                                 ))}
                             </div>
-                        </section>
+                        </section> */}
                         {this.state.data.store === "홍대입구역점" ?
                             <Hongdae /> :
                             this.state.data.store === "신촌점" ?
                                 <Shinchon /> :
-                                <Hapjeong />
+                                this.state.data.store === "합정점" ?
+                                <Hapjeong /> :
+                                <Gangnam />
                         }
                         <section className="details">
                             <h3 className="section-title">상세정보</h3>

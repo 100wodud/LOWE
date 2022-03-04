@@ -35,11 +35,11 @@ class Secondsec extends Component {
         <Desktop>
           <div id="second_section_identity">
             <div data-aos="fade-up" data-aos-duration="3000" >
-              <div className="identity_First_content">로위(LOWE)는 헤어디자이너가 최소한의 비용으로,</div>
-              <div className="identity_First_content">하루 만에 나만의 샵을 가질 수 있는 공유미용실 서비스입니다.</div>
+              <div className="identity_First_content">로위(LOWE)는 헤어디자이너에게 더 나은 미용 환경을 제공하고,</div>
+              <div className="identity_First_content">더 성장할 수 있도록 돕는 공유미용실 서비스입니다.</div>
             </div>
             <div data-aos="fade-up" data-aos-duration="3000" style={{ marginBottom: "120px" }}>
-              <div className="identity_Second_content">미용 핵심 상권 중 홍대, 신촌, 합정에 위치한 로위는 국내 대표 공유미용실로서</div>
+              <div className="identity_Second_content">국내 대표 공유미용실로서</div>
               <div className="identity_Second_content">건강하고 지속 가능한 미용 생태계를 만들고</div>
               <div className="identity_Second_content">더 많은 사람들이 더 나은 미용을 하도록 돕는 것이 로위의 미션입니다.</div>
             </div>
@@ -74,8 +74,8 @@ class Secondsec extends Component {
                 <img src={process.env.PUBLIC_URL + "/image/mainpage/main2_1.png"} alt="로위 인센티브" className="Second_Section_content_img" />
                 <div className="Second_Section_content_text">
                   <div className="Second_Section_content_text_title">높은 인센티브</div>
-                  <div className="Second_Section_content_text_content">일한 만큼 가져갈 수 있는 합리적인 수익구조로, </div>
-                  <div className="Second_Section_content_text_content">최소 60%부터 시작하는 로위만의 인센티브를 가져보세요</div>
+                  <div className="Second_Section_content_text_content">일한 만큼 가져갈 수 있는 합리적인 수익구조로,</div>
+                  <div className="Second_Section_content_text_content">최대 60% 인센티브를 가져보세요</div>
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-duration="3000" className="Second_Section_content" >
@@ -109,8 +109,9 @@ class Secondsec extends Component {
         <Mobile>
           <div id="second_section_identity">
             <div>
-              <div className="identity_First_content">로위는 디자이너가 최소한의 비용으로</div>
-              <div className="identity_First_content">하루 만에 나만의 샵을 가질 수 있는 공유미용실 서비스입니다.</div>
+              <div className="identity_First_content">로위는 헤어디자이너에게 더 나은</div>
+              <div className="identity_First_content">미용 환경을 제공하고, 더 성장할 수 있도록</div>
+              <div className="identity_First_content">돕는 공유미용실 서비스입니다</div>
             </div>
             <div>
               <div className="identity_Second_content">국내 대표 공유미용실로서 </div>

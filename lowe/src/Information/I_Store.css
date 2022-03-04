@@ -68,6 +68,7 @@
     .store_info_img{
         width:82vw;
         height: auto;
+        max-height: 48vw;
         margin-right: 0;
     }
     .store_info_content{

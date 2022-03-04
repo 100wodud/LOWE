@@ -82,6 +82,7 @@ class I_Store extends Component {
                         <div>{this.props.data.parking}</div>
                     </div>
                 </div>
+                {this.props.data.reservation ?
                 <div className="store_info_content_button">
                     <a href={this.props.data.reservation} >
                         <Desktop>
@@ -91,7 +92,8 @@ class I_Store extends Component {
                             <img src={process.env.PUBLIC_URL + `/image/info/M_${this.props.data.eng}_button.png`} alt="로위 예약하기" />
                         </Mobile>
                     </a>
-                </div>
+                </div> : null
+                }
             </div>
         )
     }

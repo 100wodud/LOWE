@@ -146,6 +146,11 @@ class M_Secondsec extends Component {
                                     <div>다양한 정보를 제공 및 쉽게 예약할 수 있는 </div>
                                     <div>로위 몰입니다.</div>
                                 </div>
+                                <div >
+                                    <a href="https://lowehair.kr" >
+                                        <img style={{width: "20.759vw", marginTop: "20px"}} src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
+                                    </a>
+                                </div>
 
                                 <div>
                                     <img style={{ width: "86.4vw", marginTop: "15vw" }} src={process.env.PUBLIC_URL + "/image/member/M_member2_3.png"} alt="lowe exclusive01" />

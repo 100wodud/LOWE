@@ -27,7 +27,18 @@
 .Info_second_button:focus:after, .Info_second_button:active:after{
     color: #333333;
     border-bottom: 2px solid #333333;
-    outline: none;
+}
+
+
+.Info_second_section_scroll {
+    width: 100%;
+    overflow-x: scroll;
+    white-space:nowrap;
+}
+
+.forcus{
+    color: #333333;
+    border-bottom: 2px solid #333333;
 }
 
 
@@ -52,13 +63,15 @@
         border: none;
     }
 
-    .Info_second_button:focus, .Info_second_button:active, .Info_second_button:after{
+    .forcus{
         color: #333333;
         border-bottom: 2px solid #333333;
     }
 
-    .Info_second_button:focus:after, .Info_second_button:active:after{
+    .Info_second_button:focus::after, .Info_second_button:active::after{
         color: #333333;
         border-bottom: 2px solid #333333;
     }
+
+    
 }

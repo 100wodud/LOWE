@@ -27,7 +27,7 @@ class I_Firstsec extends Component {
                 <Desktop>
                     <div>
                         <div className="Info_first_title" >
-                            <div>지점찾기</div>
+                            <div>지점현황</div>
                         </div>
                         <img src={process.env.PUBLIC_URL + "/image/info/info1_1.png"} alt="lowe Info" />
                         <div className="Info_first_text">
@@ -45,7 +45,7 @@ class I_Firstsec extends Component {
                 <Mobile>
                     <div>
                         <div className="Info_first_title" >
-                            <div style={{ float: "left", height: "12.2666666vw", marginRight: "21.6vw" }}>지점찾기</div>
+                            <div style={{ float: "left", height: "12.2666666vw", marginRight: "21.6vw" }}>지점현황</div>
                             <div style={{ fontSize: "4.2666666vw" }}>
                                 <div>나만의 프리미엄 매장, </div>
                                 <div>나만의 미용 공간</div>

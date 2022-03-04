@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./Timer.css"
+import "./Timer2.css"
 
 
 class Timer extends Component {
@@ -34,6 +34,20 @@ class Timer extends Component {
         // }, 1000)
     }
 
+//     handleImgValue = (key) => (e) => {
+//         uploadFile(e.target.files[0], AWSconfig)
+//         .then(data => {
+//             axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
+//                 body: `[[입점문의]](${data.location}) `
+//             })
+//         })
+//     }
+
+//     <div>
+//     <label style={{lineHeight: "64px"}} htmlFor="timer2_request" className="">지원하기</label>
+//     <input type="file" accept="*" size="40" id="timer2_request" onChange={this.handleImgValue()} />
+// </div>
+
 
     render() {
         // const { days, hours, minutes, seconds, timeUp } = this.state;
@@ -51,8 +65,8 @@ class Timer extends Component {
                     </div>} */}
 
                 <div>
-                    <a style={{lineHeight: "64px"}} href="/request">
-                        입점 신청하기
+                    <a style={{lineHeight: "64px"}} href="#6th_request"  >
+                        지원하기
                     </a>
                 </div>
             </div>
