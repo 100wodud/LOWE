@@ -28,6 +28,7 @@ class Request extends Component {
             career: '',
             question: '',
             agree: false,
+            area: '',
             error: '',
         };
     }
@@ -62,7 +63,7 @@ class Request extends Component {
         });
 
         this.setState({ error: "" });
-        if (this.state.full_name === '' || this.state.phone === '' || this.state.instagram === '' || this.state.agree === false || this.state.salary === '' || this.state.custom === '' || tour === "" || route === "") {
+        if (this.state.full_name === '' || this.state.phone === '' || this.state.instagram === '' || this.state.agree === false || this.state.salary === '' || this.state.custom === '' || tour === "" || route === "" || this.state.area === "") {
             window.alert("하나 이상의 필드에 오류가 있습니다. 재확인 후 다시 시도하세요")
         } else {  
             axios.post("https://d34jcju4l30cic.cloudfront.net/designer", {
@@ -76,6 +77,7 @@ class Request extends Component {
                 route: route,
                 career: this.state.career,
                 question: this.state.question,
+                area: this.state.area
             }).then(() => {
                 let t = '';
                 tour.split("").map((element) => (
@@ -94,7 +96,7 @@ class Request extends Component {
                     r = r + "헤어인잡"))
 
                 axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
-                    body: `[[입점문의]](http://http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/) ${this.state.full_name}`,
+                    body: `[[입점문의]](http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/) ${this.state.full_name}`,
                     connectColor: "#FAC11B",
                     connectInfo: [{
                         title: '입점문의',
@@ -104,6 +106,7 @@ class Request extends Component {
                         디자이너경력: ${this.state.year}\n
                         평균매출: ${this.state.salary}\n
                         인스타그램: ${this.state.instagram}\n
+                        주활동지역: ${this.state.area}\n
                         오신경로: ${r}\n
                         투어: ${t}\n
                         경력사항: ${this.state.career}\n
@@ -139,7 +142,7 @@ class Request extends Component {
                 <Desktop>
                     <section className="Request_section">
                         <div>
-                            <div className="Request_title">로위에 입점문의 신청해 보세요</div>
+                            <div className="Request_title">로위에 지원하세요</div>
                             <div className="Request_content">
                                 <div className="Request_subtitle">투어를 원하시는 지점을 선택해주세요.<span style={{ color: "#0e7043" }}>*</span></div>
                                 <div className="Request_tour">
@@ -160,7 +163,7 @@ class Request extends Component {
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 입점 문의 중</span></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 모집 중</span></label>
                                     </div>
                                 </div>
 
@@ -194,6 +197,12 @@ class Request extends Component {
                                         </div>
                                     </div>
 
+                                    <div className="Request_contents_box">
+                                        <div className="Request_subtitle">주활동지역<span style={{ color: "#0e7043" }}>*</span></div>
+                                        <div>
+                                            <input type="text" className="Request_content_input" placeholder="주로 근무했던 지역을 입력해 주세요.(ex. 홍대, 강남, 신촌 등)" onChange={this.handleInputValue("area")} />
+                                        </div>
+                                    </div>
                                     <div className="Request_contents_box">
                                         <div className="Request_subtitle">평균 매출<span style={{ color: "#0e7043" }}>*</span></div>
                                         <div>
@@ -267,7 +276,7 @@ class Request extends Component {
                 <Mobile>
                     <section className="Request_section">
                         <div>
-                            <div className="Request_title">로위에 입점문의 신청해 보세요</div>
+                            <div className="Request_title">로위에 지원하세요</div>
                             <div className="Request_content">
                                 <div className="Request_subtitle">투어를 원하시는 지점을 선택해주세요.<span style={{ color: "#0e7043" }}>*</span></div>
                                 <div className="Request_tour">
@@ -288,7 +297,7 @@ class Request extends Component {
                                     </div>
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(로위 강남점) <div>입점 모집 중</div></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(로위 강남점) <div>모집 중</div></label>
                                     </div>
                                 </div>
 
@@ -322,6 +331,12 @@ class Request extends Component {
                                         </div>
                                     </div>
 
+                                    <div className="Request_contents_box">
+                                        <div className="Request_subtitle">주활동지역<span style={{ color: "#0e7043" }}>*</span></div>
+                                        <div>
+                                            <input type="text" className="Request_content_input" placeholder="주 근무 지역을 입력해주세요. (ex. 홍대, 강남, 신촌 등)" onChange={this.handleInputValue("area")} />
+                                        </div>
+                                    </div>
                                     <div className="Request_contents_box">
                                         <div className="Request_subtitle">평균 매출<span style={{ color: "#0e7043" }}>*</span></div>
                                         <div>
@@ -361,7 +376,6 @@ class Request extends Component {
                                         <div className="Request_route_content">
                                             <input name="route" type="checkbox" id="route2" value="2" />
                                             <label htmlFor="route2" className="Request_checkbox">검색<div>(네이버,구글)</div></label>
-
                                         </div>
 
                                         <div className="Request_route_content">

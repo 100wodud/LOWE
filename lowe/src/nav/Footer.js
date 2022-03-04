@@ -32,7 +32,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <Desktop>
-                    <div style={{ width: "430px", marginRight: "120px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
+                    <div style={{ width: "440px", marginRight: "120px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
                         <div id="store">
                             <div className="footer_title">
                                 로위 지점 정보
@@ -40,7 +40,7 @@ class Footer extends Component {
                             <div>
                                 <dl className="dl">
                                     <dt className="dt">신촌점</dt>
-                                    <dd className="dd"> 02-332-1226 <span>|</span> 서대문구 신촌로 77 대창빌딩 4층</dd>
+                                    <dd className="dd">02-332-1226 <span>|</span> 서대문구 신촌로 77 대창빌딩 4층</dd>
                                 </dl>
                                 <dl className="dl">
                                     <dt className="dt">합정점</dt>
@@ -48,7 +48,15 @@ class Footer extends Component {
                                 </dl>
                                 <dl className="dl">
                                     <dt className="dt">홍대입구역점</dt>
-                                    <dd className="dd"> 02-332-2922 <span>|</span> 마포구 양화로 125 경남관광빌딩 4층</dd>
+                                    <dd className="dd">02-332-2922<span>|</span> 마포구 양화로 125 경남관광빌딩 4층</dd>
+                                </dl>
+                                <dl className="dl">
+                                    <dt className="dt">강남점</dt>
+                                    <dd className="dd">02-553-2010<span>|</span> 강남구 강남대로 328 강남역쉐르빌 2층</dd>
+                                </dl>
+                                <dl className="dl">
+                                    <dt className="dt">L7홍대점</dt>
+                                    <dd className="dd">-ㅤ ㅤ ㅤ ㅤ ㅤ <span>|</span> 마포구 양화로 141 (홍대L7롯데호텔) 3층</dd>
                                 </dl>
                             </div>
                             <div style={{ fontFamily: "Montserrat", fontSize: "12px", color: "#FFFFFF", marginTop: "30px" }}>
@@ -56,7 +64,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "fit-content", float: "left", paddingLeft: "2.7vw", paddingTop: "100px" }}>
+                    <div style={{ width: "fit-content", float: "left", paddingLeft: "2.65vw", paddingTop: "100px",marginBottom: "30px" }}>
                         <div id="company">
                             <div className="footer_title">
                                 벤틀스페이스 사업자 정보
@@ -89,7 +97,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "550px", float: "left", paddingLeft: "20vw", paddingTop: "64px" }}>
+                    <div style={{ width: "560px", float: "left", paddingLeft: "20vw", paddingTop: "70px" }}>
                         <div id="follow">
                             <div className="follow_title">
                                 follow us
@@ -113,7 +121,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "403px", float: "left", paddingLeft: "2.7vw", paddingTop: "50px" }}>
+                    <div style={{ width: "403px", float: "left", paddingLeft: "2.7vw", paddingTop: "20px" }}>
                         <Gotofirst />
                         <div id="about">
                             <div className="footer_title" style={{ fontFamily: "Montserrat", marginBottom: "30px" }}>
@@ -181,6 +189,14 @@ class Footer extends Component {
                             <dl className="dl">
                                 <dt className="dt">홍대입구역점</dt>
                                 <dd className="dd"> 02-332-2922 | 마포구 양화로 125 경남관광빌딩 4층</dd>
+                            </dl>
+                            <dl className="dl">
+                                <dt className="dt">강남점</dt>
+                                <dd className="dd"> 02-553-2010 | 강남구 강남대로 328 강남역쉐르빌 2층</dd>
+                            </dl>
+                            <dl className="dl">
+                                <dt className="dt">L7홍대점</dt>
+                                <dd className="dd">-ㅤ  | 마포구 양화로 141 (홍대L7롯데호텔) 3층</dd>
                             </dl>
                             <div style={{ float: "left", marginleft: "0px", paddingTop: "30px", paddingBottom: "28px" ,width: "92%", borderTop: "1px solid #575757"}}>
                                 <span style={{ float: "left", color: "white", fontSize: "14px", fontWeight: "bold", fontFamily: "Montserrat",}}>About us</span>

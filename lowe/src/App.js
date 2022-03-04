@@ -20,6 +20,7 @@ import Hyeri from "./Review/R_Hyeri_Mainpage";
 import VMainpage from "./Reservation/V_Mainpage";
 import Reservation from "./Reservation/Reservation";
 import Promotion from "./Promotion/P_Mainpage";
+import Promotion2 from "./Promotion/P_Mainpage2";
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +55,7 @@ class App extends Component {
           <Route path="/review/2roon" component={Eroon} />
           <Route path="/review/hyeri" component={Hyeri} />
           <Route path="/promotion/lowe5th" component={Promotion} />
+          <Route path="/promotion/lowe6th" component={Promotion2} />
         </Switch>
       </>
     )

@@ -12,6 +12,7 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-x:hidden;
   width: 100vw;
+  color: #333333
 }
 
 body img {
@@ -20,36 +21,58 @@ body img {
 
 body .Lowe5th_slider li {
   width: 2px;
+  padding: 4px;
+}
+
+body .Lowe5th_slider .slick-dots {
+  bottom: -40px;
 }
 body .Lowe5th_slider .slick-dots li button:before { 
-  color: #ffffff;
- opacity: 1;
- line-height: 40px;
- width: 10px;
- content: '·';
- font-size: 40px;
+ color: #ddd;
+opacity: 1;
+width: 10px;
+font-size: 8px;
 } 
 
 body .Lowe5th_slider li.slick-active button:before { 
-  color: #c2c7a9;
+  color: #9c9c9c;
  opacity: 1;
  width: 10px;
- font-size: 40px;
- content: '·';
+ font-size: 8px;
+} 
+
+body .Mainpage_first_section .slick-dots {
+  bottom: 50px;
+}
+
+body .Mainpage_first_section .slick-dots li button:before { 
+  color: #9c9c9c;
+ opacity: 1;
+ line-height: 12px;
+ width: 10px;
+ font-size: 12px;
+} 
+body .Mainpage_first_section li.slick-active button:before { 
+  color: #ddd;
+ opacity: 1;
+ width: 10px;
+ font-size: 12px;
 } 
 
 @media screen and (max-width:  1000px) {
 
-  body .modalBody .slick-dots {
-    bottom: 10px;
-  }
-  
-body .modalBody .slick-dots li button:before { 
-  width: 4px; 
-  height: 4px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  color: transparent;
+body .Mainpage_first_section .slick-dots li button:before { 
+  color: #9c9c9c;
+ opacity: 1;
+ line-height: 8px;
+ width: 8px;
+ font-size: 8px;
+} 
+body .Mainpage_first_section li.slick-active button:before { 
+  color: #ddd;
+ opacity: 1;
+ width: 8px;
+ font-size: 8px;
 } 
 }
 
