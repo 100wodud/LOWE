@@ -23,6 +23,17 @@
     color: #FFFFFF;
 }
 
+.timer_nav label, .timer_nav label::after, .timer_nav label:hover  {
+    font: 700 24px "Noto Sans";
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.timer_nav input {
+    display: none;
+}
+
+
 
 @media screen and (max-width:  429px) {
 

@@ -22,6 +22,7 @@ class Header extends Component {
       member: false,
       review: false,
       d_review: false,
+      promotion: false
     };
   }
 
@@ -63,11 +64,16 @@ class Header extends Component {
 
 
   ClickMember = () => {
-    this.setState({ member: !this.state.member, review: false })
+    this.setState({ member: !this.state.member, review: false, promotion: false })
   }
 
   ClickReview = () => {
-    this.setState({ review: !this.state.review, member: false })
+    this.setState({ review: !this.state.review, member: false, promotion: false })
+  }
+
+
+  ClickPromotion = () => {
+    this.setState({ promotion: !this.state.promotion, review: false, member: false })
   }
 
   ClickDReview = () => {
@@ -84,22 +90,22 @@ class Header extends Component {
                 <a className='menu-button' href="https://lowehair.kr/">시술예약</a>
               </div>
               <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>멤버 혜택
+                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 혜택
                   <ul>
                     <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
-                      <p style={{fontSize: "0.72916vw", paddingTop: "0.37vw"}}>멤버 혜택</p>
+                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>멤버 혜택</p>
                     </li>
                     <li style={{ marginRight: "2.34375vw" }}>
-                      <p><a style={{fontSize: "0.72916vw" }} href="/careplus">로위케어 +</a></p>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/careplus">로위케어 +</a></p>
                     </li>
                     <li>
-                      <p><a style={{fontSize: "0.72916vw" }} href="/care">로위케어</a></p>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/care">로위케어</a></p>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="menu-item">
-                <a className='menu-button' href="/info">지점찾기</a>
+                <a className='menu-button' href="/info">지점현황</a>
               </div>
             </div>
             <a href="/" style={{ margin: "0 auto", }}>
@@ -111,19 +117,19 @@ class Header extends Component {
             </a>
             <div className="menu2">
               <div className="menu-item">
-                <a className='menu-button' href="/request" >입점문의</a>
+                <a className='menu-button' href="/request" >지원하기</a>
               </div>
               <div className="menu-item" style={{ cursor: "default" }}>
                 <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
                   <ul>
                     <li style={{ marginLeft: "18.05vw", marginRight: "6vw" }} >
-                      <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw" , paddingTop: "0.5vw"}}>디자이너 리뷰</p>
+                      <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw", paddingTop: "0.5vw" }}>디자이너 리뷰</p>
                     </li>
                     <li style={{ marginRight: "3.54375vw", paddingTop: "0.13vw" }}>
-                      <p><a style={{fontSize: "0.72916vw"}} href="/designers">로위 디자이너</a></p>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/designers">로위 디자이너</a></p>
                     </li>
                     <li id="menu-review">
-                      <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw" , paddingTop: "0.5vw", paddingBottom: "0.5vw"}}>디자이너 리뷰</p>
+                      <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw", paddingTop: "0.5vw", paddingBottom: "0.5vw" }}>디자이너 리뷰</p>
                     </li>
                     <div id="review-area" style={{ marginRight: "20.65vw" }}>
                       <div style={{ float: "right" }}>
@@ -169,7 +175,7 @@ class Header extends Component {
                           <span >
                             <a href="/review/2roon">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/08.png"} alt="이룬 리뷰" />
-                              <div className="menu_review_text" style={{marginBottom: "3.125vw"}} >
+                              <div className="menu_review_text" style={{ marginBottom: "3.125vw" }} >
                                 <div style={{ lineHeight: "1.0416vw" }}>교육, 마케팅, 컨설팅 등 더욱 성장 </div>
                                 <div >할 수 있도록 도움받는 게 더 많아요</div>
                               </div>
@@ -179,7 +185,7 @@ class Header extends Component {
                             <a href="/review/yujine">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/07.png"} alt="유진 리뷰" />
                               <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw"  }}>1인제라 몸은 힘들지만 제가 원하는 </div>
+                                <div style={{ lineHeight: "1.0416vw" }}>1인제라 몸은 힘들지만 제가 원하는 </div>
                                 <div>걸 자유롭게 할 수 있어서 행복해요</div>
                               </div>
                             </a>
@@ -188,7 +194,7 @@ class Header extends Component {
                             <a href="/review/sia">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/06.png"} alt="도림, 시아 리뷰" />
                               <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw"  }}>마음 맞는 디자이너와 같이 일할 수 </div>
+                                <div style={{ lineHeight: "1.0416vw" }}>마음 맞는 디자이너와 같이 일할 수 </div>
                                 <div>있는 곳으로 함께 옮기고 싶었어요</div>
                               </div>
                             </a>
@@ -197,7 +203,7 @@ class Header extends Component {
                             <a href="/review/kijoon">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/05.png"} alt="기준 리뷰" />
                               <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw"  }}>로위에서는 눈치 보지 않고, 스스로 </div>
+                                <div style={{ lineHeight: "1.0416vw" }}>로위에서는 눈치 보지 않고, 스스로 </div>
                                 <div>모든 걸 결정할 수 있어 너무 좋아요</div>
                               </div>
                             </a>
@@ -208,8 +214,20 @@ class Header extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="menu-item" >
-                <a className='menu-button' href="/promotion/lowe5th">입점 혜택</a>
+              <div className="menu-item" style={{ cursor: "default" }}>
+                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>입점혜택
+                  <ul>
+                    <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
+                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>입점혜택</p>
+                    </li>
+                    <li style={{ marginRight: "2.34375vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe5th">강남점(모집 중)</a></p>
+                    </li>
+                    <li>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe6th">L7홍대점(채용 중)</a></p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -237,22 +255,22 @@ class Header extends Component {
                       </a>
                       <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
                         <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                        <a href="/request" style={{ color: "#ffffff", textAlign: "center"}} >
-                        <div style={{width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center"}}>
-                          <span style={{ fontWeight: 'bold', fontSize:"16px"}}>입점문의하기</span>
-                        </div>
+                        <a href="/request" style={{ color: "#ffffff", textAlign: "center" }} >
+                          <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
+                            <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
+                          </div>
                         </a>
                       </div>
                     </div>
                     <li>
-                      <a className="changeColor" href="/info">지점찾기</a>
+                      <a className="changeColor" href="/info">지점현황</a>
                     </li>
                     <li>
-                      <div className="changeColor" onClick={this.ClickMember}>멤버 혜택
+                      <div className="changeColor" onClick={this.ClickMember}>디자이너 혜택
                         <span>
                           {this.state.member ?
-                            <img src={process.env.PUBLIC_URL + "image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
-                            <img src={process.env.PUBLIC_URL + "image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
                           }
                         </span>
                       </div>
@@ -270,14 +288,30 @@ class Header extends Component {
                       <a className="changeColor" href="https://lowehair.kr/">시술예약</a>
                     </li>
                     <li>
-                      <a className="changeColor" href="/promotion/lowe5th">입점 혜택</a>
+                      <div className="changeColor" onClick={this.ClickPromotion}>입점혜택
+                        <span>
+                          {this.state.promotion ?
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
+                          }
+                        </span>
+                      </div>
+                      {this.state.promotion ?
+                        <div className="nav_bottom">
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe5th">강남점(모집 중)</a>
+                          </div>
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe6th">L7홍대점(채용 중)</a>
+                          </div>
+                        </div> : null}
                     </li>
                     <li>
                       <div className="changeColor" onClick={this.ClickReview}>디자이너 리뷰
                         <span>
                           {this.state.review ?
-                            <img src={process.env.PUBLIC_URL + "image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
-                            <img src={process.env.PUBLIC_URL + "image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
                           }
                         </span>
                       </div>
@@ -290,8 +324,8 @@ class Header extends Component {
                             <div className="changeColor" onClick={this.ClickDReview}>디자이너 리뷰
                               <span>
                                 {this.state.d_review ?
-                                  <img src={process.env.PUBLIC_URL + "image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
-                                  <img src={process.env.PUBLIC_URL + "image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
+                                  <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
+                                  <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
                                 }
                               </span>
                             </div>
@@ -326,7 +360,7 @@ class Header extends Component {
                         </div> : null}
                     </li>
                     <li>
-                      <a className="changeColor" href="/request" >입점문의</a>
+                      <a className="changeColor" href="/request" >지원하기</a>
                     </li>
                   </ul>
                 </div>
