@@ -15,7 +15,9 @@ header > div {
   align-content: center;
 }
 
-
+.black-backgrond {
+  background: #333333;
+}
 .add-background {
   background: #FFFFFF;
   border-bottom: 1px solid #DDDDDD;
@@ -26,6 +28,7 @@ header > div {
   color: #333333;
   font: bold 0.9375vw "Noto Sans";
 }
+
 
 .add-background > div > div > div > div {
   color: #333333;

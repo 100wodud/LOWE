@@ -233,7 +233,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
 
-    #tour1:checked~.Request_checkbox>div,#tour2:checked~.Request_checkbox > div,#tour3:checked~.Request_checkbox > div,#tour4:checked~.Request_checkbox > div,#tour5:checked~.Request_checkbox > .checkbox_div {
+    #tour1:checked~.Request_checkbox>div,#tour2:checked~.Request_checkbox > div,#tour3:checked~.Request_checkbox > div,#tour4:checked~.Request_checkbox > div,#tour5:checked~.Request_checkbox > div {
         background-color: #0e7043;
         font: bold 3.733333vw "Montserrat";
         color: #ffffff;
