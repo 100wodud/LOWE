@@ -32,7 +32,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <Desktop>
-                    <div style={{ width: "440px", marginRight: "120px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
+                    <div style={{ width: "455px", marginRight: "105px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
                         <div id="store">
                             <div className="footer_title">
                                 로위 지점 정보
@@ -116,6 +116,11 @@ class Footer extends Component {
                                 <span>
                                     <a className="sns_icon" href="https://www.youtube.com/channel/UC68a6jlJDg0cy6_bL8udLig" target="blank">
                                         <img className="sns_icon" src={process.env.PUBLIC_URL + "/image/Nav/youtube_icon.svg"} alt="유튜브 모양 아이콘" />
+                                    </a>
+                                </span>
+                                <span>
+                                    <a className="sns_icon" href="https://post.naver.com/bentlespace" target="blank">
+                                        <img className="sns_icon" src={process.env.PUBLIC_URL + "/image/Nav/naverpost_icon.svg"} alt="유튜브 모양 아이콘" />
                                     </a>
                                 </span>
                             </div>
@@ -220,6 +225,11 @@ class Footer extends Component {
                                 <div className="youtue_box img_box">
                                     <a href="https://www.youtube.com/channel/UC68a6jlJDg0cy6_bL8udLig" target="blank" className="link">
                                         <img src={process.env.PUBLIC_URL + "/image/Nav/youtube_icon.svg"} alt="유튜브 모양 아이콘" className="img" />
+                                    </a>
+                                </div>
+                                <div className="youtue_box img_box">
+                                    <a href="https://post.naver.com/bentlespace" target="blank" className="link">
+                                        <img src={process.env.PUBLIC_URL + "/image/Nav/naverpost_icon.svg"} alt="네이버 포스트 모양 아이콘" className="img" />
                                     </a>
                                 </div>
                                 <Gotofirst />

@@ -116,8 +116,23 @@ class Header extends Component {
               </div>
             </a>
             <div className="menu2">
-              <div className="menu-item">
-                <a className='menu-button' href="/request" >지원하기</a>
+              <div className="menu-item" style={{ cursor: "default" }}>
+                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>지원하기
+                  <ul>
+                    <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
+                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>지원하기</p>
+                    </li>
+                    <li style={{ marginRight: "2.34375vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe5th">강남점(입점형)</a></p>
+                    </li>
+                    <li style={{ marginRight: "2.34375vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe6th">L7홍대점(채용형)</a></p>
+                    </li>
+                    <li>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/request">바로 지원</a></p>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="menu-item" style={{ cursor: "default" }}>
                 <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
@@ -215,18 +230,7 @@ class Header extends Component {
                 </div>
               </div>
               <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>입점혜택
-                  <ul>
-                    <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
-                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>입점혜택</p>
-                    </li>
-                    <li style={{ marginRight: "2.34375vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe5th">강남점(모집 중)</a></p>
-                    </li>
-                    <li>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe6th">L7홍대점(채용 중)</a></p>
-                    </li>
-                  </ul>
+                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
                 </div>
               </div>
             </div>
@@ -288,25 +292,6 @@ class Header extends Component {
                       <a className="changeColor" href="https://lowehair.kr/">시술예약</a>
                     </li>
                     <li>
-                      <div className="changeColor" onClick={this.ClickPromotion}>입점혜택
-                        <span>
-                          {this.state.promotion ?
-                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
-                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
-                          }
-                        </span>
-                      </div>
-                      {this.state.promotion ?
-                        <div className="nav_bottom">
-                          <div>
-                            <a className="changeColor" href="/promotion/lowe5th">강남점(모집 중)</a>
-                          </div>
-                          <div>
-                            <a className="changeColor" href="/promotion/lowe6th">L7홍대점(채용 중)</a>
-                          </div>
-                        </div> : null}
-                    </li>
-                    <li>
                       <div className="changeColor" onClick={this.ClickReview}>디자이너 리뷰
                         <span>
                           {this.state.review ?
@@ -360,7 +345,26 @@ class Header extends Component {
                         </div> : null}
                     </li>
                     <li>
-                      <a className="changeColor" href="/request" >지원하기</a>
+                      <div className="changeColor" onClick={this.ClickPromotion}>지원하기
+                        <span>
+                          {this.state.promotion ?
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr_bold.svg"} className="header_arrow" alt="아래방향 화살표" /> :
+                            <img src={process.env.PUBLIC_URL + "/image/Nav/head_arr.svg"} className="header_arrow" alt="아래방향 화살표" />
+                          }
+                        </span>
+                      </div>
+                      {this.state.promotion ?
+                        <div className="nav_bottom">
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe5th">강남점(입점형)</a>
+                          </div>
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe6th">L7홍대점(채용형)</a>
+                          </div>
+                          <div>
+                            <a className="changeColor" href="/request">바로 지원</a>
+                          </div>
+                        </div> : null}
                     </li>
                   </ul>
                 </div>

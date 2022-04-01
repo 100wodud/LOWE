@@ -3,7 +3,7 @@ import Header from "../nav/SubHeader";
 import Firstsec from "./C_Firstsec";
 import Secondsec from "./C_Secondsec";
 import Thirdsec from "./C_Thirdsec";
-import Fourthsec from "./C_Fourthsec";
+// import Fourthsec from "./C_Fourthsec";
 import Fifthsec from "./C_Fifthsec";
 import Sixthsec from "./C_Sixthsec";
 import Seventhsec from "./C_Seventhsec";
@@ -28,7 +28,7 @@ class Mainpage extends Component {
         <Firstsec />
         <Secondsec />
         <Thirdsec />
-        <Fourthsec />
+        {/* <Fourthsec /> */}
         <Fifthsec />
         <Sixthsec />
         <Seventhsec />

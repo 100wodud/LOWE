@@ -14,13 +14,13 @@ class R_Firstsec extends Component {
       <div className="Request_first_section">
           <div>
               <div className="Request_first_title" >
-                  <div>입점문의</div>
+                  <div>지원하기</div>
               </div>
               <img src={process.env.PUBLIC_URL + "/image/request/request1_1.png"} alt="lowe request" />
               <div className="Request_first_text">
                   <div style={{fontSize: "1.25vw", fontWeight: "bold", lineHeight: "150%"}}>
                       <div>로위에</div>
-                      <div>입점문의 신청해 보세요.</div>
+                      <div>지원하세요.</div>
                   </div>
                   <div style={{fontSize: "1.041667vw", fontWeight: "500", lineHeight: "150%"}}>
                       <div>당신을 빛내줄 로위에서</div>
