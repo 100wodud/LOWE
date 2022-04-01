@@ -160,9 +160,7 @@ class Reservation extends Component {
                             <ul className="notice-list">
                                 <li><span className="num">1</span><strong>시간 예약 변경</strong>은 <strong>최소 하루 전</strong>에는 연락주세요.</li>
                                 <li><span className="num">2</span><strong>기장 추가 비용이 발생</strong>할 수 있습니다.</li>
-                                <li><span className="num">3</span>로위 할인쿠폰은 <strong>네이버 예약 시 쿠폰번호를 기입</strong>해주시면 적용됩니다.</li>
-                                <li><span className="num">4</span><strong>프라이빗 1:1 개별룸에서 안전하게 시술</strong>을 받으실 수 있습니다.</li>
-                                <li><span className="num">5</span><strong>10만원 이상 결제시 쿠폰사용 가능</strong>합니다</li>
+                                <li><span className="num">3</span><strong>프라이빗 1:1 개별룸에서 안전하게 시술</strong>을 받으실 수 있습니다.</li>
                             </ul>
                         </section>
                         <div className="floating-buttons">

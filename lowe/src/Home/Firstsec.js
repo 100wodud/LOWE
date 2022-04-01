@@ -141,9 +141,10 @@ class Firstsec extends Component {
           </div>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" style={{lineHeight: "74px"}}>
-                <div style={{fontSize: "52px"}}>로위 L7홍대점</div>
-                <div style={{fontSize: "52px"}}>디자이너 공개 채용</div>
+              <div className="Mainpage_banner_text" >
+                <div style={{fontSize: "24px", fontFamily: "Montserrat", marginBottom: "8px"}}>New</div>
+                <div style={{lineHeight: "66px", fontSize: "52px"}} >로위 L7홍대점</div>
+                <div style={{lineHeight: "66px", fontSize: "52px"}} >오픈멤버 디자이너 공개 채용</div>
                 <div className="Mainpage_banner_button" style={{borderColor: "#9c9c9c"}}>
                   <a style={{color: "#fff"}} href="/promotion/lowe6th" >L7홍대점 지원하기</a>
                 </div>
@@ -192,7 +193,6 @@ class Firstsec extends Component {
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
-              
               <div className="Mainpage_banner_text" >
                 <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
                 <div>로위 강남점 오픈 멤버</div>
@@ -206,8 +206,9 @@ class Firstsec extends Component {
           </div>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" style={{ marginTop: "5.3333vw"}} >
-                <div>로위 L7홍대점</div>
+              <div className="Mainpage_banner_text" >
+                <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
+                <div>로위 L7점홍대점</div>
                 <div>디자이너 공개 채용</div>
                 <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
                   <a href="/promotion/lowe6th" >L7홍대점 지원하기</a>

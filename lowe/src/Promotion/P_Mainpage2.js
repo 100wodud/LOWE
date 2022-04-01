@@ -16,7 +16,7 @@ class P_Mainpage2 extends Component {
     render() {
         return (
             <>
-                <Header />
+                <Header promotion={true} />
                 <Lowe6th />
                 <Footer />
                 <Timer date="2022-01-18T00:00:00" />

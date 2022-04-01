@@ -65,7 +65,7 @@ class Timer extends Component {
                     </div>} */}
 
                 <div>
-                    <a style={{lineHeight: "64px"}} href="#6th_request"  >
+                    <a style={{lineHeight: "64px"}} href="https://drive.google.com/drive/folders/19zIc6aU8bp9PjWhwAdQX1hT0F4SrEFaI?usp=sharing"  >
                         지원하기
                     </a>
                 </div>

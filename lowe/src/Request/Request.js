@@ -85,7 +85,8 @@ class Request extends Component {
                     element === "2" ? t = t + " 2호점 " :
                     element === "3" ? t = t + " 3호점 ":
                     element === "4" ? t = t + " 4호점 ":
-                    t = t + " 5호점"))
+                    element === "5" ? t = t + " 5호점 ":
+                    t = t + ""))
 
                 let r = '';
                 route.split("").map((element) => (
@@ -136,7 +137,13 @@ class Request extends Component {
         }
     }
 
+        
+    clickTourL7 = () => {
+           window.location.href = "/promotion/lowe6th" 
+    }
+
     render() {
+        console.log(this.state)
         return (
             <>
                 <Desktop>
@@ -148,22 +155,26 @@ class Request extends Component {
                                 <div className="Request_tour">
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
-                                        <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour2" className="Request_checkbox">신촌점 <span style={{ color: "#e6e6e6" }}>|</span><span style={{ color: "#a7a7a7" }}> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour3" value="3" />
-                                        <label htmlFor="tour3" className="Request_checkbox">3호점(합정점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour3" className="Request_checkbox">합정점 <span style={{ color: "#e6e6e6" }}>|</span><span  style={{ color: "#a7a7a7" }}> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour4" value="4" />
-                                        <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <span style={{ color: "#e6e6e6" }}>|</span><span> 전석 입점 완료</span></label>
+                                        <label htmlFor="tour4" className="Request_checkbox">홍대입구역점 <span style={{ color: "#e6e6e6" }}>|</span><span  style={{ color: "#a7a7a7" }}> 전석 입점 완료</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(강남점) <span style={{ color: "#e6e6e6", fontWeight: "500" }}>|</span><span> 모집 중</span></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>강남점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중</span></label>
+                                    </div>
+                                    <div className="Request_tour_content">
+                                        <input name="tour" type="checkbox" id="tour6" value="0" />
+                                        <label htmlFor="tour6" onClick={this.clickTourL7} className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중, 이메일 지원</span></label>
                                     </div>
                                 </div>
 
@@ -267,7 +278,7 @@ class Request extends Component {
                                 <span className="Request_agree_text"><span style={{ color: "#0e7043", cursor: "pointer", textDecorationLine: "underline" }} onClick={this.openmodal} >개인정보처리방침</span>에 동의합니다<span style={{ color: "#0e7043" }}>*</span></span>
                             </div>
                             <div style={{ textAlign: "center", paddingTop: "125px", paddingBottom: "255px" }}>
-                                <button className="Request_submitbtn" onClick={this.handlesubmit}>입점문의 신청하기</button>
+                                <button className="Request_submitbtn" onClick={this.handlesubmit}>지원하기</button>
                             </div>
                         </div>
                     </section >
@@ -282,22 +293,26 @@ class Request extends Component {
                                 <div className="Request_tour">
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour2" value="2" />
-                                        <label htmlFor="tour2" className="Request_checkbox">2호점(신촌점) <div>전석 입점 완료</div></label>
+                                        <label htmlFor="tour2" className="Request_checkbox">신촌점 <div>전석 입점 완료</div></label>
 
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour3" value="3" />
-                                        <label htmlFor="tour3" className="Request_checkbox">3호점(합정점) <div>전석 입점 완료</div></label>
+                                        <label htmlFor="tour3" className="Request_checkbox">합정점 <div>전석 입점 완료</div></label>
                                     </div>
 
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour4" value="4" />
-                                        <label htmlFor="tour4" className="Request_checkbox">4호점(홍대입구역점) <div>전석 입점 완료</div></label>
+                                        <label htmlFor="tour4" className="Request_checkbox">홍대입구역점 <div>전석 입점 완료</div></label>
                                     </div>
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
-                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>5호점(로위 강남점) <div>모집 중</div></label>
+                                        <label htmlFor="tour5" className="Request_checkbox" style={{ fontWeight: "bold" }}>강남점 <div>모집 중</div></label>
+                                    </div>
+                                    <div className="Request_tour_content">
+                                        <input name="tour" type="checkbox" id="tour6" value="6" />
+                                        <label onClick={this.clickTourL7} htmlFor="tour6" className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <div>모집 중, 이메일 지원</div></label>
                                     </div>
                                 </div>
 
@@ -401,7 +416,7 @@ class Request extends Component {
                                 <span className="Request_agree_text"><span style={{ color: "#0e7043", cursor: "pointer", textDecorationLine: "underline" }} onClick={this.openmodal} >개인정보처리방침</span>에 동의합니다<span style={{ color: "#0e7043" }}>*</span></span>
                             </div>
                             <div style={{ textAlign: "center", paddingTop: "16vw", paddingBottom: "34.66666vw" }}>
-                                <button className="Request_submitbtn" onClick={this.handlesubmit}>입점문의하기</button>
+                                <button className="Request_submitbtn" onClick={this.handlesubmit}>지원하기</button>
                             </div>
                         </div>
                     </section >
