@@ -45,7 +45,7 @@ class Request extends Component {
         this.setState({ [key]: e.target.value });
     };
 
-    handlesubmit = () => {
+    handlesubmit = (e) => {
         const clickTour = 'input[name="tour"]:checked';
         const tourlist = document.querySelectorAll(clickTour);
         let tour = '';
@@ -90,37 +90,32 @@ class Request extends Component {
 
                 let r = '';
                 route.split("").map((element) => (
-                    element === "1" ? r = r + " sns광고" :
-                    element === "2" ? r = r + " 검색" :
-                    element === "3" ? r = r + " 기타매체":
-                    element === "4" ? r = r + " 지인추천":
-                    r = r + "헤어인잡"))
+                    element === "1" ? r = r + " sns광고 " :
+                    element === "2" ? r = r + " 검색 " :
+                    element === "3" ? r = r + " 기타매체 ":
+                    element === "4" ? r = r + " 지인추천 ":
+                    r = r + " 헤어인잡 "))
 
-                axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
-                    body: `[[입점문의]](http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/) ${this.state.full_name}`,
-                    connectColor: "#FAC11B",
-                    connectInfo: [{
-                        title: '입점문의',
-                        description: `\n
-                        이름 : ${this.state.full_name}\n
-                        전화번호 : ${this.state.phone}\n
-                        디자이너경력: ${this.state.year}\n
-                        평균매출: ${this.state.salary}\n
-                        인스타그램: ${this.state.instagram}\n
-                        주활동지역: ${this.state.area}\n
-                        오신경로: ${r}\n
-                        투어: ${t}\n
-                        경력사항: ${this.state.career}\n
-                        개인고객: ${this.state.custom}\n
-                        문의사항 : ${this.state.question}`,
-                        imageUrl: "http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com/"
-                    }]
-                }).then(() => {
-                    window.alert("입점문의가 성공적으로 접수되었습니다.\n로위에 문의주셔서 감사드리며 작성하신 번호로 곧 답변드리겠습니다.")
-                    window.location.href = "/"
-                }).catch(err => {
-                    this.setState({ error: "에러" })
-                })
+                    e.preventDefault();
+                
+                    const webhookUrl = 'https://hooks.slack.com/services/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';
+                
+                    const data = {
+                        "text": `\n이름 : ${this.state.full_name}\n전화번호 : ${this.state.phone}\n디자이너경력: ${this.state.year}\n평균매출: ${this.state.salary}\n인스타그램: ${this.state.instagram}\n주활동지역: ${this.state.area}\n오신경로: ${r}\n투어: ${t}\n경력사항: ${this.state.career}\n개인고객: ${this.state.custom}\n문의사항: ${this.state.question}\n<http://lo-we.admin.s3-website.ap-northeast-2.amazonaws.com|입점문의 확인하기>`
+                    }
+                    let res = axios.post(webhookUrl, JSON.stringify(data), {
+                        withCredentials: false,
+                        transformRequest: [(data, headers) => {
+                            delete headers.post["Content-Type"]
+                            return data
+                        }]
+                    })
+                
+                    if (res.status === 200) {
+                        window.alert("입점문의가 성공적으로 접수되었습니다.\n로위에 문의주셔서 감사드리며 작성하신 번호로 곧 답변드리겠습니다.")
+                        window.location.href = "/"
+                        //clear state so text boxes clear
+                    } 
             }).catch(err => {
                 window.alert( "" )
             })
@@ -138,8 +133,8 @@ class Request extends Component {
     }
 
         
-    clickTourL7 = () => {
-           window.location.href = "/promotion/lowe6th" 
+    clickTourL7 =(e)=> () => {
+           window.location.href = `/promotion/lowe${e}th`
     }
 
     render() {
@@ -164,8 +159,8 @@ class Request extends Component {
                                     </div>
 
                                     <div className="Request_tour_content">
-                                        <input name="tour" type="checkbox" id="tour4" value="4" />
-                                        <label htmlFor="tour4" className="Request_checkbox">홍대입구역점 <span style={{ color: "#e6e6e6" }}>|</span><span  style={{ color: "#a7a7a7" }}> 전석 입점 완료</span></label>
+                                        <input name="tour" type="checkbox" id="tour6" value="0" />
+                                        <label htmlFor="tour6" onClick={this.clickTourL7(4)} className="Request_checkbox" style={{ fontWeight: "bold" }}>홍대입구역점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중, 이메일 지원</span></label>
                                     </div>
 
                                     <div className="Request_tour_content">
@@ -174,7 +169,11 @@ class Request extends Component {
                                     </div>
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour6" value="0" />
-                                        <label htmlFor="tour6" onClick={this.clickTourL7} className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중, 이메일 지원</span></label>
+                                        <label htmlFor="tour6" onClick={this.clickTourL7(6)} className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중, 이메일 지원</span></label>
+                                    </div>
+                                    <div className="Request_tour_content">
+                                        <input name="tour" type="checkbox" id="tour7" value="0" />
+                                        <label htmlFor="tour7" onClick={this.clickTourL7(7)} className="Request_checkbox" style={{ fontWeight: "bold" }}>이수역점 <span style={{ color: "#e6e6e6", fontWeight: "500" }}> | </span><span  style={{ color: "#a7a7a7" }}> 모집 중, 이메일 지원</span></label>
                                     </div>
                                 </div>
 
@@ -303,8 +302,8 @@ class Request extends Component {
                                     </div>
 
                                     <div className="Request_tour_content">
-                                        <input name="tour" type="checkbox" id="tour4" value="4" />
-                                        <label htmlFor="tour4" className="Request_checkbox">홍대입구역점 <div>전석 입점 완료</div></label>
+                                        <input name="tour" type="checkbox" id="tour6" value="6" />
+                                        <label onClick={this.clickTourL7(4)} htmlFor="tour6" className="Request_checkbox" style={{ fontWeight: "bold" }}>홍대입구역점 <div>모집 중, 이메일 지원</div></label>
                                     </div>
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour5" value="5" />
@@ -312,7 +311,11 @@ class Request extends Component {
                                     </div>
                                     <div className="Request_tour_content">
                                         <input name="tour" type="checkbox" id="tour6" value="6" />
-                                        <label onClick={this.clickTourL7} htmlFor="tour6" className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <div>모집 중, 이메일 지원</div></label>
+                                        <label onClick={this.clickTourL7(6)} htmlFor="tour6" className="Request_checkbox" style={{ fontWeight: "bold" }}>L7홍대점 <div>모집 중, 이메일 지원</div></label>
+                                    </div>
+                                    <div className="Request_tour_content">
+                                        <input name="tour" type="checkbox" id="tour7" value="6" />
+                                        <label onClick={this.clickTourL7(7)} htmlFor="tour7" className="Request_checkbox" style={{ fontWeight: "bold" }}>이수역점 <div>모집 중, 이메일 지원</div></label>
                                     </div>
                                 </div>
 

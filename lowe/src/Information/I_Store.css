@@ -36,10 +36,6 @@
     margin-right: 18.75vw;
 }
 
-.store_info .slick-list {
-    overflow-x: scroll;
-}
-
 .store_info .slick-slide div:focus {
     outline: none !important;
     -webkit-tap-highlight-color: transparent
@@ -104,5 +100,6 @@
         margin-top: 5.6vw;
         margin-bottom: 19.5vw;
     }
+
 
 }

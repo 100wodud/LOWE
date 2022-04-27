@@ -21,6 +21,8 @@ import VMainpage from "./Reservation/V_Mainpage";
 import Reservation from "./Reservation/Reservation";
 import Promotion from "./Promotion/P_Mainpage";
 import Promotion2 from "./Promotion/P_Mainpage2";
+import Promotion3 from "./Promotion/P_Mainpage3";
+import Promotion4 from "./Promotion/P_Mainpage4";
 
 class App extends Component {
   constructor(props) {
@@ -56,6 +58,8 @@ class App extends Component {
           <Route path="/review/hyeri" component={Hyeri} />
           <Route path="/promotion/lowe5th" component={Promotion} />
           <Route path="/promotion/lowe6th" component={Promotion2} />
+          <Route path="/promotion/lowe7th" component={Promotion3} />
+          <Route path="/promotion/lowe4th" component={Promotion4} />
         </Switch>
       </>
     )

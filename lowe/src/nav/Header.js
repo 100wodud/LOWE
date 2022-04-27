@@ -122,11 +122,17 @@ class Header extends Component {
                     <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
                       <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>지원하기</p>
                     </li>
-                    <li style={{ marginRight: "2.34375vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe5th">강남점(입점형)</a></p>
+                    <li style={{ marginRight: "4.16666vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe7th">이수역점(모집중)</a></p>
                     </li>
-                    <li style={{ marginRight: "2.34375vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe6th">L7홍대점(채용형)</a></p>
+                    <li style={{ marginRight: "4.16666vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe6th">L7홍대점(모집중)</a></p>
+                    </li>
+                    <li style={{ marginRight: "4.16666vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe5th">강남점(모집중)</a></p>
+                    </li>
+                    <li style={{ marginRight: "4.16666vw" }}>
+                      <p><a style={{ fontSize: "0.72916vw" }} href="/promotion/lowe4th">홍대입구역점(모집중)</a></p>
                     </li>
                     <li>
                       <p><a style={{ fontSize: "0.72916vw" }} href="/request">바로 지원</a></p>
@@ -356,10 +362,16 @@ class Header extends Component {
                       {this.state.promotion ?
                         <div className="nav_bottom">
                           <div>
-                            <a className="changeColor" href="/promotion/lowe5th">강남점(입점형)</a>
+                            <a className="changeColor" href="/promotion/lowe7th">이수역점(모집중)</a>
                           </div>
                           <div>
-                            <a className="changeColor" href="/promotion/lowe6th">L7홍대점(채용형)</a>
+                            <a className="changeColor" href="/promotion/lowe6th">L7홍대점(모집중)</a>
+                          </div>
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe5th">강남점(모집중)</a>
+                          </div>
+                          <div>
+                            <a className="changeColor" href="/promotion/lowe4th">홍대입구역점(모집중)</a>
                           </div>
                           <div>
                             <a className="changeColor" href="/request">바로 지원</a>

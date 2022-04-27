@@ -154,6 +154,19 @@ class Firstsec extends Component {
           </div>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
+              <div className="Mainpage_banner_text" >
+                <div style={{fontSize: "24px", fontFamily: "Montserrat", marginBottom: "8px"}}>New</div>
+                <div style={{lineHeight: "66px", fontSize: "52px"}} >로위 이수역점</div>
+                <div style={{lineHeight: "66px", fontSize: "52px"}} >오픈멤버 디자이너 공개 채용</div>
+                <div className="Mainpage_banner_button" style={{borderColor: "#9c9c9c"}}>
+                  <a style={{color: "#fff"}} href="/promotion/lowe7th" >이수역점 지원하기</a>
+                </div>
+              </div>
+            </div>
+            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_4.png"} alt="Lowe main" />
+          </div>
+          <div className="Mainpage_banner_div">
+            <div className="Mainpage_banner_box">
               <div className="Mainpage_banner_text" style={{lineHeight: "66px"}} >
                 <div>국내 최초</div>
                 <div>월세 없는 인센티브제</div>
@@ -216,6 +229,19 @@ class Firstsec extends Component {
               </div>
             </div>
             <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_3.png"} alt="Lowe main" />
+          </div>
+          <div className="Mainpage_banner_div">
+            <div className="Mainpage_banner_box">
+              <div className="Mainpage_banner_text" >
+                <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
+                <div>로위 이수역점 오픈 멤버</div>
+                <div>디자이너 모집</div>
+                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
+                  <a style={{color: "#fff"}} href="/promotion/lowe7th" >이수역점 지원하기</a>
+                </div>
+              </div>
+            </div>
+            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_4.png"} alt="Lowe main" />
           </div>
           <div className="Mainpage_banner_div">
             <div className="Mainpage_banner_box">
