@@ -13,7 +13,7 @@ class I_Mainpage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      location: 'L7홍대점',
+      location: '이수역점',
       clickloc: ''
     };
   }
@@ -58,7 +58,11 @@ class I_Mainpage extends Component {
       {
         title: 'L7홍대점',
         latlng: new kakao.maps.LatLng(37.55572265644609, 126.92168633510501)
-      }
+      },
+      {
+        title: '이수역점',
+        latlng: new kakao.maps.LatLng(37.48511234734332, 126.982730518148)
+      },
 
       
     ], selectedMarker = null;

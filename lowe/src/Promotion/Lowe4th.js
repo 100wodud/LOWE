@@ -5,7 +5,7 @@ import Map from "./P_Map2";
 
 const { kakao } = window;
 
-class Lowe6th extends Component {
+class Lowe4th extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class Lowe6th extends Component {
         let container = document.getElementById('promtion_map');
         let options = {}
         options = {
-            center: new kakao.maps.LatLng(37.55572265644609, 126.92168633510501),
+            center: new kakao.maps.LatLng(37.55451175644609, 126.92030633510501),
             level: 4,
             disableDoubleClickZoom: true,
             draggable: true
@@ -28,8 +28,8 @@ class Lowe6th extends Component {
 
         let positions = [
             {
-                title: 'L7 홍대점',
-                latlng: new kakao.maps.LatLng(37.55572265644609, 126.92168633510501)
+                title: '홍대입구역점',
+                latlng: new kakao.maps.LatLng(37.55451175644609, 126.92030633510501)
             }
         ];
 
@@ -75,16 +75,16 @@ class Lowe6th extends Component {
         return (
             <section className="Lowe5th_section">
                 <div className="Lowe5th_div" >
-                    {/* <img src={process.env.PUBLIC_URL + "/image/promotion/06/01.png"} alt="로위 6호점 L7" /> */}
+                    {/* <img src={process.env.PUBLIC_URL + "/image/promotion/06/01.png"} alt="로위 4호점 홍대입구역점" /> */}
 
                     <div className="Lowe6th_firstsec_div">
                         <div>
-                            <div className="Lowe6th_firstsec_title">로위 <span>L7홍대점</span></div>
+                            <div className="Lowe6th_firstsec_title">로위 <span>홍대입구역점</span></div>
                             <div className="Lowe6th_firstsec_title">디자이너</div>
                             <div className="Lowe6th_firstsec_title" style={{color: "#ffffff"}}>상반기 공개 모집</div>
                         </div>
                         <div style={{marginTop: "40px"}}>
-                            <div className="Lowe6th_firstsec_sub" style={{lineHeight: "150%"}}>로위 L7홍대점은</div>
+                            <div className="Lowe6th_firstsec_sub" style={{lineHeight: "150%"}}>로위 홍대입구역점은</div>
                             <div className="Lowe6th_firstsec_sub" style={{lineHeight: "150%"}}><span>공유미용실 시스템(입점형)이 아닌</span></div>
                             <div className="Lowe6th_firstsec_sub" style={{lineHeight: "150%"}}>일반미용실 시스템(채용형)과 동일<span>합니다</span></div>
                         </div>
@@ -95,7 +95,7 @@ class Lowe6th extends Component {
                             </div>
                             <div style={{marginBottom: "40px"}}>
                                 <div className="Lowe6th_firstsec_content_circle">근무위치</div>
-                                <div className="Lowe6th_firstsec_content_text" style={{fontWeight: "400", marginBottom: "16px"}}>L7홍대점</div>
+                                <div className="Lowe6th_firstsec_content_text" style={{fontWeight: "400", marginBottom: "16px"}}>홍대입구역점</div>
                                 <div className="Lowe6th_firstsec_content_text" style={{fontSize: "18px", color: "#9c9c9c"}}>마포구 양화로 141 (홍대 L7롯데호텔) 3층</div>
                             </div>
                             <div style={{marginBottom: "40px"}}>
@@ -112,12 +112,12 @@ class Lowe6th extends Component {
                             <div style={{marginBottom: "40px"}} className="Lowe6th_firstsec_content_img">
                                 <div className="Lowe6th_firstsec_content_circle">교육사항</div>
                                 <div className="Lowe6th_firstsec_content_text" style={{marginBottom: "18px"}}>탑디자이너 기술 내,외부교육</div>
-                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/01.png"}  style={{marginBottom: "16px"}} alt="로위 6호점 L7" /></div>
-                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/02.png"}  style={{marginBottom: "40px"}} alt="로위 6호점 L7" /></div>
+                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/01.png"}  style={{marginBottom: "16px"}} alt="로위 4호점 홍대입구역점" /></div>
+                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/02.png"}  style={{marginBottom: "40px"}} alt="로위 4호점 홍대입구역점" /></div>
                                 <div className="Lowe6th_firstsec_content_text" style={{marginBottom: "18px"}}>헤어사진 촬영 전문가 교육</div>
-                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/03.png"}  style={{marginBottom: "40px"}} alt="로위 6호점 L7" /></div>
+                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/03.png"}  style={{marginBottom: "40px"}} alt="로위 4호점 홍대입구역점" /></div>
                                 <div className="Lowe6th_firstsec_content_text" style={{marginBottom: "18px"}}>CS 교육</div>
-                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/04.png"}  alt="로위 6호점 L7" /></div>
+                                <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/01/04.png"}  alt="로위 4호점 홍대입구역점" /></div>
                             </div>
                             <div style={{marginBottom: "40px"}}>
                                 <div className="Lowe6th_firstsec_content_circle">복리후생</div>
@@ -141,9 +141,9 @@ class Lowe6th extends Component {
                                 <div className="Lowe6th_firstsec_content_circle">채용절차</div>
                                 <div className="Lowe6th_request_div_content">
                                     <div className="Lowe6th_request_div_circle">서류</div>
-                                    <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/arrow.svg"} alt="로위 6호점 L7" /></div>
+                                    <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/arrow.svg"} alt="로위 4호점 홍대입구역점" /></div>
                                     <div className="Lowe6th_request_div_circle">면접</div>
-                                    <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/arrow.svg"} alt="로위 6호점 L7" /></div>
+                                    <div><img src={process.env.PUBLIC_URL + "/image/promotion/06/arrow.svg"} alt="로위 4호점 홍대입구역점" /></div>
                                     <div className="Lowe6th_request_div_circle">최종 합격</div>
                                 </div>
                             </div>
@@ -160,26 +160,26 @@ class Lowe6th extends Component {
                     </div>
                     <div className="Lowe5th_slider_div">
                         <div className="Lowe5th_slider_title">
-                            <div className="Lowe5th_slider_title_sub"><span>NEW</span>4월 중 오픈예정</div>
-                            <div className="Lowe5th_slider_title_main">로위 L7홍대점</div>
-                            <div className="Lowe5th_slider_title_loc">마포구 양화로 141 (홍대 L7롯데호텔) 3층</div>
+                            <div className="Lowe5th_slider_title_sub"><span>NEW</span>디자이너 모집 중</div>
+                            <div className="Lowe5th_slider_title_main">로위 홍대입구역점</div>
+                            <div className="Lowe5th_slider_title_loc">마포구 양화로 125, 경남관광빌딩 4층</div>
                         </div>
                         <div className="Lowe5th_slider">
                             <Slider {...setting}>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/image/promotion/06/main/01.png"} alt="로위 6호점 L7" />
+                                    <img src={process.env.PUBLIC_URL + "/image/promotion/04/main/01.jpg"} alt="로위 4호점 홍대입구역점" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/image/promotion/06/main/02.png"} alt="로위 6호점 L7" />
+                                    <img src={process.env.PUBLIC_URL + "/image/promotion/04/main/02.jpg"} alt="로위 4호점 홍대입구역점" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/image/promotion/06/main/03.png"} alt="로위 6호점 L7" />
+                                    <img src={process.env.PUBLIC_URL + "/image/promotion/04/main/03.jpg"} alt="로위 4호점 홍대입구역점" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/image/promotion/06/main/04.png"} alt="로위 6호점 L7" />
+                                    <img src={process.env.PUBLIC_URL + "/image/promotion/04/main/04.jpg"} alt="로위 4호점 홍대입구역점" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/image/promotion/06/main/05.png"} alt="로위 6호점 L7" />
+                                    <img src={process.env.PUBLIC_URL + "/image/promotion/04/main/05.jpg"} alt="로위 4호점 홍대입구역점" />
                                 </div>
                             </Slider>
                         </div>
@@ -190,15 +190,14 @@ class Lowe6th extends Component {
                             <div className="Lowe5th_space_second">홍대입구역 1번 출구</div>
                         </div>
                         <div className="Lowe5th_care_img_div">
-                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/02.png"} alt="로위 6호점 L7" />
+                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/02.png"} alt="로위 4호점 홍대입구역점" />
                         </div>
                         <div className="Lowe5th_care_text">
-                        대표 미용핵심지역, 홍대에 나만의 샵을 오픈하세요!<br />홍대입구역 1번 출구 도보 1분으로 디자이너 출퇴근길과 고객이 찾아오는 길이 쉬워집니다. 홍대만의 트렌디함을 원하는 MZ세대의 많은 고객들을 이제는 로위에서 충분히 만나보실 수 있습니다. 
-
+                        대표 미용핵심지역, 홍대에 나만의 샵을 오픈하세요!<br />홍대입구역 1번 출구 도보 5분으로 디자이너 출퇴근길과 고객이 찾아오는 길이 쉬워집니다. 홍대만의 트렌디함을 원하는 MZ세대의 많은 고객들을 이제는 로위에서 충분히 만나보실 수 있습니다.
                         </div>
                             <div className="Lowe5th_space_text_div" style={{marginTop: "20px"}}>
                                 <ul className="notice-list">
-                                    <li><span className="num">✔</span><span style={{color:"#FB6F20", fontWeight: "700"}}>홍대입구역 1번 출구</span> 도보 1분 (횡단보도x)️</li>
+                                    <li><span className="num">✔</span><span style={{color:"#FB6F20", fontWeight: "700"}}>홍대입구역 1번 출구</span> 도보 5분 (횡단보도x)️</li>
                                     <li><span className="num">✔</span><span style={{color:"#FB6F20", fontWeight: "700"}}>초역세권,</span> 메인 홍대입구역 사거리 위치</li>
                                     <li><span className="num">✔</span>트렌디한 홍대 감성의 <span style={{color:"#FB6F20", fontWeight: "700"}}>MZ세대의 많은 고객</span></li>
                                 </ul>
@@ -207,20 +206,20 @@ class Lowe6th extends Component {
                     <div className="Lowe5th_map_div">
                         
                     <div>
-                            <div className="Lowe5th_space_first">쇼핑,대학교,오피스,병원까지</div>
-                            <div className="Lowe5th_space_second">로위 L7홍대점 빌딩은</div>
+                            <div className="Lowe5th_space_first">홍대 메인 사거리, 스타벅스, 병원까지</div>
+                            <div className="Lowe5th_space_second">로위 홍대입구역점 빌딩은</div>
                         </div>
                         <div className="Lowe5th_care_img_div">
-                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/03.png"} alt="로위 6호점 L7" />
+                            <img src={process.env.PUBLIC_URL + "/image/promotion/04/03.jpg"} alt="로위 4호점 홍대입구역점" />
                         </div>
                         <div className="Lowe5th_care_text">
-                        로위 L7홍대점은 밀레니얼 세대에 맞는 다양한 업종들로 이루어진 프리미엄 빌딩에 있습니다. 롯데의 L7홍대 호텔, 라인프렌즈, 엔젤리너스 등을 비롯해 주위에 홍익대학교, 메가박스 등 편리하고 여가를 즐기기 위한 곳들로 가득 차 로위 L7홍대점도 이러한 여가공간 중심에 위치합니다.    
+                            로위 홍대입구역점은 홍대 메인 사거리에 위치하여 다양한 고객들이 찾아오는 스타벅스와 클라이밍장, 병원 까지 있어 많은 고객을 만나보실 수 있습니다. 따라서 많은 고객들이 편리하게 이용할 수 있도록 120평규모의 넓은 매장과 넓은 주차공간이 마련되어 고객이용의 불편함을 최소화한 건물입니다.    
                         </div>
                             <div className="Lowe5th_space_text_div" style={{marginTop: "20px"}}>
                                 <ul className="notice-list">
-                                    <li><span className="num">✔</span><span style={{color:"#FB6F20", fontWeight: "700"}}>롯데 L7홍대 호텔 건물 3층</span></li>
-                                    <li><span className="num">✔</span>홍대 메인 사거리가 모두 보이는 <span style={{color:"#FB6F20", fontWeight: "700"}}>통창뷰 건물</span></li>
-                                    <li><span className="num">✔</span>호텔, 피부과, 카페 등 입점한 <span style={{color:"#FB6F20", fontWeight: "700"}}>복합 여가공간 중심에 위치</span></li>
+                                    <li><span className="num">✔</span><span style={{color:"#FB6F20", fontWeight: "700"}}>테라스가 있어 반려동물과 함께 </span>할 수 있는 홍대 유일 미용실 </li>
+                                    <li><span className="num">✔</span>스타벅스 리저브, 클라이밍장, 병원 등이 입점하여 <span style={{color:"#FB6F20", fontWeight: "700"}}>많은 고객층 보유</span></li>
+                                    <li><span className="num">✔</span>120평 규모의 미용실과 함께 <span style={{color:"#FB6F20", fontWeight: "700"}}>다수의 주차공간</span></li>
                                 </ul>
                             </div>
                     </div>
@@ -230,7 +229,7 @@ class Lowe6th extends Component {
                             <div className="Lowe5th_care_first"><strong>새로운 프라이빗룸 미용실</strong></div>
                         </div>
                         <div className="Lowe5th_care_img_div">
-                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/05.png"} alt="로위 6호점 L7" />
+                            <img src={process.env.PUBLIC_URL + "/image/promotion/04/04.jpg"} alt="로위 4호점 홍대입구역점" />
                         </div>
 
                         <div className="Lowe5th_care_text">
@@ -238,23 +237,23 @@ class Lowe6th extends Component {
                         </div>
 
                         <div className="Lowe5th_care_img_div">
-                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/06.png"} alt="로위 6호점 L7" />
+                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/06.png"} alt="로위 4호점 홍대입구역점" />
                         </div>
                     </div>
                     <div className="Lowe5th_map_div">
                         <div>
-                            <div className="Lowe5th_map_first">로위 L7홍대점 위치</div>
+                            <div className="Lowe5th_map_first">로위 홍대입구역점 위치</div>
                             <div className="Lowe5th_care_text" style={{marginBottom: "60px"}}>디자이너, 신규&기존 고객 모두 만족할 수 있는<br />홍대입구역 초역세권 위치</div>
                         </div>
                         <Map kakaoMap={this.kakaoMap} />
                         <div>
-                            <div className="Lowe5th_map_thrid">마포구 양화로 141 (홍대 L7롯데호텔) 3층, 로위 L7 홍대점</div>
+                            <div className="Lowe5th_map_thrid">마포구 양화로 125, 스타벅스 리저브 건물 4층</div>
                         </div>
                     </div>
                     {/* <div className="Lowe5th_space_div">
                         <div>
                             <div className="Lowe5th_space_first">먼저 눈으로 확인해보세요!</div>
-                            <div className="Lowe5th_space_second">L7홍대점 공간이미지</div>
+                            <div className="Lowe5th_space_second">홍대입구역점 공간이미지</div>
                         </div>
                         <div>
                             <img className="Lowe5th_space_mainimg" src={process.env.PUBLIC_URL + "/image/promotion/06/space/" + this.state.space} alt="로위 공간이미지" />
@@ -282,13 +281,13 @@ class Lowe6th extends Component {
                     
                     <div className="Lowe5th_space_div">
                         <div>
-                            <div className="Lowe5th_promotion_div_title">로위 L7홍대점<br />기본급 보장</div>
+                            <div className="Lowe5th_promotion_div_title">로위 홍대입구역점<br />기본급 보장</div>
                             <div className="Lowe5th_promotion_div_content">
-                                오직 오픈멤버 디자이너에게만 드리는 혜택
+                                지금 지원한 디자이너에게만 드리는 혜택
                             </div>
                         </div>
                         <div className="Lowe5th_promotion_img">
-                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/07.png"} alt="로위 6호점 L7" />
+                            <img src={process.env.PUBLIC_URL + "/image/promotion/06/07.png"} alt="로위 4호점 홍대입구역점" />
                             <div >
                                 ‘잘 할 수 있을까?’<br /><strong>부담은 덜고, 동기부여는 높이고<br />6개월동안 정착지원금을 지원</strong>해드립니다
                             </div>
@@ -300,7 +299,7 @@ class Lowe6th extends Component {
     }
 }
 
-export default Lowe6th;
+export default Lowe4th;
 
 
 

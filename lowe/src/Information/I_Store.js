@@ -22,6 +22,8 @@ class I_Store extends Component {
 
         };
     }
+    componentDidMount = (e)=>{
+    }
 
     render() {
         let settings = {}
@@ -29,7 +31,6 @@ class I_Store extends Component {
             settings = {
                 dots: false,
                 infinite: false,
-                autoplaySpeed: 10000,
                 pauseOnHover: true,
                 slidesToShow: 1.9,
                 slidesToScroll: 1,
@@ -39,7 +40,6 @@ class I_Store extends Component {
             settings = {
                 dots: false,
                 infinite: false,
-                autoplaySpeed: 10000,
                 pauseOnHover: true,
                 slidesToShow: 1.1,
                 slidesToScroll: 1,
@@ -48,9 +48,9 @@ class I_Store extends Component {
         }
         return (
             <div className="store_info">
-                <Slider {...settings}>
+                <Slider {...settings} cancelable={false}>
                     {this.props.data.picture.map((e) => (
-                        <div key={e}>
+                        <div key={e} >
                             <img className="store_info_img" src={process.env.PUBLIC_URL + e} alt={"로위" + this.props.data.store} />
                         </div>
                     ))}

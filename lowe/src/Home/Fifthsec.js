@@ -82,12 +82,29 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
+                                            <span className="Fifth_Slide_content_name">이수역점</span>
+                                            <span className="Fifth_Slide_content_span">사전모집 중</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>01</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_6.png"} alt="lowe mainpage" />
+                                    </div>
+                                    <div>
+                                        <a href="/promotion/lowe7th" >
+                                            <img style={{width: "13.75vw"}} src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div key={2} className="Fifth_Slide_div">
+                                    <div className="Fifth_Slide_content">
+                                        <div>
                                             <span className="Fifth_Slide_content_name">L7홍대점</span>
                                             <span className="Fifth_Slide_content_span">사전모집 중</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>01</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>02</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_5.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -96,7 +113,7 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={2} className="Fifth_Slide_div">
+                                <div key={3} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
                                             <span className="Fifth_Slide_content_name">강남점</span>
@@ -104,7 +121,7 @@ class Fifthsec extends Component {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>02</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>03</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -113,24 +130,24 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={3} className="Fifth_Slide_div">
+                                <div key={4} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">신촌점</span>
-                                            <span className="Fifth_Slide_content_span">모집완료</span>
+                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
+                                            <span className="Fifth_Slide_content_span">모집 중</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>03</span> / 05</div>
-                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>04</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
-                                            <img style={{width: "6.354166vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                        <a href="/promotion/lowe4th" >
+                                            <img style={{width: "13.958vw"}} src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
-                                <div key={4} className="Fifth_Slide_div">
+                                <div key={5} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
                                             <span className="Fifth_Slide_content_name">합정점</span>
@@ -138,7 +155,7 @@ class Fifthsec extends Component {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>04</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>05</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_3.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -147,16 +164,16 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={5} className="Fifth_Slide_div">
+                                <div key={6} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
+                                            <span className="Fifth_Slide_content_name">신촌점</span>
                                             <span className="Fifth_Slide_content_span">모집완료</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>05</span> / 05</div>
-                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>06</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
                                         <a href="/info" >
@@ -208,12 +225,29 @@ class Fifthsec extends Component {
                                 <div key={1} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
+                                            <span className="Fifth_Slide_content_name">이수역점</span>
+                                            <span className="Fifth_Slide_content_span">사전모집 중</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>01</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_6.png"} alt="lowe mainpage" />
+                                    </div>
+                                    <div>
+                                        <a href="/promotion/lowe7th" >
+                                            <img style={{ width: "40.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div key={2} className="Fifth_Slide_div">
+                                    <div className="Fifth_Slide_content">
+                                        <div>
                                             <span className="Fifth_Slide_content_name">L7홍대점</span>
                                             <span className="Fifth_Slide_content_span">사전모집 중</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>01</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>02</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_5.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -222,7 +256,7 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={2} className="Fifth_Slide_div">
+                                <div key={3} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
                                             <span className="Fifth_Slide_content_name">강남점</span>
@@ -230,7 +264,7 @@ class Fifthsec extends Component {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>02</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>03</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -239,24 +273,24 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={3} className="Fifth_Slide_div">
+                                <div key={4} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">신촌점</span>
-                                            <span className="Fifth_Slide_content_span">모집완료</span>
+                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
+                                            <span className="Fifth_Slide_content_span">모집 중</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>03</span> / 05</div>
-                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>04</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
-                                            <img style={{width: "22vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                        <a href="/promotion/lowe4th" >
+                                            <img style={{ width: "44.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
-                                <div key={4} className="Fifth_Slide_div">
+                                <div key={5} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
                                             <span className="Fifth_Slide_content_name">합정점</span>
@@ -264,7 +298,7 @@ class Fifthsec extends Component {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>04</span> / 05</div>
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>05</span> / 06</div>
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_3.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
@@ -273,20 +307,20 @@ class Fifthsec extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div key={5} className="Fifth_Slide_div">
+                                <div key={6} className="Fifth_Slide_div">
                                     <div className="Fifth_Slide_content">
                                         <div>
-                                            <span className="Fifth_Slide_content_name">홍대입구역점</span>
+                                            <span className="Fifth_Slide_content_name">신촌점</span>
                                             <span className="Fifth_Slide_content_span">모집완료</span>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>05</span> / 05</div>
-                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
+                                        <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>06</span> / 06</div>
+                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
                                         <a href="/info" >
-                                            <img style={{width: "20vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                            <img style={{width: "22vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>

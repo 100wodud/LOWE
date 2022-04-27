@@ -32,7 +32,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <Desktop>
-                    <div style={{ width: "455px", marginRight: "105px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
+                    <div style={{ width: "490px", marginRight: "70px",float: "left", paddingLeft: "20vw", paddingTop: "100px" }}>
                         <div id="store">
                             <div className="footer_title">
                                 로위 지점 정보
@@ -58,13 +58,17 @@ class Footer extends Component {
                                     <dt className="dt">L7홍대점</dt>
                                     <dd className="dd">-ㅤ ㅤ ㅤ ㅤ ㅤ <span>|</span> 마포구 양화로 141 (홍대L7롯데호텔) 3층</dd>
                                 </dl>
+                                <dl className="dl">
+                                    <dt className="dt">이수역점</dt>
+                                    <dd className="dd">-ㅤ ㅤ ㅤ ㅤ ㅤ <span>|</span> 서초구 방배동 1715 이수파이브(ISUFIVE), 3층</dd>
+                                </dl>
                             </div>
                             <div style={{ fontFamily: "Montserrat", fontSize: "12px", color: "#FFFFFF", marginTop: "30px" }}>
                                 © Copyright BENTLESPACE All rights reserved.
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "fit-content", float: "left", paddingLeft: "2.65vw", paddingTop: "100px",marginBottom: "30px" }}>
+                    <div style={{ width: "fit-content", float: "left", paddingLeft: "2.65vw", paddingTop: "100px",marginBottom: "80px" }}>
                         <div id="company">
                             <div className="footer_title">
                                 벤틀스페이스 사업자 정보
@@ -202,6 +206,10 @@ class Footer extends Component {
                             <dl className="dl">
                                 <dt className="dt">L7홍대점</dt>
                                 <dd className="dd">-ㅤ  | 마포구 양화로 141 (홍대L7롯데호텔) 3층</dd>
+                            </dl>
+                            <dl className="dl">
+                                <dt className="dt">이수역점</dt>
+                                <dd className="dd">-ㅤ  | 서초구 방배동 1715 이수파이브(ISUFIVE), 3층</dd>
                             </dl>
                             <div style={{ float: "left", marginleft: "0px", paddingTop: "30px", paddingBottom: "28px" ,width: "92%", borderTop: "1px solid #575757"}}>
                                 <span style={{ float: "left", color: "white", fontSize: "14px", fontWeight: "bold", fontFamily: "Montserrat",}}>About us</span>
