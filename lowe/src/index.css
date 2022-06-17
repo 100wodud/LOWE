@@ -11,9 +11,9 @@ body {
   -webkit-tap-highlight-color : transparent;
   -webkit-overflow-scrolling: touch;
   overflow-x:hidden;
-  width: 100vw;
-  color: #333333
+  max-width: 100vw;
 }
+
 
 body img {
   image-rendering: -webkit-optimize-contrast;
@@ -59,7 +59,7 @@ body .Mainpage_first_section li.slick-active button:before {
  font-size: 12px;
 } 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
 
 body .Mainpage_first_section .slick-dots li button:before { 
   color: #9c9c9c;
@@ -74,15 +74,12 @@ body .Mainpage_first_section li.slick-active button:before {
  width: 8px;
  font-size: 8px;
 } 
+
 }
 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-* {
-  -webkit-text-size-adjust: none;
 }
 

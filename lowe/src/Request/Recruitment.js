@@ -1,11 +1,10 @@
 import { Component } from "react";
 import Header from "../nav/SubHeader";
 import { Helmet } from 'react-helmet';
-import Firstsec from "./R_Firstsec"
+import Firstsec from "./Rec_Firstsec";
+import Timer from "../nav/Timer2";
 
-
-
-class R_Mainpage extends Component {
+class Recruitment extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,11 +20,12 @@ class R_Mainpage extends Component {
           <meta property="og:title" content="국내 대표 공유미용실 로위(LOWE) - 디자이너 리뷰" />
         </Helmet>
         <div id="header_trigger" />
-        <Header />
         <Firstsec />
+        <Header />
+        <Timer date="2022-01-18T00:00:00" />
       </>
     )
   }
 }
 
-export default R_Mainpage;
+export default Recruitment;

@@ -27,17 +27,17 @@ class C_Firstsec extends Component {
                 <Desktop>
                 <div>
                     <div className="Care_first_title" >
-                        <div>로위팀 케어</div>
+                        <div>디자이너 혜택</div>
                     </div>
                     <img src={process.env.PUBLIC_URL + "/image/care/care1_1.png"} alt="lowe care" />
                     <div className="Care_first_text">
-                        <div style={{fontSize: "1.25vw", fontWeight: "bold", lineHeight: "1.77083vw"}}>
+                        <div style={{fontSize: "1.25vw", fontWeight: "bold"}}>
                             <div>디자이너는 미용에만</div>
                             <div>집중할 수 있도록,</div>
                         </div>
-                        <div style={{fontSize: "1.041667vw", fontWeight: "500", lineHeight: "1.77083vw"}}>
-                            <div>로위팀의 각 분야별 전문가가</div>
-                            <div>디자이너분들을 위하여 다양한 전문 서비스를 제공합니다.</div>
+                        <div style={{fontSize: "1.041667vw", fontWeight: "500"}}>
+                            <div>디자이너는 미용에만 집중할 수 있도록,</div>
+                            <div>각 분야별 전문 서비스를 제공합니다.</div>
                         </div>
                     </div>
                 </div>
@@ -46,14 +46,14 @@ class C_Firstsec extends Component {
                     <div>
                         <div className="Care_first_title" >
                             <div style={{ float: "left", marginBottom: "13.6vw", marginRight: "19.73333vw" }}>
-                                <div>로위 케어</div>
+                                <div>디자이너 혜택</div>
                             </div>
                         </div>
                         <img src={process.env.PUBLIC_URL + "/image/care/care1_1.png"} alt="lowe Care" />
                         <div className="Care_first_text">
                             <div>
-                                <div>디자이너는 미용에만 집중할 수 있도록, </div>
-                                <div>로위팀의 각 분야별 전문 서비스를 제공합니다.</div>
+                                <div>디자이너는 미용에만 집중할 수 있도록,</div>
+                                <div>각 분야별 전문 서비스를 제공합니다.</div>
                             </div>
                         </div>
                     </div>

@@ -5,30 +5,42 @@ class R_Firstsec extends Component {
   constructor(props) {
     super(props);
     this.state = {
-  
+
     };
   }
 
   render() {
     return (
-      <div className="Request_first_section">
-          <div>
-              <div className="Request_first_title" >
-                  <div>지원하기</div>
+      <section className="R_Firstsec_section">
+        <div className="R_Firstsec_div">
+          <div className="R_Firstsec_banner_div">
+            <div className="R_Firstsec_banner_box">
+              <div className="R_Firstsec_banner_text" >
+                <div><strong>입점형</strong> 디자이너</div>
+                <div className="R_Firstsec_banner_button">
+                  <a href="/requests/enterstore" style={{height: "fit-content"}}>
+                    <img style={{height: "56px"}} src={process.env.PUBLIC_URL + "/image/request/arrow.png"} alt="Lowe request" />
+                  </a>
+                </div>
               </div>
-              <img src={process.env.PUBLIC_URL + "/image/request/request1_1.png"} alt="lowe request" />
-              <div className="Request_first_text">
-                  <div style={{fontSize: "1.25vw", fontWeight: "bold", lineHeight: "150%"}}>
-                      <div>로위에</div>
-                      <div>지원하세요.</div>
-                  </div>
-                  <div style={{fontSize: "1.041667vw", fontWeight: "500", lineHeight: "150%"}}>
-                      <div>당신을 빛내줄 로위에서</div>
-                      <div>본인의 잠재력과 매력을 맘껏 펼쳐보세요!</div>
-                  </div>
-              </div>
+            </div>
+            <img className="R_Firstsec_banner_img" src={process.env.PUBLIC_URL + "/image/request/M_request1.png"} alt="Lowe request" />
           </div>
-      </div>
+          <div className="R_Firstsec_banner_div" style={{marginTop: "-3px"}}>
+            <div className="R_Firstsec_banner_box">
+              <div className="R_Firstsec_banner_text" >
+                <div><strong>채용형</strong> 디자이너</div>
+                <div className="R_Firstsec_banner_button">
+                  <a href="/requests/recruitment" style={{height: "fit-content"}}>
+                    <img style={{height: "56px"}} src={process.env.PUBLIC_URL + "/image/request/arrow.png"} alt="Lowe request" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img className="R_Firstsec_banner_img" src={process.env.PUBLIC_URL + "/image/request/M_request2.png"} alt="Lowe request" />
+          </div>
+        </div>
+      </section>
     )
   }
 }

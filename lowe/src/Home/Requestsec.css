@@ -17,16 +17,16 @@
     margin: 0 auto;
     width: 320px;
     height: 60px;
-    line-height: 60px;
 }
 
 #Mainpage_request_button > a {
     font: bold 24px "Noto Sans";
     color: #FFFFFF;
+    line-height: 56px;
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Mainpage_Request_section {
         width:100%;
         display: inline-block;

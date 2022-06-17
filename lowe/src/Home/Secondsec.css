@@ -36,6 +36,7 @@
 
 #second_section_content{
     width: 62.5%;
+    padding: 8.3333vw 0;
     margin: 0 auto;
     align-content: center;
     position: relative;
@@ -53,9 +54,8 @@
 }
 
 #Second_Section_title_text{
-    width: 45%;
+    width: 40.35%;
     float: left;
-    margin-bottom: 5.208333vw;
     margin-right: 0.2vw;
 }
 
@@ -73,7 +73,7 @@
 }
 
 #Second_Section_title_content{
-    width: 45%;
+    width: 58%;
     float: left;
 }
 
@@ -100,6 +100,12 @@
 .Second_Section_content_img {
     width: 100%;
     height: 12.5vw;
+    margin-top: 8.3333vw;
+}
+
+#second_section_content img {
+    width: 100%;
+    margin-top: 8.3333vw;
 }
 
 .Second_Section_content_text {
@@ -123,8 +129,34 @@
     line-height: 1.875vw;
 }
 
+.Second_Section_last_div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Second_Section_last_div > div {
+    width: 32%;
+}
 
-@media screen and (max-width:  1000px) {
+.Second_Section_last_title {
+    text-align: left;
+    font: 700 1.875vw "Noto Sans";
+    height: 4.89583vw;
+    line-height: 90%;
+}
+
+.Second_Section_last_title span {
+    font: 400 1.09375vw "Noto Sans";
+    color: #9c9c9c;
+}
+
+.Second_Section_last_content {
+    font: 400 1.09375vw "Noto Sans";
+    color: #9c9c9c;
+    text-align: left;
+}
+
+@media screen and (max-width:  999px) {
     .Mainpage_second_section {
         width:100%;
         padding-top: 0;
@@ -149,6 +181,7 @@
         margin-top: 6.933vw;
         line-height: 140%;
     }
+    
     .identity_First_content{
         font: bold 5.06666vw "Noto Sans";
         color: #333333;
@@ -161,17 +194,36 @@
         color: #333333;
         line-height: 5.86666vw;
     }
-    
-    #second_section_content{
+    #second_section_content_forth {
+        padding-bottom: 40vw;
+        padding-top: 0px;
         width: 86.5%;
         margin: 0 auto;
         align-content: center;
         position: relative;
         text-align: center;
-    }
+        height: fit-content;
 
-    #second_section_content > div {
-        height: 44vw;
+    }
+    #second_section_content_third{
+        padding-bottom: 40vw;
+        width: 86.5%;
+        margin: 0 auto;
+        align-content: center;
+        position: relative;
+        text-align: center;
+
+        height: fit-content;
+    }
+    
+    #second_section_content{
+        padding-bottom: 40vw;
+        height: fit-content;
+        width: 86.5%;
+        margin: 0 auto;
+        align-content: center;
+        position: relative;
+        text-align: center;
     }
     
     /* 재돌려쓰기 */
@@ -181,7 +233,6 @@
         color: #333333;
         text-align: left;
         margin-bottom: 2.6666vw;
-    
     }
     
     #Second_Section_title_text{
@@ -195,9 +246,12 @@
         font: normal 7.46666vw "Noto Sans";
         color: #333333;
         text-align: left;
-    
     }
-    
+    .Second_Section_second_content {
+        font: 400 4.3533vw "Noto Sans";
+        text-align: left;
+
+    }
     .Second_Section_title_text_bold{
         font: bold 7.46666vw "Noto Sans";
         text-align: left;
@@ -227,10 +281,9 @@
     
     .Second_Section_content {
         position: relative;
-        width: 100vw;
-        margin-left: -6.75vw;
+        width: 100%;
         float: none;
-        text-align: center;
+        text-align: left;
     }
     
     .Second_Section_content_img {
@@ -246,10 +299,10 @@
     }
     
     .Second_Section_content_text_title{
-        font: bold 4.53333vw "Noto Sans";
+        font: bold 7.466666vw "Noto Sans";
         color: #333333;
         margin-bottom: 2.4vw;
-        margin-top: 5.0666vw;
+        margin-top: 10.666666vw;
     }
     
     
@@ -258,6 +311,7 @@
         font: 500 4vw "Noto Sans";
         color: #707070;
         line-height: 5.666666vw;
+        margin-bottom: 10.666666vw;
     }
     
 

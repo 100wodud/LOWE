@@ -1,0 +1,84 @@
+.Rec_Firstsec_section {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    margin-bottom: -3px;
+    text-align: center;
+    padding-top: 61px;
+}
+
+.Rec_Firstsec_div{
+    max-width: 428px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.Rec_Firstsec_first_content {
+    margin-left: 24px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.Rec_Firstsec_second_content {
+    padding: 80px 24px 80px 24px;
+    text-align: left;
+
+}
+
+.Rec_Firstsec_first_content_first{
+    font: 400 28px "Noto Sans";
+    margin-bottom: 32px;
+}
+
+.Rec_Firstsec_first_content_second {
+    font: 400 20px "Noto Sans";
+    margin-bottom: 40px;
+
+}
+
+
+.Rec_Firstsec_second_content_second {
+    font: 400 18px "Noto Sans";
+    margin-bottom: 40px;
+    color: #707070;
+}
+
+.Rec_Firstsec_section img {
+    width: 100%;
+}
+.Rec_Firstsec_third_content_div{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.Rec_Firstsec_content_method {
+    border: 1px solid #FB6F20;
+    border-radius: 40px;
+    width: 138px;
+    height: 45px;
+    font: 700 24px "Noto Sans";
+    line-height: 43px;
+    color: #FB6F20;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.Rec_Firstsec_third_content_font{
+    font: 400 16px "Noto Sans";
+    line-height: 24px;
+}
+
+.Rec_Firstsec_content_method_text{
+    font: 400 22px "Noto Sans";
+    margin-bottom: 4px;
+}
+
+.Rec_Firstsec_content_address {
+    font: 400 20px "Noto Sans";
+    color: #FB6F20;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 40px;
+}

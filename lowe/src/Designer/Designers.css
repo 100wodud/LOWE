@@ -15,7 +15,7 @@
   position: relative;
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
   .designers_info {
     height: auto;
     position: relative;

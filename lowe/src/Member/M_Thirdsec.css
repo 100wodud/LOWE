@@ -2,6 +2,9 @@
     width:100%;
     display: inline-block;
   }
+  .Member_Third_section div{
+    line-height: 150%;
+  }
 
   .Member_Third_section > div {
     width: 62.5%;
@@ -63,7 +66,14 @@
     }
   }
 
-@media screen and (max-width:  1000px) {
+  /* */
+  
+    .Member_wrap::-webkit-scrollbar {
+      display: none;
+  } 
+  
+
+@media screen and (max-width:  999px) {
   .Member_Third_section {
   width:100%;
   display: inline-block;

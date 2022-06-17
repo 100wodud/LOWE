@@ -1,14 +1,13 @@
 import { Component } from "react";
 import Header from "../nav/SubHeader";
 import Firstsec from "./C_Firstsec";
-import Secondsec from "./C_Secondsec";
 import Thirdsec from "./C_Thirdsec";
 // import Fourthsec from "./C_Fourthsec";
 import Fifthsec from "./C_Fifthsec";
-import Sixthsec from "./C_Sixthsec";
 import Seventhsec from "./C_Seventhsec";
 import RequestNav from "../nav/RequestNav";
-import Review from "./C_Review";
+import Secondsec2 from "../Member/M_Secondsec";
+import Thirdsec2 from "../Member/M_Thirdsec";
 import Footer from "../nav/Footer";
 import "./C_Mainpage.css"
 
@@ -26,13 +25,12 @@ class Mainpage extends Component {
         <Header />
         <RequestNav />
         <Firstsec />
-        <Secondsec />
         <Thirdsec />
+        <Seventhsec />
         {/* <Fourthsec /> */}
         <Fifthsec />
-        <Sixthsec />
-        <Seventhsec />
-        <Review />
+        <Secondsec2 />
+        <Thirdsec2 />
         <Footer />
       </>
     )

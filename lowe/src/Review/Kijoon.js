@@ -32,7 +32,7 @@ class Kijoon extends Component {
                                     <div>홍대입구역점</div>
                                     <div style={{ fontWeight: "bold" }}>원장 기준</div>
                                 </div>
-                                <div style={{ width: "25.3125vw", height: "55.6458vw" }}>
+                                <div style={{ width: "25.3125vw", height: "57.6458vw" }}>
                                     <img src={process.env.PUBLIC_URL + "/image/Review/Kijoon/01.png"} alt="기준 디자이너" />
                                 </div>
                             </div>

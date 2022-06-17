@@ -1,76 +1,132 @@
 .Mainpage_Sixth_section {
-    width:100%;
-    padding-top: 18.23vw;
-    display: inline-block;
-  }
-  
-  #Sixth_section_content{
-    width: 62.5%;
-    margin: 0 auto;
-    align-content: center;
-    position: relative;
-    text-align: center;
-  }
-  
-  /* 재돌려쓰기 */
-  .Sixth_Section_title{
-    font: bold 1vw "Montserrat";
-    color: #333333;
+  width:100%;
+  padding-top: 18.23vw;
+  display: inline-block;
+  padding-bottom: 18.23vw;
+}
+
+#Sixth_Section_title_text {
+  width: 100%;
+}
+
+#Sixth_section_content{
+  width: 62.5%;
+  margin: 0 auto;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+
+/* 재돌려쓰기 */
+.Sixth_Section_title{
+  font: bold 2.1875vw "Noto Sans";
+  width: 100%;
+  color: #333333;
+  text-align: left;
+
+}
+
+
+#Sixth_section_content ul {
+    list-style:none;
     text-align: left;
-    margin-bottom: 25px;
-  
+    margin-top: -2.96875vw;
+    margin-bottom: 3.645833vw;
+    padding-inline-start: 0;
+}
+
+#Sixth_section_content a{
+  text-decoration:none;
+}
+
+#Sixth_section_content li {
+    padding: 2.1875vw 0 3.775vw;
+    border-top: 1px solid #DDDDDD;
+    vertical-align: middle;
+    height: 1.71875vw;
+}
+
+#Sixth_section_content li:last-child {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+
+.Sixth_review_designer{
+    width: 15.885vw;
+    font: normal 1.145833vw "Montserrat";
+    color: #333333;
+}
+.Sixth_review_content{
+  font: bold 1.458333vw "Montserrat";
+  color: #333333;
+  float: left;
+  width: 37.5vw;
+  margin-right: 1.1187vw;
+}
+
+.arrow, .circle {
+  position: absolute;
+}
+.circle {
+  width: 2.1875vw;
+  margin-top: -1.95vw;
+  margin-left: -2.75vw;
+}
+
+.arrow {
+  width: 0.58125vw;
+  margin-top: -1.4vw;
+  margin-left: -1.9vw;
+  transform: rotate(0.25turn);
+}
+
+#Sixth_section_content li a:hover .arrow {
+  animation: horizontals 0.7s ease-in-out infinite;
+}
+
+.btn-right {
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes horizontals {
+  0% {
+    margin-left: -1.9vw;
   }
-  #Sixth_Section_title_text{
-    width: 40%;
-    margin-bottom: 100px;
-    margin-right: 0.2vw;
+  50% {
+    margin-left: -1.7vw;
+  }
+  100% {
+    margin-left: -1.9vw;
+  }
+}
+
+.Sixth_review_btn {
+  margin-left: 5.3125vw;
     float: left;
-  }
-  
-  .Sixth_Section_title_text{
-    font: normal 2.1875vw "Noto Sans";
+    border: 1px solid #333333;
+    font: bold 1.25vw "Noto Sans";
+    padding: 0.677083vw 4.27083333vw 0.677083vw 4.27083333vw;
     color: #333333;
-    text-align: left;
-  }
+}
+
+@media screen and (max-width:  1400px) {
+.circle {
+  margin-top: -2.4vw;
+}
+
+.arrow {
+  margin-top: -1.8vw;
+}
+
+}
+@media screen and (max-width:  999px) {
   
-  .Sixth_Section_title_text_bold{
-    font: bold 2.1875vw "Noto Sans";
-    text-align: left;
-    color: #333333;
-  }
-  
-  /* */
-  
-
-  .Sixth_Section_interview {
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
-
-  .Sixth_Section_interview_text {
-    text-align: left;
-    font: bold 1.666667vw "Noto Sans";
-    line-height: 60%;
-    color: #333333;
-    padding-bottom: 1vw;
-    height: fit-content;
-  }
-
-  .Sixth_Section_interview_text > p {
-    margin: 0 0 1.4vw 0; 
-  }
-
-  .More_view {
-    float: right;
-  }
-
-
-@media screen and (max-width:  1000px) {
   .Mainpage_Sixth_section {
     width:100%;
-    padding-top: 36.8vw;
+    padding-top: 16.8vw;
     display: inline-block;
+    padding-bottom: 18.23vw;
   }
   
   #Sixth_section_content{
@@ -83,57 +139,110 @@
   
   /* 재돌려쓰기 */
   .Sixth_Section_title{
-    font: bold 3.2vw "Montserrat";
+    font: bold 7.466666vw "Noto Sans";
     color: #333333;
     text-align: left;
-    margin-bottom: 2.6666vw;
+    margin-bottom: 10.6666vw;
   
   }
-  #Sixth_Section_title_text{
-    width: 100%;
-    float: none;
-    margin-bottom: 4.2666vw;
-    margin-right: 0;
-  }
-  
-  .Sixth_Section_title_text{
-    font: normal 7.46666vw "Noto Sans";
-    color: #333333;
-    text-align: left;
-  }
-  
-  .Sixth_Section_title_text_bold{
-    font: bold 7.46666vw "Noto Sans";
-    text-align: left;
-    color: #333333;
-    margin-bottom: 12.8vw;
-  }
-  
-  /* */
-  
 
-  .Sixth_Section_interview {
-    float: none;
-    padding: 0;
+  #Sixth_section_content ul {
+      margin-left: 0;
+      list-style:none;
+      text-align: left;
+      margin-bottom: 3.645833vw;
+      padding-inline-start: 0;
+  }
+
+  #Sixth_section_content a{
+    text-decoration:none;
+  }
+
+  #Sixth_section_content li {
+      height: 25vw;
+      vertical-align: middle;
+      margin: auto;
+      padding: 5.3333vw 0;
+      border-top: 1px solid #DDDDDD;
+  }
+
+
+  #Sixth_section_content li:last-child {
+    height: 25vw;
+    vertical-align: middle;
+    margin: auto;
+    padding: 5.3333vw 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+
+  .Sixth_review_designer{
+      width: 72%;
+      float: none;
+      font: normal 3.73333vw "Montserrat";
+      color: #333333;
+      line-height: 6.4vw;
+      margin-bottom: 3.2vw;
+  }
+  .Sixth_review_content{
+    font: bold 4.266666vw "Montserrat";
+    color: #333333;
+    float: left;
+    width: 72%;
+    line-height: 6.4vw;
+    word-break: keep-all;
     margin: 0;
+    white-space: pre-line;
   }
 
-  .Sixth_Section_interview_text {
-    text-align: left;
-    font: bold 4.8vw "Noto Sans";
-    line-height: 6.03333vw;
-    margin-bottom: 3vw;
-    color: #333333;
-    height: fit-content;
-    padding: 0;
+
+  .arrow, .circle {
+    position: absolute;
+  }
+  .circle {
+    width: 11.73vw;
+    margin-left: 3.7vw;
+    margin-top: -3.5vw;
   }
 
-  .Sixth_Section_interview_text > p {
-    margin: 0 0 1.4vw 0; 
+  .arrow {
+    width: 2.025vw;
+    margin-top: 0.5vw;
+    margin-left: 8.5vw;
+    transform: rotate(0.25turn);
   }
 
-  .More_view {
-    float: right;
+
+  .btn-right {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .arrow, .circle {
+    position: absolute;
+  }
+
+  .btn-right {
+    position: relative;
+    height: 100%;
+    margin-left: 4.508333vw;
+    width: 15px;
+    text-align: center;
+  }
+  
+
+  #Sixth_section_content li a:hover .arrow {
+    animation: none;
+}
+
+  .Sixth_review_btn {
+      float: none;
+      border: 1px solid #333333;
+      font: bold 3.73333vw "Noto Sans";
+      padding: 3.50666vw 16.303333vw 3.50666vw 16.303333vw;
+      color: #333333;
+      margin: auto;
+      text-align: center;
   }
 
 }

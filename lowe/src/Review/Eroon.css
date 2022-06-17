@@ -37,7 +37,12 @@
 
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
+
+    .Eroon_section  div {
+        line-height: 150%;
+    }
+
 
 
 .Eroon_section > div {

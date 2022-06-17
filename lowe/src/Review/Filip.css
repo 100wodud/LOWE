@@ -34,7 +34,7 @@
 
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     
     .Filip_section > div {
         padding-top: 10.9333333vw;
@@ -43,7 +43,9 @@
         position: relative;
         text-align: left;
     }
-
+    .Filip_section div {
+        line-height: 150%;
+    }
 
 .Filip_title{
     font: normal 4.8vw "Noto Sans";

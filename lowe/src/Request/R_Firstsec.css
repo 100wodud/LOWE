@@ -1,35 +1,68 @@
-
-.Request_first_section{
-    width:100vw;
-    display: inline-block;
-    margin-bottom: 8.854166vw;
+.R_Firstsec_section {
+    height: fit-content;
+    margin-bottom: -3px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 4.4791666vw;
 }
 
-.Request_first_section > div {
-    margin-left: 18.75%;
-    margin-top: 12.24vw;
-    width: 81.25%;
+.R_Firstsec_div{
+    margin: auto;
+    overflow: hidden;
 }
 
-.Request_first_title{
-    margin-bottom: 3.125vw;
-    font: bold 1.5625vw "Noto Sans";
-    color: #333333;
+.R_Firstsec_banner_div{
+    position: relative;
+    text-align: center;
+    width: 100% ;
+    overflow: hidden;
 }
 
-.Request_first_section img {
+.R_Firstsec_banner_text{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font:400 36px "Noto Sans";
     width: 100%;
-    height: 25vw;
-    object-fit: fill;
-    margin-bottom: 4.16667vw;
 }
 
-.Request_first_text > div{
-    float: left;
-    margin-right: 16.51vw;
+.R_Firstsec_banner_button{
+    margin-top: 20px;
+    padding: 0 38px;
+    width: fit-content; 
+    background-color: #fff;
+    height: 56px;
 }
 
-.Request_first_text > div > div {
-    font-family: "Noto Sans";
-    color: #333333;
+.R_Firstsec_banner_button > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.R_Firstsec_banner_box{
+    position: absolute;
+    width: 75%;
+    left: 45%;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+}
+.R_Firstsec_banner_img{    
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: calc(50vh - 2.2395833vw);
+}
+
+
+
+@media screen and (max-width:  999px) {
+    .R_Firstsec_section {
+        margin-top: 61px;
+        height: calc(50vh - 30px);
+    }
 }

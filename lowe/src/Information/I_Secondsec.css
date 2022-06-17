@@ -42,8 +42,7 @@
 }
 
 
-
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Info_second_section {
         width: 93.6vw;
         padding-left: 6.4vw;

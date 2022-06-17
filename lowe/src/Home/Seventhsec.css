@@ -1,124 +1,129 @@
 .Mainpage_Seventh_section {
-    width:100%;
-    padding-top: 18.23vw;
-    display: inline-block;
-    padding-bottom: 18.23vw;
-  }
-  
-  #Seventh_section_content{
-    width: 62.5%;
-    margin: 0 auto;
-    align-content: center;
-    position: relative;
-    text-align: center;
-  }
-  
-  /* 재돌려쓰기 */
-  .Seventh_Section_title{
-    font: bold 1vw "Montserrat";
-    color: #333333;
-    text-align: left;
-    margin-bottom: 2.96875vw;
-  
-  }
-
-  #Seventh_section_content ul {
-    margin-left: 5.3125vw;
-      list-style:none;
-      text-align: left;
-      margin-bottom: 3.645833vw;
-      padding-inline-start: 0;
-  }
-
-  #Seventh_section_content a{
-    text-decoration:none;
-  }
-
-  #Seventh_section_content li {
-      padding: 2.1875vw 0 2.1875vw 0;
-      border-top: 1px solid #DDDDDD;
-      vertical-align: middle;
-      height: 1.71875vw;
-  }
-
-  .Seventh_review_designer{
-      width: 15.885vw;
-      float: left;
-      font: normal 1.145833vw "Montserrat";
-      color: #333333;
-  }
-  .Seventh_review_content{
-    font: bold 1.18416666vw "Montserrat";
-    color: #333333;
-    float: left;
-    width: 37.5vw;
-    margin-right: 1.1187vw;
-  }
-
-  .arrow, .circle {
-    position: absolute;
-  }
-  .circle {
-    width: 2.1875vw;
-    margin-top: -1.05vw;
-  }
-
-  .arrow {
-    width: 0.58125vw;
-    margin-top: -0.5vw;
-    margin-left: 0.75vw;
-    transform: rotate(0.25turn);
-  }
-
-  #Seventh_section_content li a:hover .arrow {
-    animation: horizontals 0.7s ease-in-out infinite;
+  width:100%;
+  padding-top: 18.23vw;
+  display: inline-block;
+  padding-bottom: 18.23vw;
 }
 
-  .btn-right {
-    position: relative;
-    display: inline-block;
-  }
-  
-  @keyframes horizontals {
-    0% {
-      margin-left: 0.7vw;
-    }
-    50% {
-      margin-left: 0.9vw;
-    }
-    100% {
-      margin-left: 0.7vw;
-    }
-  }
+#Seventh_section_content{
+  width: 62.5%;
+  margin: 0 auto;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
 
-  .Seventh_review_btn {
-    margin-left: 5.3125vw;
-      float: left;
-      border: 1px solid #333333;
-      font: bold 1.25vw "Noto Sans";
-      padding: 0.677083vw 4.27083333vw 0.677083vw 4.27083333vw;
-      color: #333333;
+/* 재돌려쓰기 */
+.Seventh_Section_title{
+  font: bold 1vw "Montserrat";
+  color: #333333;
+  text-align: left;
+  margin-bottom: 2.96875vw;
+
+}
+
+#Seventh_section_content ul {
+  margin-left: 5.3125vw;
+    list-style:none;
+    text-align: left;
+    margin-bottom: 3.645833vw;
+    padding-inline-start: 0;
+}
+
+#Seventh_section_content a{
+  text-decoration:none;
+}
+
+#Seventh_section_content li {
+    padding: 2.1875vw 0 2.1875vw 0;
+    border-top: 1px solid #DDDDDD;
+    vertical-align: middle;
+    height: 1.71875vw;
+}
+
+.Seventh_review_designer{
+    width: 15.885vw;
+    float: left;
+    font: normal 1.145833vw "Montserrat";
+    color: #333333;
+}
+.Seventh_review_content{
+  font: bold 1.18416666vw "Montserrat";
+  color: #333333;
+  float: left;
+  width: 37.5vw;
+  margin-right: 1.1187vw;
+}
+
+.arrow, .circle {
+  position: absolute;
+}
+.circle {
+  width: 2.1875vw;
+  margin-top: -1.05vw;
+}
+
+.arrow {
+  width: 0.58125vw;
+  margin-top: -0.5vw;
+  margin-left: 0.75vw;
+  transform: rotate(0.25turn);
+}
+
+#Seventh_section_content li a:hover .arrow {
+  animation: horizontals 0.7s ease-in-out infinite;
+}
+
+.btn-right {
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes horizontals {
+  0% {
+    margin-left: 0.7vw;
   }
+  50% {
+    margin-left: 0.9vw;
+  }
+  100% {
+    margin-left: 0.7vw;
+  }
+}
+
+.Seventh_review_btn {
+  margin-left: 5.3125vw;
+    float: left;
+    border: 1px solid #333333;
+    font: bold 1.25vw "Noto Sans";
+    padding: 0.677083vw 4.27083333vw 0.677083vw 4.27083333vw;
+    color: #333333;
+}
 
 @media screen and (max-width:  1400px) {
-  .circle {
-    margin-top: -1.4vw;
-  }
+.circle {
+  margin-top: -1.4vw;
+}
 
-  .arrow {
-    margin-top: -0.8vw;
-  }
+.arrow {
+  margin-top: -0.8vw;
+}
 
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
   .Mainpage_Seventh_section {
     width:100%;
     padding-top: 16.8vw;
     display: inline-block;
     padding-bottom: 18.23vw;
   }
-  
+  .Seventh_Section_title{
+    font: bold 7.466666vw "Montserrat";
+    color: #333333;
+    text-align: left;
+    margin-bottom: 10.6666vw;
+  }
   #Seventh_section_content{
     width: 90%;
     margin: 0 auto;
@@ -126,16 +131,6 @@
     position: relative;
     text-align: center;
   }
-  
-  /* 재돌려쓰기 */
-  .Seventh_Section_title{
-    font: bold 3.2vw "Montserrat";
-    color: #333333;
-    text-align: left;
-    margin-bottom: 2.6666vw;
-  
-  }
-
   #Seventh_section_content ul {
       margin-left: 0;
       list-style:none;
@@ -144,85 +139,35 @@
       padding-inline-start: 0;
   }
 
-  #Seventh_section_content a{
-    text-decoration:none;
+  .Seventh_faq_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Seventh_faq_title div {
+    font: 700 4.8vw "Noto Sans";
+    white-space: pre-line;
+    word-break: keep-all;
   }
 
   #Seventh_section_content li {
-      height: 25vw;
-      vertical-align: middle;
-      margin: auto;
-      padding-top: 5.3333vw;
-      border-top: 1px solid #DDDDDD;
-  }
-
-  .Seventh_review_designer{
-      width: 72%;
-      float: none;
-      font: normal 3.73333vw "Montserrat";
-      color: #333333;
-      line-height: 6.4vw;
-      margin-bottom: 3.2vw;
-  }
-  .Seventh_review_content{
-    font: bold 4.266666vw "Montserrat";
-    color: #333333;
-    float: left;
-    width: 72%;
-    line-height: 6.4vw;
-    word-break: keep-all;
-    margin: 0;
-  }
-
-
-  .arrow, .circle {
-    position: absolute;
-  }
-  .circle {
-    width: 11.73vw;
-    margin-left: 3.7vw;
-    margin-top: -3.5vw;
-  }
-
-  .arrow {
-    width: 2.025vw;
-    margin-top: 0.5vw;
-    margin-left: 8.5vw;
-    transform: rotate(0.25turn);
-  }
-
-
-  .btn-right {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .arrow, .circle {
-    position: absolute;
-  }
-
-  .btn-right {
-    position: relative;
-    height: 100%;
-    margin-left: 4.508333vw;
-    width: 15px;
-    text-align: center;
-  }
-  
-
-  #Seventh_section_content li a:hover .arrow {
-    animation: none;
+    height: fit-content;
+    margin: auto;
+    padding: 7.4666667vw 0;
+    border-top: 1px solid #DDDDDD;
+    cursor: pointer;
 }
-
-  .Seventh_review_btn {
-      float: none;
-      border: 1px solid #333333;
-      font: bold 3.73333vw "Noto Sans";
-      padding: 3.50666vw 16.303333vw 3.50666vw 16.303333vw;
-      color: #333333;
-      margin: auto;
-      text-align: center;
+  #Seventh_section_content li:last-child {
+    border-bottom: 1px solid #DDDDDD;
   }
 
+  .Seventh_faq_content {
+    margin-top: 5.333333vw;
+    font: 400 4.8vw "Noto Sans";
+    color: #9c9c9c;
+    white-space: pre-line;
+    word-break: keep-all;
+  }
 
 }

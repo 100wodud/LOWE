@@ -146,7 +146,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Request_section{
         width:100%;
         padding-top: 16.26666vw;

@@ -5,7 +5,6 @@ import Thirdsec from "./Thirdsec";
 import Fifthsec from "./Fifthsec";
 import Fourthsec from "./Fourthsec";
 import Sixthsec from "./Sixthsec";
-import Seventhsec from "./Seventhsec";
 import Requestsec from "./Requestsec";
 import RequestNav from "../nav/RequestNav";
 import Header from "../nav/Header";
@@ -31,7 +30,6 @@ class Mainpage extends Component {
         <Fourthsec />
         <Fifthsec />
         <Sixthsec />
-        <Seventhsec />
         <Requestsec />
         <Footer />
       </>

@@ -34,9 +34,11 @@
     color: #333333;
 }
 
+.Care_first_section div {
+    line-height: 150%;
+}
 
-
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
 
     .Care_first_section{
         width:100vw;

@@ -27,7 +27,7 @@
     }
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .goto_nav {
         position: absolute;
         left: 70%;

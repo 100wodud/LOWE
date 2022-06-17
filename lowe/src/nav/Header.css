@@ -73,7 +73,7 @@ header > div > div > div > div > ul >li >p >a:hover {
   left: 46%;
 }
 .logoView{
-  padding: 1.250vw 0 1.25vw 0;
+  padding: 1.50vw 0 1.25vw 0;
   width: 6.25vw;
 }
 
@@ -178,8 +178,7 @@ header > div > div > div > div > ul >li >p >a:hover {
     width: 9.8vw;
   }
   
-
-  @media screen and (max-width:  1000px) {
+  @media screen and (max-width:  999px) {
     header {
       position: fixed;
       width: 100vw;
