@@ -27,76 +27,57 @@ class Thirdsec extends Component {
                     <div id="Third_section_content">
                         <div>
                             <div data-aos="fade-up" data-aos-duration="3000" id="Third_Section_title_text">
-                            <div className="Third_Section_title_text_bold">
-                            국내최초 월세 없는 
+                                <div className="Third_Section_title_text">
+                                    로위는
                                 </div>
-                            <div className="Third_Section_title_text_bold">
-                            인센티브제 공유미용실,
+                                <div className="Third_Section_title_text_bold">
+                                    근무 유형을 선택
                                 </div>
                                 <div className="Third_Section_title_text">
-                                로위만의 합리적인 실수익구조
+                                    할 수 있어요.
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="3000" id="Third_Section_title_content">
-                                <div>
-                                공유미용실 최초로 월세, 수수료 등 
 
-
-                                </div>
-                                <div>
-                                디자이너가 따로 지불해야 할 비용 없이
-                                </div>
-                                <div>
-                                오로지 디자이너 매출에 따라 가져가는 로위 인센티브제.
-                                </div>
-                                <div style={{fontWeight: "700", marginTop: "0.625vw"}}>
-                                * 공유미용실 로위는 월세 없는 매출 인센티브제입니다.
-                                </div>
-                            </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="3000" className="Third_Section_div">
-                            <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/main3_1.png"} alt="lowe mainpage" />
+                            <div>
+                                <a href="/requests/enterstore">
+                                    <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/main3_3.png"} alt="lowe mainpage" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/requests/recruitment">
+                                    <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/main3_2.png"} alt="lowe mainpage" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </Desktop>
                 <Mobile>
                     <div id="Third_section_content">
-                        <div data-aos="fade-up" data-aos-duration="3000" >
+                        <div >
                             <div id="Third_Section_title_text">
-                                <div className="Third_Section_title_text_bold">
-                                    최초 월세 없는
+                                <div className="Third_Section_title_text">
+                                    로위는
                                 </div>
                                 <div className="Third_Section_title_text_bold">
-                                    인센티브제 공유미용실,
+                                    근무 유형을 선택
                                 </div>
                                 <div className="Third_Section_title_text">
-                                    로위만의
-                                </div>
-                                <div className="Third_Section_title_text">
-                                    합리적인 실수익구조
-                                </div>
-                            </div>
-                            <div id="Third_Section_title_content">
-                                <div>
-                                    공유미용실 최초로 월세, 수수료 등
-                                </div>
-                                <div>
-                                    디자이너가 따로 지불해야 할 비용 없이
-                                </div>
-                                <div>
-                                    오로지 디자이너 매출에 따라 가져가는
-                                </div>
-                                <div>
-                                    로위 인센티브제.
-                                </div>
-                                <div style={{ fontWeight: "bold", marginTop: "8px" }}>
-                                    *로위는 월세 없는 매출 인센티브제입니다.
+                                    할 수 있어요.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="3000" className="Third_Section_div">
-                        <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/M_main3_1.png"} alt="lowe mainpage" />
+                    <div data-aos-duration="3000" className="Third_Section_div">
+                        <a href="/requests/enterstore">
+                            <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/M_main3_2.png"} alt="lowe mainpage" />
+                        </a>
+                    </div>
+                    <div data-aos-duration="3000" className="Third_Section_div" style={{ marginTop: "2.66666vw" }}>
+                        <a href="/requests/recruitment">
+                            <img className="Third_section_chart" src={process.env.PUBLIC_URL + "/image/mainpage/M_main3_3.png"} alt="lowe mainpage" />
+                        </a>
                     </div>
                 </Mobile>
             </section>

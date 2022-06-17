@@ -22,7 +22,7 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .request_nav {
         position: fixed;
         top: 83%;

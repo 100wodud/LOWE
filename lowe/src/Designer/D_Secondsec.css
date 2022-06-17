@@ -29,7 +29,7 @@
     outline: none;
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Designer_second_section {
         width: 93vw;
         display: inline-block;

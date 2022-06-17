@@ -14,9 +14,7 @@
 
 .R_modalBody::-webkit-scrollbar{ display:none; }
 
-
 .modalclick {
-
     z-index: 150;  
     transition: opacity 0.4s ease-in-out;
     position: fixed;
@@ -47,7 +45,6 @@
     position: absolute;
     width: 40px;
     cursor: pointer;
-    
 }
 
 
@@ -67,7 +64,7 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
 
 .R_Modal_Title{
     padding-top: 17.5vw;

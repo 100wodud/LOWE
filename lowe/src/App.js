@@ -23,6 +23,8 @@ import Promotion from "./Promotion/P_Mainpage";
 import Promotion2 from "./Promotion/P_Mainpage2";
 import Promotion3 from "./Promotion/P_Mainpage3";
 import Promotion4 from "./Promotion/P_Mainpage4";
+import Recruitment from "./Request/Recruitment";
+import Enterstore from "./Request/Enterstore";
 
 class App extends Component {
   constructor(props) {
@@ -42,6 +44,8 @@ class App extends Component {
           <Route path="/reservation" component={VMainpage} />
           <Route path="/event/:id" component={Event} />
           <Route path="/request" component={Request} />
+          <Route path="/requests/recruitment" component={Recruitment} />
+          <Route path="/requests/enterstore" component={Enterstore} />
           <Route path="/care" component={Care} />
           <Route path="/info" component={Info} />
           <Route path="/careplus" component={Member} />

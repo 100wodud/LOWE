@@ -35,7 +35,11 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
+
+    .Kijoon_section  div {
+        line-height: 150%;
+    }
 
 
     .Kijoon_section > div {

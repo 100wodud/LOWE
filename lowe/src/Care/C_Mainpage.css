@@ -13,6 +13,10 @@
     float: left;
 }
 
+.Care_section div {
+    line-height: 150%;
+}
+
 .Care_title > div > div {
     margin-bottom: 3.125vw;
     font-family: "Noto Sans";
@@ -38,7 +42,7 @@
     float: left;
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Care_section{
         width:100vw;
         display: inline-block;

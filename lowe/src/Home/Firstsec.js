@@ -113,74 +113,58 @@ class Firstsec extends Component {
     var settings = {
       dots: true,
       infinite: true,
-      autoplaySpeed: 10000,
-      pauseOnHover: true,
+      autoplaySpeed: 5000,
+      pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
-      touchMove : true, 
-      draggable : true,
+      autoplay: true,
+      touchMove: true,
+      draggable: true,
       arrows: false,
     };
     return (
       <section className="Mainpage_first_section" id="Mainpage_first_section">
         <Desktop>
-        <Slider {...settings}>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" style={{color: "#333333"}} >
-                <div style={{fontSize: "24px", fontFamily: "Montserrat", marginBottom: "8px"}}>New</div>
-                <div style={{lineHeight: "66px"}} >로위 강남점 오픈 멤버</div>
-                <div style={{lineHeight: "66px"}} >디자이너 모집</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#9c9c9c"}}>
-                  <a style={{color: "#333"}} href="/promotion/lowe5th" >강남점 지원하기</a>
+          <Slider {...settings}>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box">
+                <div className="Mainpage_banner_text" >
+                  <div style={{ fontWeight: "400", fontSize: "72px" }} >2022 로위헤어</div>
+                  <div style={{ fontSize: "72px" }} >상반기 헤어디자이너 대규모 채용</div>
+                  <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px" }}>성수점/이수역점/L7홍대점/강남점/홍대입구역점/합정점/신촌점</div>
+                  <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
+                    <a href="/request" >지원하기</a>
+                  </div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_3.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_2.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" >
-                <div style={{fontSize: "24px", fontFamily: "Montserrat", marginBottom: "8px"}}>New</div>
-                <div style={{lineHeight: "66px", fontSize: "52px"}} >로위 L7홍대점</div>
-                <div style={{lineHeight: "66px", fontSize: "52px"}} >오픈멤버 디자이너 공개 채용</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#9c9c9c"}}>
-                  <a style={{color: "#fff"}} href="/promotion/lowe6th" >L7홍대점 지원하기</a>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box">
+                <div className="Mainpage_banner_text" >
+                  <div style={{ fontSize: "42px", marginBottom: "24px" }} >디자이너 성장을 위해 지원하는</div>
+                  <div style={{ fontSize: "72px", marginBottom: "80px" }} >로위 디자이너 혜택</div>
+                  <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
+                    <a style={{ color: "#fff" }} href="/care" >지원혜택</a>
+                  </div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_4.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_3.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" >
-                <div style={{fontSize: "24px", fontFamily: "Montserrat", marginBottom: "8px"}}>New</div>
-                <div style={{lineHeight: "66px", fontSize: "52px"}} >로위 이수역점</div>
-                <div style={{lineHeight: "66px", fontSize: "52px"}} >오픈멤버 디자이너 공개 채용</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#9c9c9c"}}>
-                  <a style={{color: "#fff"}} href="/promotion/lowe7th" >이수역점 지원하기</a>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box">
+                <div className="Mainpage_banner_text" style={{ lineHeight: "66px" }} >
+                  <div style={{ fontWeight: "400", marginBottom: "24px", fontSize: "42px" }}>로위에서의 안정적 근무를 위해</div>
+                  <div style={{ fontWeight: "400", fontSize: "72px" }}>정착지원금
+                  </div>
+                  <div style={{ fontSize: "72px" }}>6개월 지원 최대 300만원</div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_1.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_4.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" style={{lineHeight: "66px"}} >
-                <div>국내 최초</div>
-                <div>월세 없는 인센티브제</div>
-                <div style={{fontWeight: "500"}}>공유미용실 로위</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
-                  <a style={{color: "#fff"}} href="/request" >지원하기</a>
-                </div>
-              </div>
-            </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_1.png"} alt="Lowe main" />
-          </div>
-        </Slider>
+          </Slider>
 
-        {/* <div className="taskbar_div">
+          {/* <div className="taskbar_div">
           <div id="taskbar_group1" onClick={this.Barstart}>
             <div className="taskbar_name">OPEN PROMOTION</div>
             <div id="myProgress1">
@@ -203,62 +187,48 @@ class Firstsec extends Component {
         </div> */}
         </Desktop>
         <Mobile>
-        <Slider ref={slider => (this.slider = slider)} {...settings}>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" >
-                <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
-                <div>로위 강남점 오픈 멤버</div>
-                <div>디자이너 모집</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
-                  <a style={{color: "#fff"}} href="/promotion/lowe5th" >강남점 지원하기</a>
+          <Slider ref={slider => (this.slider = slider)} {...settings}>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box">
+                <div className="Mainpage_banner_text" >
+                  <div>2022 로위헤어</div>
+                  <div><strong>상반기</strong></div>
+                  <div><strong>헤어디자이너</strong></div>
+                  <div><strong>대규모 채용</strong></div>
+                  <div style={{ font: "400 4vw 'Noto Sans'", marginTop: "3.2vw" }}>성수점/이수역점/L7홍대점/강남점/<br />홍대입구역점/합정점/신촌점</div>
+                  <div className="Mainpage_banner_button" style={{ borderColor: "#ccc", fontSize: "5.33333vw" }}>
+                    <a href="/request" >ㅤ ㅤ지원하기ㅤ ㅤ </a>
+                  </div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_3.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_2.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" >
-                <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
-                <div>로위 L7점홍대점</div>
-                <div>디자이너 공개 채용</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
-                  <a href="/promotion/lowe6th" >L7홍대점 지원하기</a>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box" style={{ top: "40%" }}>
+                <div className="Mainpage_banner_text">
+                  <div style={{ font: "400 5.6vw 'Noto Sans'", marginBottom: "3.2vw" }}>로위에서의<br />안정적 근무를 위해</div>
+                  <div>정착지원금</div>
+                  <div><strong>6개월 지원</strong></div>
+                  <div><strong>최대 300만원</strong></div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_2.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_3.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" >
-                <div style={{fontSize: "4.266vw", fontFamily: "Montserrat", marginBottom: "4px"}}>New</div>
-                <div>로위 이수역점 오픈 멤버</div>
-                <div>디자이너 모집</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
-                  <a style={{color: "#fff"}} href="/promotion/lowe7th" >이수역점 지원하기</a>
+            <div className="Mainpage_banner_div">
+              <div className="Mainpage_banner_box" style={{ top: "40%" }}>
+                <div className="Mainpage_banner_text">
+                  <div style={{ font: "400 5.6vw 'Noto Sans'", marginBottom: "3.2vw" }}>디자이너 성장을 위해<br />로위가 지원하는</div>
+                  <div><strong>디자이너 혜택</strong></div>
+                  <div className="Mainpage_banner_button" style={{ borderColor: "#ccc", fontSize: "5.33333vw" }}>
+                    <a href="/care" > ㅤ지원 혜택ㅤ </a>
+                  </div>
                 </div>
               </div>
+              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_4.png"} alt="Lowe main" />
             </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_4.png"} alt="Lowe main" />
-          </div>
-          <div className="Mainpage_banner_div">
-            <div className="Mainpage_banner_box">
-              <div className="Mainpage_banner_text" style={{ marginTop: "5.3333vw"}} >
-                <div>국내 최초</div>
-                <div>월세 없는 인센티브제</div>
-                <div style={{fontWeight: "500"}}>공유미용실 로위</div>
-                <div className="Mainpage_banner_button" style={{borderColor: "#ccc"}}>
-                  <a style={{color: "#fff"}} href="/request" >지원하기</a>
-                </div>
-              </div>
-            </div>
-            <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_1.png"} alt="Lowe main" />
-          </div>
-        </Slider>
+          </Slider>
 
-        {/* <div className="taskbar_div">
+          {/* <div className="taskbar_div">
           <div id="taskbar_group1" onClick={this.Barstart}>
             <div className="taskbar_name">로위 5호점 OPEN</div>
             <div id="myProgress1">

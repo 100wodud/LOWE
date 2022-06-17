@@ -37,7 +37,11 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
+    .Yujine_section  div {
+        line-height: 150%;
+    }
+
 
 
     .Yujine_section > div {

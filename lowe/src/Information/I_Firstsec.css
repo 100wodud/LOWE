@@ -35,9 +35,7 @@
 }
 
 
-
-
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
 
     .Info_first_section{
         width:100vw;

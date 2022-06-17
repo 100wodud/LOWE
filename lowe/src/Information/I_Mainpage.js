@@ -13,7 +13,7 @@ class I_Mainpage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      location: '이수역점',
+      location: '성수점',
       clickloc: ''
     };
   }
@@ -31,7 +31,7 @@ class I_Mainpage extends Component {
     } else {
       options = {
         center: new kakao.maps.LatLng(37.52777036753169, 126.975538807699239),
-        level: 8,
+        level: 9,
         disableDoubleClickZoom: true,
         draggable: true
       };
@@ -62,6 +62,10 @@ class I_Mainpage extends Component {
       {
         title: '이수역점',
         latlng: new kakao.maps.LatLng(37.48511234734332, 126.982730518148)
+      },
+      {
+        title: '성수점',
+        latlng: new kakao.maps.LatLng(37.54481234734332, 127.0543230518148)
       },
 
       
@@ -139,8 +143,8 @@ class I_Mainpage extends Component {
         <div id="header_trigger" />
         <Header navColor={true} />
         <Firstsec />
-        <Map kakaoMap={this.kakaoMap} />
         <Secondsec location={this.state.location} onClicklocation={this.onClicklocation} />
+        <Map kakaoMap={this.kakaoMap} />
         <Footer />
       </>
     )

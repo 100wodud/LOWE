@@ -24,7 +24,7 @@ class C_Secondsec extends Component {
         return (
             <section className="Care_section">
                 <Desktop>
-                    <div className="Care_title">
+                    {/* <div className="Care_title">
                         <div style={{ width: "16.458333vw" }}>
                             <div style={{ fontSize: "1.25vw", fontWeight: "bold" }}>지점관리</div>
                         </div>
@@ -55,6 +55,39 @@ class C_Secondsec extends Component {
                             <div style={{ fontFamily: "Noto Sans", fontSize: "1.041667vw", fontWeight: "bold", marginBottom: "2.083vw" }}>매출향상</div>
                             <div style={{ fontFamily: "Noto Sans", fontSize: "1.041667vw", fontWeight: "500" }}>매출데이터 분석, 디자이너별 </div>
                             <div style={{ fontFamily: "Noto Sans", fontSize: "1.041667vw", fontWeight: "500" }}>정기미팅</div>
+                        </div>
+                    </div> */}
+                    <div className="Care_title">
+                        <div>
+                            <div style={{ fontSize: "42.6666px", fontWeight: "bold", marginBottom: "53.333px" }}>지점관리</div>
+                        </div>
+                    </div>
+
+                    <img src={process.env.PUBLIC_URL + "/image/care/care2_1.png"} alt="로위 지점관리" />
+                    <div className="Care_title">
+                        <div style={{ fontSize: "40px", fontWeight: "bold", marginBottom: "109.333px" }}>
+                            <div>단순 응대를 넘어 소비자의 높은 만족도를 위해</div>
+                            <div>지점 전문가가 집중 관리합니다.</div>
+                        </div>
+                    </div>
+                    <div className="Care_contents">
+                        <div style={{ width: "100%" }}>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "bold", marginBottom: "32px" }}>예약</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500", marginBottom: "74.6666px" }}>효율적인 온오프라인 예약관리 및 분석</div>
+                        </div>
+                        <div style={{ width: "100%" }}>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "bold", marginBottom: "32px" }}>고객</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500" }}>다양한 채널의 온라인 문의 예약화,</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500", marginBottom: "74.6666px" }}>긴급 이슈사항 대응</div>
+                        </div>
+                        <div style={{ width: "100%" }}>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "bold", marginBottom: "32px" }}>매장</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500" }}>미용기기 및 소모품 관리,</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500", marginBottom: "74.6666px" }}>매장청결(세탁, 전체적인 시설) 유지 </div>
+                        </div>
+                        <div style={{ width: "100%" }}>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "bold", marginBottom: "32px" }}>매출향상</div>
+                            <div style={{ fontFamily: "Noto Sans", fontSize: "40px", fontWeight: "500", marginBottom: "32px" }}>매출데이터 분석, 디자이너별 정기미팅</div>
                         </div>
                     </div>
                 </Desktop>

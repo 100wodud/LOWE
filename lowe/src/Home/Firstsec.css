@@ -5,6 +5,19 @@
     overflow: hidden;
     text-align: center;
 }
+
+
+.Second_Section_img_div {
+    height: 33.33vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.33333vw;
+}
+
+.Second_Section_img_div div{
+    width: 29.1666vw;
+}
 .Mainpage_banner_div{
     position: relative;
     text-align: center;
@@ -16,16 +29,17 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    font-size: 54px;
+    font-size: 52px;
     font-family:  'Noto Sans';
     font-weight: bold;
     width: 100%;
 }
 
 .Mainpage_banner_button{
+    margin: auto;
     margin-top: 32px;
-    font: 700 20px "Noto Sans";
-    padding: 16px 47px 16px 47px;
+    font: 700 26px "Noto Sans";
+    padding: 19.5px 47px 19.5px 47px;
     border: 2px solid #CCCCCC;
     width: fit-content;
 }
@@ -37,13 +51,13 @@
 
 .Mainpage_banner_box{
     position: absolute;
-    width: 40%;
-    top: 45%;
-    left: 40%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
     margin: 0;
     padding: 0;
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
 
 }
 .Mainpage_banner_img{    
@@ -147,12 +161,14 @@
     font-size: 80px;
 }
 
-@media screen and (max-width:  1000px) {
+
+@media screen and (max-width:  999px) {
 .Mainpage_first_section {
     background-position: center;
     height: 149.333vw;
     width: 100% ;
     overflow: hidden;
+    margin: auto;
 }
 
 .Mainpage_banner_div{
@@ -167,13 +183,14 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    font-size: 7.466666vw;
+    font-size: 9.6vw;
     font-family:  'Noto Sans';
-    font-weight: bold;
+    font-weight: 400;
     width: 100%;
 }
 
 .Mainpage_banner_button{
+    margin: 0;
     margin-top: 5.5333vw;
     font: bold 4.26666vw "Noto Sans";
     padding: 3.2vw 10.4vw 3.2vw 10.4vw;
@@ -189,7 +206,6 @@
 .Mainpage_banner_box{
     position: absolute;
     width: 75%;
-    top: 32%;
     left: 45%;
     margin: 0;
     padding: 0;

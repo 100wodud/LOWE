@@ -55,7 +55,7 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .store_info {
         width: 93.6vw;
         padding-bottom: 12.5vw;

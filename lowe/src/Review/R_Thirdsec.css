@@ -4,7 +4,7 @@
     display: inline-block;
      
 }
-      
+
 .R_Third_section > div{
     width: 62.5%;
     margin: 0 auto;
@@ -76,7 +76,7 @@
       width: 3.125vw;
   }
 
-  @media screen and (max-width:  1000px) {
+  @media screen and (max-width:  999px) {
     .R_Third_section{
       width:100%;
       padding: 20vw 0 32vw 0;

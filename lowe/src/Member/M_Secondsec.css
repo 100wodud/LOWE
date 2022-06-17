@@ -1,7 +1,10 @@
 .Member_second_section {
     width:100%;
     display: inline-block;
-    background-color: #FDFCF8;
+  }
+
+  .Member_second_section div {
+    line-height: 150%;
   }
 
   .Member_second_section > div {
@@ -51,8 +54,7 @@
 
   }
 
-
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
   .Member_second_section > div {
     width: 87.5%;
     margin: 0 auto;
@@ -74,9 +76,8 @@
     color: #333333;
   }
 
-  .Member_second_content_title {
-    width: 89vw;
-    font: bold 4vw "Montserrat";
+  .Member_second_content_title >div {
+    font: bold 4vw "Noto Sans";
     color: #333333;
     margin: 0;
     line-height: 150%;
@@ -85,11 +86,12 @@
   .Member_second_content_text {
     font: 500 4vw "Montserrat";
     color: #333333;
-    margin-top: 16vw;
-    margin-bottom: 10.333vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .Member_second_content_text div {
-    line-height: 6.13333vw;
+    line-height: 150%;
+    font-family: "Noto Sans";
   }
 
   .exclusive_img {

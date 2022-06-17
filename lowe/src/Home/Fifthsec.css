@@ -111,11 +111,11 @@
 
 .Fifth_Slide_div > div >a{
   float: right;
-  margin-top: 2.0833333333vw;
+  margin-top: 2.233333333vw;
   margin-right: 20px;
 }
 .Fifth_Slide_div > div >a > img {
-  width: 12.34375vw;
+  height: 3.125vw;
 }
 
 #Fifth_Slide_button_div {
@@ -137,7 +137,7 @@
 }
 
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
   .Mainpage_Fifth_section {
     width:100%;
     padding-top: 36.8vw;
@@ -163,7 +163,7 @@
   #Fifth_Section_title_text{
     width: 100%;
     float: none;
-    margin-bottom: 4.2666vw;
+    margin-bottom: 10.66666vw;
     margin-right: 0;
   }
   
@@ -246,6 +246,7 @@
     padding: 0.53333vw 1.466666vw 0.53333vw 1.466666vw;
     vertical-align: middle;
     line-height: 0;
+    margin: auto;
   }
   
   .Fifth_Slide_div > div >a{

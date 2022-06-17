@@ -30,7 +30,7 @@ class M_Thirdsec extends Component {
                 <div>
                     <div className="Member_Third_content" style={{ marginBottom: "12.23958vw" }}>
                         <div style={{ float: "left", marginRight: "5.20833vw" }}>
-                            <div className="Member_Third_title">CARE + 04</div>
+                            <div className="Member_Third_title">BENEFIT + 04</div>
                             <div className="Member_Third_title_text">
                                 <div >천만클럽</div>
                             </div>
@@ -53,15 +53,15 @@ class M_Thirdsec extends Component {
                 <div>
                     <div className="Member_Third_content" style={{ marginBottom: "12.23958vw" }}>
                         <div style={{ float: "left", marginRight: "5.20833vw" }}>
-                            <div className="Member_Third_title">CARE + 04</div>
+                            <div className="Member_Third_title">Benefit + 03</div>
                             <div className="Member_Third_title_text" style={{marginBottom: "6.93333vw"}}>
                                 <div >천만클럽</div>
                             </div>
                         </div>
                         <div style={{ float: "left" }}>
                             <div className="Member_Third_content_title" style={{marginBottom: "3.2vw"}}>
-                                <div>1:1시술이 이루어지는 만큼 디자이너의 노력과 성과를</div>
-                                <div>높이 평가 드리고자 매월 #천만키트를 선물 드립니다.</div>
+                                <div style={{lineHeight: "150%"}}>1:1시술이 이루어지는 만큼 디자이너의 노력과 성과를</div>
+                                <div style={{lineHeight: "150%"}}>높이 평가 드리고자 매월 #천만키트를 선물 드립니다.</div>
                             </div>
                             <div className="Member_Third_content_text">
                                 <div>1300 BLACK / 1200 GOLD / 1000 SILVER</div>

@@ -63,9 +63,8 @@ class Timer extends Component {
                         <img style={{verticalAlign: "middle", marginTop: "-3px"}} src={process.env.PUBLIC_URL + "/image/Nav/line.png"} alt="line" />
                     </span>
                     </div>} */}
-
                 <div>
-                    <a style={{lineHeight: "64px"}} href="https://drive.google.com/drive/folders/19zIc6aU8bp9PjWhwAdQX1hT0F4SrEFaI?usp=sharing"  >
+                    <a style={{lineHeight: "64px"}} href="https://ohella2019.typeform.com/teamLOWE"  >
                         지원하기
                     </a>
                 </div>

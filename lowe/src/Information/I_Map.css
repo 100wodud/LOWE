@@ -1,7 +1,6 @@
 .Map_section {
-    width:100vw;
+    width:100%;
     display: inline-block;
-    margin-bottom: 4.16666vw;
 }
 
 #map {
@@ -9,10 +8,10 @@
     height: 33.333333vw;
 }
 
-@media screen and (max-width:  1000px) {
+@media screen and (max-width:  999px) {
     .Map_section {
         width:100vw;
-        margin-bottom: 7.2vw;
+        margin-bottom: 0px;
     }
     
     #map {
