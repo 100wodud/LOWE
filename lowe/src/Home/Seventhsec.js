@@ -1,7 +1,7 @@
 import { Component } from "react";
 import "./Seventhsec.css";
 import { useMediaQuery } from 'react-responsive'
-import faq from "../data/FAQ";
+// import faq from "../data/FAQ";
 
 
 const Desktop = ({ children }) => {
