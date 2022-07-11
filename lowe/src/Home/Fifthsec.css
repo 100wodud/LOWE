@@ -275,4 +275,10 @@
   .Fifth_Slide_button > img {
     width: 10.1333vw;
   }
+
+.Fifth_Slide_div > div >a > img {
+  height: 10vw;
+  width: fit-content;
+}
+
 }

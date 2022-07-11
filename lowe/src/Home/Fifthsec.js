@@ -91,7 +91,6 @@ class Fifthsec extends Component {
                                         <div>
                                             <span className="Fifth_Slide_content_name">이수역점</span>
                                             <span className="Fifth_Slide_content_span">모집 중</span>
-                                            <span className="Fifth_Slide_content_span" style={{marginLeft: "6px"}}>6월 오픈 예정</span>
                                         </div>
                                     </div>
                                     <div>
@@ -226,7 +225,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/requests/recruitment" >
-                                            <img style={{ width: "40.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button5.png"} alt="lowe mainpage" />
+                                            <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button5.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -235,7 +234,6 @@ class Fifthsec extends Component {
                                         <div>
                                             <span className="Fifth_Slide_content_name">이수역점</span>
                                             <span className="Fifth_Slide_content_span">모집 중</span>
-                                            <span className="Fifth_Slide_content_span" style={{marginLeft: "6px"}}>6월 오픈 예정</span>
                                         </div>
                                     </div>
                                     <div>
@@ -244,7 +242,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/promotion/lowe7th" >
-                                            <img style={{ width: "40.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
+                                            <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -261,7 +259,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/promotion/lowe6th" >
-                                            <img style={{ width: "44.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button2.png"} alt="lowe mainpage" />
+                                            <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button2.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -295,7 +293,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/promotion/lowe4th" >
-                                            <img style={{ width: "44.5333vw"}}src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
+                                            <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -312,7 +310,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/info" >
-                                            <img style={{width: "22vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                            <img style={{width: "22vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -329,7 +327,7 @@ class Fifthsec extends Component {
                                     </div>
                                     <div>
                                         <a href="/info" >
-                                            <img style={{width: "22vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                            <img style={{width: "22vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>

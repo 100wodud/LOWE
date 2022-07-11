@@ -129,9 +129,9 @@ class Firstsec extends Component {
             <div className="Mainpage_banner_div">
               <div className="Mainpage_banner_box">
                 <div className="Mainpage_banner_text" >
-                  <div style={{ fontWeight: "400", fontSize: "72px" }} >2022 로위헤어</div>
+                  <div style={{ fontWeight: "400", fontSize: "72px" }} ><span style={{ fontFamily: "Montserrat" }}>2022</span> 로위헤어</div>
                   <div style={{ fontSize: "72px" }} >상반기 헤어디자이너 대규모 채용</div>
-                  <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px" }}>성수점/이수역점/L7홍대점/강남점/홍대입구역점/합정점/신촌점</div>
+                  <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px", fontWeight: "400" }}>성수점/이수역점/L7홍대점/강남점/홍대입구역점/합정점/신촌점</div>
                   <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
                     <a href="/request" >지원하기</a>
                   </div>
@@ -142,7 +142,7 @@ class Firstsec extends Component {
             <div className="Mainpage_banner_div">
               <div className="Mainpage_banner_box">
                 <div className="Mainpage_banner_text" >
-                  <div style={{ fontSize: "42px", marginBottom: "24px" }} >디자이너 성장을 위해 지원하는</div>
+                  <div style={{ fontSize: "42px", marginBottom: "24px", fontWeight: "400" }} >디자이너 성장을 위해 지원하는</div>
                   <div style={{ fontSize: "72px", marginBottom: "80px" }} >로위 디자이너 혜택</div>
                   <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
                     <a style={{ color: "#fff" }} href="/care" >지원혜택</a>
@@ -153,11 +153,11 @@ class Firstsec extends Component {
             </div>
             <div className="Mainpage_banner_div">
               <div className="Mainpage_banner_box">
-                <div className="Mainpage_banner_text" style={{ lineHeight: "66px" }} >
+                <div className="Mainpage_banner_text" style={{ lineHeight: "180%" }} >
                   <div style={{ fontWeight: "400", marginBottom: "24px", fontSize: "42px" }}>로위에서의 안정적 근무를 위해</div>
                   <div style={{ fontWeight: "400", fontSize: "72px" }}>정착지원금
                   </div>
-                  <div style={{ fontSize: "72px" }}>6개월 지원 최대 300만원</div>
+                  <div style={{ fontSize: "72px" }}><span style={{ fontFamily: "Montserrat" }}>6</span>개월 지원 최대 <span style={{ fontFamily: "Montserrat" }}>300</span>만원</div>
                 </div>
               </div>
               <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_1.png"} alt="Lowe main" />

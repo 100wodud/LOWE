@@ -26,7 +26,7 @@ class Ent_Firstsec extends Component {
                     <div className="Rec_Firstsec_first_content_first" style={{marginBottom: "16px", marginTop: "40px"}}><strong>자율 출퇴근제</strong></div>
                     <div className="Rec_Firstsec_second_content_second">이제부터 내가 내 삶의 주체가 될 수 있도록,<br /><strong>원하는 스케줄로 자유롭게 근무하세요</strong></div>
                     <img style={{marginBottom: "40px"}} src={process.env.PUBLIC_URL + "/image/request/M_request1_3_2.png"} alt="lowe request" />
-                    <div className="Rec_Firstsec_first_content_first" style={{marginBottom: "16px", marginTop: "40px", lineHeight: "16px"}}><strong>프라이빗한 공간</strong><br /><span style={{font: "400 16px 'Noto Sans'", color: "#9c9c9c"}}>(일부 지점 제외)</span></div>
+                    <div className="Rec_Firstsec_first_content_first" style={{marginBottom: "16px", marginTop: "40px", lineHeight: "90%"}}><strong>프라이빗한 공간</strong><br /><span style={{font: "400 16px 'Noto Sans'", color: "#9c9c9c"}}>(일부 지점 제외)</span></div>
                     <div className="Rec_Firstsec_second_content_second">고객이 더 만족하는 프라이빗룸으로<br /><strong>나만의 미용공간을 가져보세요</strong></div>
                     <img src={process.env.PUBLIC_URL + "/image/request/M_request1_4.png"} alt="lowe request" />
                 </div>

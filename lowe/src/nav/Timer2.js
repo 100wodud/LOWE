@@ -64,7 +64,7 @@ class Timer extends Component {
                     </span>
                     </div>} */}
                 <div>
-                    <a style={{lineHeight: "64px"}} href="https://ohella2019.typeform.com/teamLOWE"  >
+                    <a style={{lineHeight: "64px"}} href="https://teamlowe.typeform.com/lo-we"  >
                         지원하기
                     </a>
                 </div>
