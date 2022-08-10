@@ -140,7 +140,7 @@
 @media screen and (max-width:  999px) {
   .Mainpage_Fifth_section {
     width:100%;
-    padding-top: 36.8vw;
+    padding-top: 0px;
     display: inline-block;
     margin: 0;
   }
@@ -254,10 +254,7 @@
     margin-top: 4.26666vw;
     margin-right: 3%;
   }
-  .Fifth_Slide_div > div >a > img {
-    width: 33.6666vw;
-  }
-  
+
   #Fifth_Slide_button_div {
     float: left;
     position: relative;
@@ -277,8 +274,7 @@
   }
 
 .Fifth_Slide_div > div >a > img {
-  height: 10vw;
-  width: fit-content;
+  height: 10vw ;
 }
 
 }

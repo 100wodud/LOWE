@@ -5,6 +5,7 @@ import Firstsec from "./R_Firstsec";
 import Hyeri from "./Hyeri";
 import Thirdsec from "./R_Thirdsec";
 import { Helmet } from 'react-helmet';
+import TagManager from "react-gtm-module";
 
 
 class R_Hyeri_Mainpage extends Component {
@@ -13,6 +14,19 @@ class R_Hyeri_Mainpage extends Component {
         this.state = {
         };
     }
+
+    componentDidMount = () =>{
+        window.localStorage.setItem("route", "디자이너 리뷰");
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "review_view",
+              designer: "서혜리"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
+
+    }
+
 
 
     render() {

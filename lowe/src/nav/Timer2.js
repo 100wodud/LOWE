@@ -34,19 +34,19 @@ class Timer extends Component {
         // }, 1000)
     }
 
-//     handleImgValue = (key) => (e) => {
-//         uploadFile(e.target.files[0], AWSconfig)
-//         .then(data => {
-//             axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
-//                 body: `[[입점문의]](${data.location}) `
-//             })
-//         })
-//     }
+    //     handleImgValue = (key) => (e) => {
+    //         uploadFile(e.target.files[0], AWSconfig)
+    //         .then(data => {
+    //             axios.post("https://wh.jandi.com/connect-api/webhook/21700539/63e9bb0332d40124962aaa0024282b15", {
+    //                 body: `[[입점문의]](${data.location}) `
+    //             })
+    //         })
+    //     }
 
-//     <div>
-//     <label style={{lineHeight: "64px"}} htmlFor="timer2_request" className="">지원하기</label>
-//     <input type="file" accept="*" size="40" id="timer2_request" onChange={this.handleImgValue()} />
-// </div>
+    //     <div>
+    //     <label style={{lineHeight: "64px"}} htmlFor="timer2_request" className="">지원하기</label>
+    //     <input type="file" accept="*" size="40" id="timer2_request" onChange={this.handleImgValue()} />
+    // </div>
 
 
     render() {
@@ -63,11 +63,11 @@ class Timer extends Component {
                         <img style={{verticalAlign: "middle", marginTop: "-3px"}} src={process.env.PUBLIC_URL + "/image/Nav/line.png"} alt="line" />
                     </span>
                     </div>} */}
-                <div>
-                    <a style={{lineHeight: "64px"}} href="https://teamlowe.typeform.com/lo-we"  >
+                <a data-tag-index="Recruit_apply" data-tag-cate="apply" style={{ lineHeight: "64px" }} href="https://teamlowe.typeform.com/lo-we"  >
+                    <div>
                         지원하기
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         );
     }

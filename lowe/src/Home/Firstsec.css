@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #333333;
+}
 
 .Second_Section_img_div {
     height: 33.33vw;
@@ -40,13 +44,12 @@
     margin-top: 32px;
     font: 700 26px "Noto Sans";
     padding: 19.5px 47px 19.5px 47px;
-    border: 2px solid #CCCCCC;
-    width: fit-content;
+    width: fit-content;  
+    background-color: #fff;
 }
 
 .Mainpage_banner_button > a {
     text-decoration: none;
-    color: #FFFFFF;
 }
 
 .Mainpage_banner_box{
@@ -191,16 +194,16 @@
 
 .Mainpage_banner_button{
     margin: 0;
-    margin-top: 5.5333vw;
+    margin-top: 8.533333vw;
     font: bold 4.26666vw "Noto Sans";
     padding: 3.2vw 10.4vw 3.2vw 10.4vw;
-    border: 2px solid #CCCCCC;
     width: fit-content;
+    color: #333333;
 }
 
-.Mainpage_banner_button > a {
+a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #333333;
 }
 
 .Mainpage_banner_box{

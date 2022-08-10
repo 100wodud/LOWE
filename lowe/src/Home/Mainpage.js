@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Firstsec from "./Firstsec";
 import Secondsec from "./Secondsec";
-import Thirdsec from "./Thirdsec";
+// import Thirdsec from "./Thirdsec";
 import Fifthsec from "./Fifthsec";
 import Fourthsec from "./Fourthsec";
 import Sixthsec from "./Sixthsec";
@@ -26,7 +26,7 @@ class Mainpage extends Component {
         <RequestNav />
         <Firstsec />
         <Secondsec />
-        <Thirdsec />
+        {/* <Thirdsec /> */}
         <Fourthsec />
         <Fifthsec />
         <Sixthsec />

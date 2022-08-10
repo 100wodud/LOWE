@@ -73,7 +73,6 @@ class Fifthsec extends Component {
                                         <div>
                                             <span className="Fifth_Slide_content_name">성수점</span>
                                             <span className="Fifth_Slide_content_span">모집 중</span>
-                                            <span className="Fifth_Slide_content_span" style={{marginLeft: "6px"}}>7월 오픈 예정</span>
                                         </div>
                                     </div>
                                     <div>
@@ -81,7 +80,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_6.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/requests/recruitment" >
+                                        <a href="/requests/recruitment"  onClick={()=>{return window.localStorage.setItem("route", "메인_지원하기");}} data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="성수">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button5.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -98,7 +97,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_7.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe7th" >
+                                        <a href="/promotion/lowe7th"  data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="이수">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -115,7 +114,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_5.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe6th" >
+                                        <a href="/promotion/lowe6th"  data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="L7홍대">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button2.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -132,7 +131,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe5th" >
+                                        <a href="/promotion/lowe5th" data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="강남">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -149,7 +148,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe4th" >
+                                        <a href="/promotion/lowe4th" data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="홍대입구">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -166,7 +165,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_3.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
+                                        <a href="/info" data-tag-index="Main" data-tag-cate="branch_moreview" data-tag-title="합정">
                                             <img style={{width: "5.729166vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -183,7 +182,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
+                                        <a href="/info" data-tag-index="Main" data-tag-cate="branch_moreview" data-tag-title="신촌">
                                             <img style={{width: "5.729166vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -216,15 +215,14 @@ class Fifthsec extends Component {
                                         <div>
                                             <span className="Fifth_Slide_content_name">성수점</span>
                                             <span className="Fifth_Slide_content_span">모집 중</span>
-                                            <span className="Fifth_Slide_content_span" style={{marginLeft: "6px"}}>7월 오픈 예정</span>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="Fifth_Slide_content_number"><span style={{ fontWeight: "bold" }}>01</span> / 07</div>
-                                        <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_8.png"} alt="lowe mainpage" />
+                                        <img className="Fifth_Slide_img" style={{objectFit: "cover"}} src={process.env.PUBLIC_URL + "/image/mainpage/main5_6.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/requests/recruitment" >
+                                        <a href="/requests/recruitment" onClick={()=>{return window.localStorage.setItem("route", "메인_지원하기");}} data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="성수">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button5.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -241,7 +239,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_7.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe7th" >
+                                        <a href="/promotion/lowe7th"  data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="이수">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button3.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -258,7 +256,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_5.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe6th" >
+                                        <a href="/promotion/lowe6th" data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="L7홍대">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button2.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -275,7 +273,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main5_1.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe5th" >
+                                        <a href="/promotion/lowe5th" data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="강남">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -292,7 +290,7 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_4.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/promotion/lowe4th" >
+                                        <a href="/promotion/lowe4th" data-tag-index="Main" data-tag-cate="branch_apply" data-tag-title="홍대입구">
                                             <img src={process.env.PUBLIC_URL + "/image/Nav/benefit_button4.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
@@ -309,8 +307,8 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_3.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
-                                            <img style={{width: "22vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                        <a href="/info" data-tag-index="Main" data-tag-cate="branch_moreview" data-tag-title="합정">
+                                            <img style={{width: "22vw", height: "5.46666vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>
@@ -326,8 +324,8 @@ class Fifthsec extends Component {
                                         <img className="Fifth_Slide_img" src={process.env.PUBLIC_URL + "/image/mainpage/main5_2.png"} alt="lowe mainpage" />
                                     </div>
                                     <div>
-                                        <a href="/info" >
-                                            <img style={{width: "22vw", height: "fit-content"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
+                                        <a href="/info" data-tag-index="Main" data-tag-cate="branch_moreview" data-tag-title="신촌">
+                                            <img style={{width: "22vw", height: "5.46666vw"}} src={process.env.PUBLIC_URL + "/image/Nav/moreview.png"} alt="lowe mainpage" />
                                         </a>
                                     </div>
                                 </div>

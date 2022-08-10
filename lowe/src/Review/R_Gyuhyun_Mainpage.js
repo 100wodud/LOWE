@@ -5,6 +5,7 @@ import Firstsec from "./R_Firstsec";
 import Gyuhyun from "./Gyuhyun";
 import Thirdsec from "./R_Thirdsec";
 import { Helmet } from 'react-helmet';
+import TagManager from "react-gtm-module";
 
 
 class R_Gyuhyun_Mainpage extends Component {
@@ -13,6 +14,19 @@ class R_Gyuhyun_Mainpage extends Component {
         this.state = {
         };
     }
+
+    componentDidMount = () =>{
+        window.localStorage.setItem("route", "디자이너 리뷰");
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "review_view",
+              designer: "규현"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
+
+    }
+
 
 
     render() {

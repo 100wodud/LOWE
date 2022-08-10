@@ -5,6 +5,7 @@ import Firstsec from "./R_Firstsec";
 import Eroon from "./Eroon";
 import Thirdsec from "./R_Thirdsec";
 import { Helmet } from 'react-helmet';
+import TagManager from "react-gtm-module";
 
 
 class R_Eroon_Mainpage extends Component {
@@ -12,6 +13,17 @@ class R_Eroon_Mainpage extends Component {
         super(props);
         this.state = {
         };
+    }
+
+    componentDidMount = () =>{
+        window.localStorage.setItem("route", "디자이너 리뷰");
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "review_view",
+              designer: "이룬"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
     }
 
 

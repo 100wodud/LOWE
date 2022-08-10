@@ -5,6 +5,7 @@ import Firstsec from "./R_Firstsec";
 import Yujine from "./Yujine";
 import Thirdsec from "./R_Thirdsec";
 import { Helmet } from 'react-helmet';
+import TagManager from "react-gtm-module";
 
 
 class R_Yujine_Mainpage extends Component {
@@ -12,6 +13,18 @@ class R_Yujine_Mainpage extends Component {
         super(props);
         this.state = {
         };
+    }
+
+    componentDidMount = () =>{
+        window.localStorage.setItem("route", "디자이너 리뷰");
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "review_view",
+              designer: "유진"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
+
     }
 
 

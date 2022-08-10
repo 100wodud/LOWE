@@ -76,9 +76,40 @@
 }
 
 .Rec_Firstsec_content_address {
-    font: 400 20px "Noto Sans";
+    font: 700 26px "Noto Sans";
     color: #FB6F20;
     text-decoration: underline;
     text-underline-position: under;
     margin-bottom: 40px;
+}
+
+.Rec_Firstsec_first_content_first_slider{
+
+    overflow-x: scroll;
+    white-space:nowrap;
+    height: 92.8vw;
+    max-height: 397.184px;
+    margin: auto;
+    display: flex;
+
+}
+.Rec_Firstsec_first_content_first_slider_img {
+    width: 74.1333vw;
+    max-width: 317.3px;
+    height: 92.8vw;
+    max-height: 397.184px;
+    margin-right: 8px;
+    position: relative;
+
+}
+.Rec_Firstsec_first_content_first_slider_img img{
+    width: 74.1333vw;
+    max-width: 317.3px;
+    height: 92.8vw;
+    max-height: 397.184px;
+    position: absolute;
+}
+.Rec_Firstsec_first_content_first_slider_img div {
+    position: absolute;
+    text-shadow: 1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }

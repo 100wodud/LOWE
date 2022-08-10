@@ -12,8 +12,6 @@ const Mobile = ({ children }) => {
   return isMobile ? children : null
 }
 
-
-
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -22,12 +20,14 @@ class Header extends Component {
       member: false,
       review: false,
       d_review: false,
-      promotion: false
+      promotion: false,
+      hamburger: false,
+      inner: false,
     };
   }
 
   componentDidMount = () => {
-    if (window.innerWidth > 2000) {
+    if (window.innerWidth > 1000) {
       let reviews = document.getElementById("review-area");
       let review = document.getElementById("menu-review");
 
@@ -60,6 +60,7 @@ class Header extends Component {
 
       }
     });
+
   }
 
 
@@ -80,198 +81,206 @@ class Header extends Component {
     this.setState({ d_review: !this.state.d_review })
   }
 
+  onClickhamburger = () => {
+    this.setState({ hamburger: !this.state.hamburger })
+  }
+
   render() {
     return (
-      <header id="scroll" className="smooth">
+      <>
         <Desktop>
-          <div>
-            <div className="menu1" >
-            <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
-                  <ul>
-                    <li style={{ marginLeft: "18.05vw", marginRight: "6vw" }} >
-                      <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw", paddingTop: "0.5vw" }}>디자이너 리뷰</p>
-                    </li>
-                    <li style={{ marginRight: "7.54375vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/designers"> </a></p>
-                    </li>
-                    <div id="review-area" style={{ marginRight: "20.65vw" }}>
-                      <div style={{ float: "right" }}>
-                        <div>
-                          <span>
-                            <a href="/review/woody">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/04.png"} alt="우디 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>로위만의 디자이너 맞춤 시스템이 </div>
-                                <div>일에 집중할 수 있도록 만들어줘요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/gyuhyun">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/03.png"} alt="규현 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>처음엔 걱정이 많았지만, </div>
-                                <div>규모만큼 체계적이라 믿음이 갔어요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/filip">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/02.png"} alt="필립 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>디자이너로서 더 발전하고 즐기면서 </div>
-                                <div>일할 수 있는 환경이라 생각해요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/hyeri">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/01.png"} alt="혜리 히뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>제가 원하는 시간에 일할 수 있고,</div>
-                                <div> 일한 만큼 가져갈 수 있어요</div>
-                              </div>
-                            </a>
-                          </span>
-                        </div>
-                        <div>
-                          <span >
-                            <a href="/review/2roon">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/08.png"} alt="이룬 리뷰" />
-                              <div className="menu_review_text" style={{ marginBottom: "3.125vw" }} >
-                                <div style={{ lineHeight: "1.0416vw" }}>교육, 마케팅, 컨설팅 등 더욱 성장 </div>
-                                <div >할 수 있도록 도움받는 게 더 많아요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/yujine">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/07.png"} alt="유진 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>1인제라 몸은 힘들지만 제가 원하는 </div>
-                                <div>걸 자유롭게 할 수 있어서 행복해요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/sia">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/06.png"} alt="도림, 시아 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>마음 맞는 디자이너와 같이 일할 수 </div>
-                                <div>있는 곳으로 함께 옮기고 싶었어요</div>
-                              </div>
-                            </a>
-                          </span>
-                          <span>
-                            <a href="/review/kijoon">
-                              <img src={process.env.PUBLIC_URL + "/image/Nav/review/05.png"} alt="기준 리뷰" />
-                              <div className="menu_review_text">
-                                <div style={{ lineHeight: "1.0416vw" }}>로위에서는 눈치 보지 않고, 스스로 </div>
-                                <div>모든 걸 결정할 수 있어 너무 좋아요</div>
-                              </div>
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="menu-item">
-                <a className='menu-button' href="/care">디자이너 혜택</a>
-              </div>
-              <div className="menu-item">
-                <a className='menu-button' href="/info">지점현황</a>
-              </div>
-            </div>
-            <a href="/" style={{ margin: "0 auto", }}>
-              <div className="logo">
-                {this.state.navColor ?
-                  <img src={process.env.PUBLIC_URL + "/image/Nav/logo_black.svg"} className="logoView" alt="logo black"></img> :
-                  <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
+          <header id="scroll" className="smooth">
+            <a href='/care'>
+              <div className="header_banner">
+                지원혜택 보러가기 🥳
               </div>
             </a>
-            <div className="menu2">
-              <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>지원하기
-                  <ul>
-                    <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
-                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>지원하기</p>
-                    </li>
-                    <li style={{ marginRight: "4.16666vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/requests/recruitment">채용형 지원하기</a></p>
-                    </li>
-                    <li style={{ marginRight: "4.16666vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/requests/enterstore">입점형 지원하기</a></p>
-                    </li>
-                  </ul>
+            <div>
+              <div className="menu1" >
+                <div className="menu-item" style={{ cursor: "default" }}>
+                  <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
+                    <ul>
+                      <li style={{ marginLeft: "18.05vw", marginRight: "6vw" }} >
+                        <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw", paddingTop: "0.5vw" }}>디자이너 리뷰</p>
+                      </li>
+                      <li style={{ marginRight: "7.54375vw" }}>
+                        <p><a style={{ fontSize: "0.72916vw" }} href="/designers"> </a></p>
+                      </li>
+                      <div id="review-area" style={{ marginRight: "20.65vw" }}>
+                        <div style={{ float: "right" }}>
+                          <div>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="우디" href="/review/woody">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/04.png"} alt="우디 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>로위만의 디자이너 맞춤 시스템이 </div>
+                                  <div>일에 집중할 수 있도록 만들어줘요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="규현" href="/review/gyuhyun">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/03.png"} alt="규현 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>처음엔 걱정이 많았지만, </div>
+                                  <div>규모만큼 체계적이라 믿음이 갔어요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="필립" href="/review/filip">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/02.png"} alt="필립 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>디자이너로서 더 발전하고 즐기면서 </div>
+                                  <div>일할 수 있는 환경이라 생각해요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="혜리" href="/review/hyeri">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/01.png"} alt="혜리 히뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>제가 원하는 시간에 일할 수 있고,</div>
+                                  <div> 일한 만큼 가져갈 수 있어요</div>
+                                </div>
+                              </a>
+                            </span>
+                          </div>
+                          <div>
+                            <span >
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="이룬" href="/review/2roon">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/08.png"} alt="이룬 리뷰" />
+                                <div className="menu_review_text" style={{ marginBottom: "3.125vw" }} >
+                                  <div style={{ lineHeight: "1.0416vw" }}>교육, 마케팅, 컨설팅 등 더욱 성장 </div>
+                                  <div >할 수 있도록 도움받는 게 더 많아요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="유진" href="/review/yujine">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/07.png"} alt="유진 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>1인제라 몸은 힘들지만 제가 원하는 </div>
+                                  <div>걸 자유롭게 할 수 있어서 행복해요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="도림" href="/review/sia">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/06.png"} alt="도림, 시아 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>마음 맞는 디자이너와 같이 일할 수 </div>
+                                  <div>있는 곳으로 함께 옮기고 싶었어요</div>
+                                </div>
+                              </a>
+                            </span>
+                            <span>
+                              <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="기준" href="/review/kijoon">
+                                <img src={process.env.PUBLIC_URL + "/image/Nav/review/05.png"} alt="기준 리뷰" />
+                                <div className="menu_review_text">
+                                  <div style={{ lineHeight: "1.0416vw" }}>로위에서는 눈치 보지 않고, 스스로 </div>
+                                  <div>모든 걸 결정할 수 있어 너무 좋아요</div>
+                                </div>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="menu-item">
+                  <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' href="/care">디자이너 혜택</a>
+                </div>
+                <div className="menu-item">
+                  <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' href="/info">지점현황</a>
                 </div>
               </div>
-              
-              <div className="menu-item">
-                <a className='menu-button' style={{fontFamily: "Montserrat", lineHeight: "160%"}} href="https://lowehair.kr/">LOWE mall</a>
-              </div>
-              <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
+              <a href="/" style={{ margin: "0 auto", }}>
+                <div className="logo">
+                  {this.state.navColor ?
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img> :
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
+                </div>
+              </a>
+              <div className="menu2">
+                <div className="menu-item">
+                  <a data-tag-index="Nav" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기"); }} data-tag-title="지원하기" className='menu-button' href="/requests/recruitment">지원하기</a>
+                </div>
+
+                <div className="menu-item">
+                  <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
+                </div>
+                <div className="menu-item" style={{ cursor: "default" }}>
+                  <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </header>
         </Desktop>
         <Mobile>
-          <a href="/" style={{ margin: "0 auto", }}>
-            <div className="logo">
-              {this.state.navColor ?
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_black.svg"} className="logoView" alt="logo black"></img> :
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
-            </div>
-          </a>
-          <div className="menu-wrap">
-            <input type="checkbox" className="toggler" />
-            <div className="hamburger">
-              <div></div>
-            </div>
-            <div className="menu">
-              <div className="menuAll">
-                <div className="menuBar">
-                  <ul className="menuList">
-                    <div className="menuLisk_black">
-                      <a href="/" style={{ width: "100%", height: "60px", paddingLeft: "12px" }}>
-                        <img style={{ marginTop: "14px", width: "32px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
-                      </a>
-                      <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
-                        <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                        <a href="/request" style={{ color: "#ffffff", textAlign: "center" }} >
-                          <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
-                            <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
+          <header id="scroll" className="smooth" style={this.state.hamburger && window.innerWidth > 1000 ? null : { height: "100px" }}>
+            <a href='/care'>
+              <div className="header_banner">
+                지원혜택 보러가기 🥳
+              </div>
+            </a>
+            <div>
+              <a href="/">
+                <div className="logo">
+                  {this.state.navColor ?
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img> :
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
+                </div>
+              </a>
+              <div className="menu-wrap">
+                <input type="checkbox" className={this.state.hamburger ? "toggler" : "toggler top40"} onClick={this.onClickhamburger} />
+                <div className={this.state.hamburger ? "hamburger" : "hamburger top40"}>
+                  <div></div>
+                </div>
+                <div className="menu">
+                  <div className="menuAll">
+                    <div className="menuBar">
+                      <ul className="menuList">
+                        <div className="menuLisk_black">
+                          <a href="/" style={{ width: "100%", height: "60px", paddingLeft: "12px" }}>
+                            <img style={{ marginTop: "14px", width: "32px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
+                          </a>
+                          <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
+                            <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
+                            <a data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_버튼"); }} style={{ color: "#ffffff", textAlign: "center" }} >
+                              <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
+                                <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
+                              </div>
+                            </a>
                           </div>
-                        </a>
-                      </div>
+                        </div>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/info">지점현황</a>
+                        </li>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className="changeColor" href="/care">디자이너 혜택</a>
+                        </li>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="디자이너 리뷰" className="changeColor" href="/review/yujine">디자이너 리뷰</a>
+                        </li>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="https://lowehair.kr/">로위몰</a>
+                        </li>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="지원하기" className="changeColor" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_메뉴"); }}>지원하기</a>
+                        </li>
+                      </ul>
                     </div>
-                    <li>
-                      <a className="changeColor" href="/info">지점현황</a>
-                    </li>
-                    <li>
-                      <a className="changeColor" href="/care">디자이너 혜택</a>
-                    </li>
-                    <li>
-                      <a className="changeColor" href="/review/yujine">디자이너 리뷰</a>
-                    </li>
-                    <li>
-                      <a className="changeColor" href="https://lowehair.kr/">LOWE mall</a>
-                    </li>
-                    <li>
-                      <a className="changeColor" href="/request">지원하기</a>
-                    </li>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </header>
         </Mobile>
-      </header>
+      </>
     );
   }
 }

@@ -74,7 +74,7 @@ class R_Thirdsec extends Component {
                             <Slider ref={c => (this.slider = c)} {...settings}>
                                 {review.sort(() => Math.random() - 0.5).map((e) => (
                                     <div key={1} className="R_Third_Slide_div">
-                                        <a href={e.link} >
+                                        <a  data-tag-index="Review" data-tag-cate="related_list" data-tag-title={e.designer} href={e.link} >
                                             <div>
                                                 <img className="R_Third_Slide_img" src={process.env.PUBLIC_URL + e.img} alt={`${e.designer} 리뷰`} />
                                             </div>
@@ -103,7 +103,7 @@ class R_Thirdsec extends Component {
                             <div>
                                 {this.state.showdata ? this.state.showdata.map((e) => (
                                     <div key={e.designer} className="R_Third_Slide_div">
-                                        <a href={e.link} >
+                                        <a data-tag-index="Review" data-tag-cate="related_list" data-tag-title={e.designer} href={e.link} >
                                             <div>
                                                 <img className="R_Third_Slide_img" src={process.env.PUBLIC_URL + e.img} alt={`${e.designer} 리뷰`} />
                                             </div>

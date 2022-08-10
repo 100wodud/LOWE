@@ -66,7 +66,7 @@ class I_Store extends Component {
                     </div>
                     <div className="store_info_content_info">
                         <p className="store_info_content_title" style={{width: "15.885416vw"}}>위치</p>
-                        <div style={{ marginBottom: "0.8vw" }}>{this.props.data.address}</div>
+                        <div style={{ marginBottom: "0.625vw" }}>{this.props.data.address}</div>
                         {this.props.data.location.map((e) => (
                             <div key={e}>
                                 <div style={{ fontWeight: "normal" }}>{e}</div>
@@ -84,7 +84,7 @@ class I_Store extends Component {
                 </div>
                 {this.props.data.reservation ?
                 <div className="store_info_content_button">
-                    <a href={this.props.data.reservation} >
+                    <a data-tag-index="Branchstatus" data-tag-cate="reservation" data-tag-title={this.props.data.store} href={this.props.data.reservation} >
                         <Desktop>
                             <img src={process.env.PUBLIC_URL + `/image/info/${this.props.data.eng}_button.png`} alt="로위 예약하기" />
                         </Desktop>
