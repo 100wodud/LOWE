@@ -44,7 +44,7 @@ class M_Secondsec extends Component {
                                     <div>제작합니다.</div>
                                 </div>
                                 <div>
-                                    <a href="https://lowehair.kr">
+                                    <a data-tag-index="Benefit" data-tag-cate="site" href="https://lowehair.kr">
                                         <img src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
                                     </a>
                                 </div>
@@ -71,7 +71,7 @@ class M_Secondsec extends Component {
                                     <div>예약을 쉽게 할 수 있도록 합니다.</div>
                                 </div>
                                 <div>
-                                    <a href="https://lowehair.kr/designers">
+                                    <a data-tag-index="Benefit" data-tag-cate="profile" href="https://lowehair.kr/designers">
                                         <img src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
                                     </a>
                                 </div>
@@ -96,7 +96,7 @@ class M_Secondsec extends Component {
                                     <div>헤어 커머스 페이지입니다.</div>
                                 </div>
                                 <div >
-                                    <a href="https://lowehair.kr" >
+                                    <a data-tag-index="Benefit" data-tag-cate="site" href="https://lowehair.kr" >
                                         <img style={{width: "20.759vw", marginTop: "20px"}} src={process.env.PUBLIC_URL + "/image/Nav/ex_moreview.png"} alt="lowe moreview" />
                                     </a>
                                 </div>

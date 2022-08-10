@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { Route, Switch, withRouter} from "react-router-dom";
 import Mainpage from "./Home/Mainpage";
-import Request from "./Request/R_Mainpage";
 import Info from "./Information/I_Mainpage";
 import Events from "./Event/E_Mainpage";
 import Owner from "./owner/owner";
@@ -25,6 +24,13 @@ import Promotion3 from "./Promotion/P_Mainpage3";
 import Promotion4 from "./Promotion/P_Mainpage4";
 import Recruitment from "./Request/Recruitment";
 import Enterstore from "./Request/Enterstore";
+import TagManager from 'react-gtm-module';
+
+const tagManagerArgs = {
+  gtmId: 'GTM-PGSJWDB'
+}
+
+TagManager.initialize(tagManagerArgs);
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +39,9 @@ class App extends Component {
   
     };
   }
+  componentDidMount = () => {
 
+  }
   render() {
     return (
       <>
@@ -43,7 +51,6 @@ class App extends Component {
           <Route path="/reservation/:eng" component={Reservation} />
           <Route path="/reservation" component={VMainpage} />
           <Route path="/event/:id" component={Event} />
-          <Route path="/request" component={Request} />
           <Route path="/requests/recruitment" component={Recruitment} />
           <Route path="/requests/enterstore" component={Enterstore} />
           <Route path="/care" component={Care} />

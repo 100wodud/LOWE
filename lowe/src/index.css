@@ -2,9 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
@@ -12,6 +9,36 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-x:hidden;
   max-width: 100vw;
+}
+
+
+
+@font-face {
+  font-family: "Montserrat"; 
+  unicode-range: U+0030-0039, U+0041-005A, U+0061-007A;
+  font-weight: 400;
+  src:  
+  url("./fonts/Montserrat-Regular.ttf") format("woff2"),
+  url("./fonts/Montserrat-Regular.ttf") format("woff"),
+  url("./fonts/Montserrat-Regular.ttf") format("truetype"),
+  url("./fonts/Montserrat-Regular.ttf") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  unicode-range: U+AC00-D7A3;
+  font-weight: 400;
+  src: 
+  url("./fonts/NotoSansKR-Regular.otf") format("woff2"),
+  url("./fonts/NotoSansKR-Regular.otf") format("woff"),
+  url("./fonts/NotoSansKR-Regular.otf") format("truetype"),
+  url("./fonts/NotoSansKR-Regular.otf") format("embedded-opentype");
+}
+
+
+
+* {
+  font-family: Montserrat, Noto Sans, sans-serif; 
 }
 
 

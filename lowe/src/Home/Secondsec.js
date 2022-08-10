@@ -61,8 +61,9 @@ class Secondsec extends Component {
               </div>
               <div id="Second_Section_title_content">
                 <div>
-                  로위는 건강하고 지속가능한 미용생태계를 만들고<br />
-                  더 많은 사람들이 더 좋은 미용을 하도록 돕는 것 입니다.
+                로위(LOWE)의 미션은<br />
+                <strong>“헤어 디자이너가 만족하는 환경을 지원하고, 지속 가능한 미용 생태계를 만들어,<br />
+                더 많은 사람 이 더 좋은 미용 경험을 하도록 돕는 것”</strong> 입니다.
                 </div>
                 <div style={{ marginTop: "1.25vw" }}>
                   비합리적이고, 멈춰있는 기존 미용환경이 아닌, 누구에게나 합리적이고<br />
@@ -100,11 +101,29 @@ class Secondsec extends Component {
             <div className="Second_Section_img_div">
               <div>
 
-            <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_1.png"} alt="로위 인센티브" />
+              <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_1.png"} alt="로위 인센티브" />
+              <div className="Second_Section_title_text_name">
+                    <div style={{textAlign: "left"}}>
+                      <strong>신촌점</strong> 원장 도위
+                    </div>
+                    <div  style={{textAlign: "right"}}>
+                      <strong>2019년 7월 입점</strong>
+                    </div>
+                </div>
+            
               </div>
               <div>
 
-            <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_2.png"} alt="로위 인센티브" style={{marginTop: "12.5vw", paddingBottom: "8.3333vw"}}/>
+                  <img src={process.env.PUBLIC_URL + "/image/mainpage/main6_2.png"} alt="로위 인센티브" style={{marginTop: "12.5vw"}}/>
+
+                  <div className="Second_Section_title_text_name" style={{marginBottom: "8.3333vw"}}>
+                          <div style={{textAlign: "left"}}>
+                            <strong>합정점</strong> 원장 서해리
+                          </div>
+                          <div  style={{textAlign: "right"}}>
+                            <strong>2020년 11월 입점</strong>
+                          </div>
+                      </div>
               </div>
             </div>
           </div>
@@ -157,7 +176,7 @@ class Secondsec extends Component {
                   MISSION
                 </div>
                 <div style={{ marginTop: "10.666666vw" }} className="Second_Section_second_content">
-                  로위는<br />건강하고 지속가능한 미용생태계를 만들고 <br />더 많은 사람들이 더 좋은 미용을 하도록 돕는 것 입니다.
+                  로위(LOWE)의 미션은<br /><strong>“헤어 디자이너가 만족하는 환경을 지원하고,<br />지속 가능한 미용 생태계를 만들어, 더 많은 사람<br />이 더 좋은 미용 경험을 하도록 돕는 것” 입니다.</strong>
                 </div>
                 <div style={{ marginTop: "4.26666vw" }} className="Second_Section_second_content">
                   비합리적이고, 멈춰있는 기존 미용환경이 아닌,<br />누구에게나 합리적이고 원하는 디자인을 그리며<br />디자이너가 만족할 미용 생태계를 만드는 것이<br /> 로위의 존재 이유입니다.
@@ -180,9 +199,17 @@ class Secondsec extends Component {
                   사람들에게 숨겨진 고유한 매력을 찾아내는<br />헤어 디자이너로서 나날이 바뀌는 트렌드를<br /> 분석하고, 고객 만족을 위해 노력하고,<br />나를 알리는 콘텐츠를 만들고, 다양한 고객들과 소통하고, <br /><strong>더 나은 미용 환경을 함께 만들어가며 앞으로<br />더 나아갈 우리는 로위의 디자이너입니다.</strong>
                 </div>
                 <div style={{ marginTop: "4.26666vw" }} className="Second_Section_second_content">
-                  디자이너로서, 전문가로서, 예술가로서 인정받고 <br />존경받을 수 있도록 <strong>로위 디자이너는 로위팀으로,<br />언제나 함께하며 발전할 것입니다. </strong>
+                  디자이너로서, 전문가로서, 예술가로서 인정받고 <br />존경받을 수 있도록 <strong>로위 디자이너는 로위팀으로, <br />언제나 함께하며 발전할 것입니다. </strong>
                 </div>
-                <img style={{ margin: "10.666666vw 0" }} src={process.env.PUBLIC_URL + "/image/mainpage/M_main2_3.png"} alt="로위 인센티브" className="Second_Section_content_img" />
+                <img style={{ margin: "10.666666vw 0 3.2vw 0" }} src={process.env.PUBLIC_URL + "/image/mainpage/M_main2_3.png"} alt="로위 인센티브" className="Second_Section_content_img" />
+                <div className="Second_Section_title_text_name">
+                    <div>
+                      <strong>신촌점</strong> 원장 도위
+                    </div>
+                    <div>
+                      <strong>2019년 7월 입점</strong>
+                    </div>
+                </div>
               </div>
             </div>
           </div>

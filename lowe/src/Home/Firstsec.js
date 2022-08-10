@@ -117,7 +117,7 @@ class Firstsec extends Component {
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       touchMove: true,
       draggable: true,
       arrows: false,
@@ -127,29 +127,34 @@ class Firstsec extends Component {
         <Desktop>
           <Slider {...settings}>
             <div className="Mainpage_banner_div">
-              <div className="Mainpage_banner_box">
-                <div className="Mainpage_banner_text" >
-                  <div style={{ fontWeight: "400", fontSize: "72px" }} ><span style={{ fontFamily: "Montserrat" }}>2022</span> 로위헤어</div>
-                  <div style={{ fontSize: "72px" }} >상반기 헤어디자이너 대규모 채용</div>
-                  <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px", fontWeight: "400" }}>성수점/이수역점/L7홍대점/강남점/홍대입구역점/합정점/신촌점</div>
-                  <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
-                    <a href="/request" >지원하기</a>
+              <a href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "메인배너"); }} data-tag-index="Main" data-tag-cate="top_apply">
+                <div className="Mainpage_banner_box">
+                  <div className="Mainpage_banner_text" >
+                    <div style={{ fontWeight: "400", fontSize: "72px" }} >로위헤어</div>
+                    <div style={{ fontSize: "72px" }} >디자이너 채용</div>
+                    <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px", fontWeight: "400" }}>성수점/이수역점/L7홍대점/강남점/방배점</div>
+                    <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px", color: "#333333" }}>
+                      지원하기
+                    </div>
                   </div>
                 </div>
-              </div>
-              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_3.png"} alt="Lowe main" />
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_3.png"} alt="Lowe main" />
+
+              </a>
             </div>
             <div className="Mainpage_banner_div">
-              <div className="Mainpage_banner_box">
-                <div className="Mainpage_banner_text" >
-                  <div style={{ fontSize: "42px", marginBottom: "24px", fontWeight: "400" }} >디자이너 성장을 위해 지원하는</div>
-                  <div style={{ fontSize: "72px", marginBottom: "80px" }} >로위 디자이너 혜택</div>
-                  <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px" }}>
-                    <a style={{ color: "#fff" }} href="/care" >지원혜택</a>
+              <a href="/care" data-tag-index="Main" data-tag-cate="top_benefit">
+                <div className="Mainpage_banner_box">
+                  <div className="Mainpage_banner_text" >
+                    <div style={{ fontSize: "42px", marginBottom: "24px", fontWeight: "400" }} >디자이너 성장을 위해 지원하는</div>
+                    <div style={{ fontSize: "72px", marginBottom: "80px" }} >로위 디자이너 혜택</div>
+                    <div className="Mainpage_banner_button" style={{ width: "263px", color: "#333333" }}>
+                      지원혜택
+                    </div>
                   </div>
                 </div>
-              </div>
-              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_4.png"} alt="Lowe main" />
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_4.png"} alt="Lowe main" />
+              </a>
             </div>
             <div className="Mainpage_banner_div">
               <div className="Mainpage_banner_box">
@@ -189,20 +194,35 @@ class Firstsec extends Component {
         <Mobile>
           <Slider ref={slider => (this.slider = slider)} {...settings}>
             <div className="Mainpage_banner_div">
-              <div className="Mainpage_banner_box">
-                <div className="Mainpage_banner_text" >
-                  <div>2022 로위헤어</div>
-                  <div><strong>상반기</strong></div>
-                  <div><strong>헤어디자이너</strong></div>
-                  <div><strong>대규모 채용</strong></div>
-                  <div style={{ font: "400 4vw 'Noto Sans'", marginTop: "3.2vw" }}>성수점/이수역점/L7홍대점/강남점/<br />홍대입구역점/합정점/신촌점</div>
-                  <div className="Mainpage_banner_button" style={{ borderColor: "#ccc", fontSize: "5.33333vw" }}>
-                    <a href="/request" >ㅤ ㅤ지원하기ㅤ ㅤ </a>
+              <a href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "메인배너"); }} data-tag-index="Main" data-tag-cate="top_apply">
+                <div className="Mainpage_banner_box" style={{ top: "40%" }}>
+                  <div className="Mainpage_banner_text" >
+                    <div>로위헤어</div>
+                    <div><strong>디자이너 채용</strong></div>
+                    <div style={{ font: "400 4vw 'Noto Sans'", marginTop: "3.2vw" }}>성수점/이수역점/L7홍대점/강남점/방배점</div>
+                    <div className="Mainpage_banner_button" style={{ fontSize: "5.33333vw" }}>
+                      ㅤ ㅤ지원하기ㅤ ㅤ
+                    </div>
                   </div>
                 </div>
-              </div>
-              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_3.png"} alt="Lowe main" />
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_3.png"} alt="Lowe main" />
+              </a>
             </div>
+            <div className="Mainpage_banner_div">
+              <a href="/care" data-tag-index="Main" data-tag-cate="top_benefit">
+                <div className="Mainpage_banner_box" style={{ top: "40%" }}>
+                  <div className="Mainpage_banner_text">
+                    <div style={{ font: "400 5.6vw 'Noto Sans'", marginBottom: "3.2vw" }}>디자이너 성장을 위해<br />로위가 지원하는</div>
+                    <div><strong>디자이너 혜택</strong></div>
+                    <div className="Mainpage_banner_button" style={{ fontSize: "5.33333vw" }}>
+                      ㅤ지원혜택ㅤ
+                    </div>
+                  </div>
+                </div>
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_4.png"} alt="Lowe main" />
+              </a>
+            </div>
+
             <div className="Mainpage_banner_div">
               <div className="Mainpage_banner_box" style={{ top: "40%" }}>
                 <div className="Mainpage_banner_text">
@@ -213,18 +233,6 @@ class Firstsec extends Component {
                 </div>
               </div>
               <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_2.png"} alt="Lowe main" />
-            </div>
-            <div className="Mainpage_banner_div">
-              <div className="Mainpage_banner_box" style={{ top: "40%" }}>
-                <div className="Mainpage_banner_text">
-                  <div style={{ font: "400 5.6vw 'Noto Sans'", marginBottom: "3.2vw" }}>디자이너 성장을 위해<br />로위가 지원하는</div>
-                  <div><strong>디자이너 혜택</strong></div>
-                  <div className="Mainpage_banner_button" style={{ borderColor: "#ccc", fontSize: "5.33333vw" }}>
-                    <a href="/care" > ㅤ지원 혜택ㅤ </a>
-                  </div>
-                </div>
-              </div>
-              <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_4.png"} alt="Lowe main" />
             </div>
           </Slider>
 

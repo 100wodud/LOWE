@@ -6,7 +6,7 @@ export default (
           <Route path="/" />
           <Route path="/reservation/:eng" />
           <Route path="/reservation" />
-          <Route path="/request" />
+          <Route path="/requests/recruitment" />
           <Route path="/care" />
           <Route path="/info" />
           <Route path="/careplus" />

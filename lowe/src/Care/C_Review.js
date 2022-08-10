@@ -34,7 +34,7 @@ class C_Review extends Component {
                             <div>아래 버튼을 클릭하여 신청해 주세요!</div>
                         </div>
                         <div id="Care_review_button">
-                            <a href="/request">지원하기</a>
+                            <a href="/requests/recruitment">지원하기</a>
                         </div>
                     </div>
                 </Desktop>
@@ -47,7 +47,7 @@ class C_Review extends Component {
                             <div>아래 버튼을 클릭하여 신청해 주세요!</div>
                         </div>
                         <div id="Care_review_button">
-                            <a href="/request">지원하기</a>
+                            <a href="/requests/recruitment">지원하기</a>
                         </div>
                     </div>
                 </Mobile>

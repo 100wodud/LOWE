@@ -51,7 +51,7 @@ class Timer extends Component {
                     </div>} */}
 
                 <div>
-                    <a style={{lineHeight: "64px"}} href="/request">
+                    <a style={{lineHeight: "64px"}} href="/requests/recruitment">
                         입점 신청하기
                     </a>
                 </div>

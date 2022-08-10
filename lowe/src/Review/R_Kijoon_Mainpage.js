@@ -5,6 +5,7 @@ import Firstsec from "./R_Firstsec";
 import Thirdsec from "./R_Thirdsec";
 import Kijoon from "./Kijoon";
 import { Helmet } from 'react-helmet';
+import TagManager from "react-gtm-module";
 
 
 class R_Kijoon_Mainpage extends Component {
@@ -12,6 +13,19 @@ class R_Kijoon_Mainpage extends Component {
         super(props);
         this.state = {
         };
+    }
+
+
+    componentDidMount = () =>{
+        window.localStorage.setItem("route", "디자이너 리뷰");
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "review_view",
+              designer: "기준"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
+
     }
 
 

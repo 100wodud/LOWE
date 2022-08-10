@@ -18,6 +18,11 @@ class I_Mainpage extends Component {
     };
   }
 
+  componentDidMount = () =>{
+
+    window.localStorage.setItem("route", "지점현황");
+}
+
   kakaoMap = () => {
     let container = document.getElementById('map');
     let options = {}
@@ -145,6 +150,7 @@ class I_Mainpage extends Component {
         <Firstsec />
         <Secondsec location={this.state.location} onClicklocation={this.onClicklocation} />
         <Map kakaoMap={this.kakaoMap} />
+        <div id="script"></div>
         <Footer />
       </>
     )

@@ -19,6 +19,12 @@ class Mainpage extends Component {
     };
   }
 
+  componentDidMount = () =>{
+    window.localStorage.setItem("route", "디자이너 혜택");
+}
+
+
+
   render() {
     return (
       <>
@@ -31,6 +37,7 @@ class Mainpage extends Component {
         <Fifthsec />
         <Secondsec2 />
         <Thirdsec2 />
+        <div id="script"></div>
         <Footer />
       </>
     )

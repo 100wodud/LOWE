@@ -2,7 +2,8 @@ import { Component } from "react";
 import Header from "../nav/SubHeader";
 import Lowe4th from "./Lowe4th";
 import Footer from "../nav/Footer";
-import Timer from "../nav/Timer2";
+import Timer from "../nav/Timer3";
+import TagManager from "react-gtm-module";
 
 
 class P_Mainpage4 extends Component {
@@ -10,6 +11,16 @@ class P_Mainpage4 extends Component {
         super(props);
         this.state = {
         };
+    }
+
+    componentDidMount = () => {
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "branch_apply_view",
+              entry: "홍대입구역"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
     }
 
 

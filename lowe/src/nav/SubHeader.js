@@ -96,7 +96,7 @@ class Header extends Component {
                       <div style={{ float: "right" }}>
                         <div>
                           <span>
-                            <a href="/review/woody">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="우디" href="/review/woody">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/04.png"} alt="우디 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>로위만의 디자이너 맞춤 시스템이 </div>
@@ -105,7 +105,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/gyuhyun">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="규현" href="/review/gyuhyun">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/03.png"} alt="규현 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>처음엔 걱정이 많았지만, </div>
@@ -114,7 +114,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/filip">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="필립" href="/review/filip">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/02.png"} alt="필립 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>디자이너로서 더 발전하고 즐기면서 </div>
@@ -123,7 +123,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/hyeri">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="혜리" href="/review/hyeri">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/01.png"} alt="혜리 히뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>제가 원하는 시간에 일할 수 있고,</div>
@@ -134,7 +134,7 @@ class Header extends Component {
                         </div>
                         <div>
                           <span >
-                            <a href="/review/2roon">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="이룬" href="/review/2roon">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/08.png"} alt="이룬 리뷰" />
                               <div className="menu_review_text" style={{ marginBottom: "3.125vw" }} >
                                 <div style={{ lineHeight: "1.0416vw" }}>교육, 마케팅, 컨설팅 등 더욱 성장 </div>
@@ -143,7 +143,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/yujine">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="유진" href="/review/yujine">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/07.png"} alt="유진 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>1인제라 몸은 힘들지만 제가 원하는 </div>
@@ -152,7 +152,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/sia">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="도림" href="/review/sia">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/06.png"} alt="도림, 시아 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>마음 맞는 디자이너와 같이 일할 수 </div>
@@ -161,7 +161,7 @@ class Header extends Component {
                             </a>
                           </span>
                           <span>
-                            <a href="/review/kijoon">
+                            <a data-tag-index="Review" data-tag-cate="pc_list" data-tag-title="기준" href="/review/kijoon">
                               <img src={process.env.PUBLIC_URL + "/image/Nav/review/05.png"} alt="기준 리뷰" />
                               <div className="menu_review_text">
                                 <div style={{ lineHeight: "1.0416vw" }}>로위에서는 눈치 보지 않고, 스스로 </div>
@@ -177,39 +177,27 @@ class Header extends Component {
               </div>
               
               <div className="menu-item">
-                <a className='menu-button' href="/care">디자이너 혜택</a>
+                <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' href="/care">디자이너 혜택</a>
               </div>
               <div className="menu-item">
-                <a className='menu-button' href="/info">지점현황</a>
+                <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' href="/info">지점현황</a>
               </div>
             </div>
             <a href="/" style={{ margin: "0 auto", }}>
               <div className="logo">
                 { this.props.promotion ?
                 <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img> :
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_black.svg"} className="logoView" alt="logo black"></img>
+                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img>
                 }
               </div>
             </a>
             <div className="menu2">
-              <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>지원하기
-                  <ul>
-                    <li style={{ marginLeft: "18.75vw", marginRight: "9.5vw" }} >
-                      <p style={{ fontSize: "0.72916vw", paddingTop: "0.37vw" }}>지원하기</p>
-                    </li>
-                    <li style={{ marginRight: "4.16666vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/requests/recruitment">채용형 지원하기</a></p>
-                    </li>
-                    <li style={{ marginRight: "4.16666vw" }}>
-                      <p><a style={{ fontSize: "0.72916vw" }} href="/requests/enterstore">입점형 지원하기</a></p>
-                    </li>
-                  </ul>
-                </div>
+              <div className="menu-item">
+                <a data-tag-index="Nav" data-tag-title="지원하기" className='menu-button'onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기");}} href="/requests/recruitment">지원하기</a>
               </div>
               
               <div className="menu-item">
-                <a className='menu-button' style={{fontFamily: "Montserrat", lineHeight: "160%"}} href="https://lowehair.kr/">LOWE mall</a>
+                <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
               </div>
               <div className="menu-item" style={{ cursor: "default" }}>
                 <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
@@ -223,7 +211,7 @@ class Header extends Component {
             <div className="logo">
                 { this.props.promotion ?
                 <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img> :
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_black.svg"} className="logoView" alt="logo black"></img>
+                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img>
                 }
             </div>
           </a>
@@ -242,7 +230,7 @@ class Header extends Component {
                       </a>
                       <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
                         <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                        <a href="/request" style={{ color: "#ffffff", textAlign: "center" }} >
+                        <a  data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment"onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기_버튼");}} style={{ color: "#ffffff", textAlign: "center" }} >
                           <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
                             <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
                           </div>
@@ -250,19 +238,19 @@ class Header extends Component {
                       </div>
                     </div>
                     <li>
-                      <a className="changeColor" href="/info">지점현황</a>
+                      <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/info">지점현황</a>
                     </li>
                     <li>
-                      <a className="changeColor" href="/care">디자이너 혜택</a>
+                      <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className="changeColor" href="/care">디자이너 혜택</a>
                     </li>
                     <li>
-                      <a className="changeColor" href="/review/yujine">디자이너 리뷰</a>
+                      <a data-tag-index="Nav" data-tag-title="디자이너 리뷰" className="changeColor" href="/review/yujine">디자이너 리뷰</a>
                     </li>
                     <li>
-                      <a className="changeColor" href="https://lowehair.kr/">LOWE mall</a>
+                      <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="https://lowehair.kr/">로위몰</a>
                     </li>
                     <li>
-                      <a className="changeColor" href="/request">지원하기</a>
+                      <a data-tag-index="Nav" data-tag-title="지원하기" className="changeColor" href="/requests/recruitment" onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기_메뉴");}}>지원하기</a>
                     </li>
                   </ul>
                 </div>

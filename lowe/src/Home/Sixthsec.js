@@ -40,7 +40,7 @@ class Sixthsec extends Component {
                   <ul>
                     {media.map((e, i) => (
                       <li key={i}>
-                        <a href={e.url}>
+                        <a data-tag-index="Main" data-tag-cate="news" data-tag-title={e.title} href={e.url}>
                           <div className="Sixth_review_designer" style={{marginBottom: "8px"}}>
                             <span style={{ fontWeight: "bold", marginRight: "10px", fontSize: "1.1458333vw" }}>{e.location}</span>{e.date}
                           </div>
@@ -71,7 +71,7 @@ class Sixthsec extends Component {
               <ul>
                 {media.map((e, i) => (
                   <li key={i}>
-                    <a href={e.url}>
+                    <a data-tag-index="Main" data-tag-cate="news" data-tag-title={e.title} href={e.url}>
                       <div className="Sixth_review_designer">
                         <span style={{ fontWeight: "bold", marginRight: "10px" }}>{e.location}</span>{e.date}
                       </div>

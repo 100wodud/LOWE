@@ -3,6 +3,7 @@ import Header from "../nav/SubHeader";
 import { Helmet } from 'react-helmet';
 import Firstsec from "./Rec_Firstsec";
 import Timer from "../nav/Timer2";
+import TagManager from "react-gtm-module";
 
 class Recruitment extends Component {
   constructor(props) {
@@ -10,6 +11,22 @@ class Recruitment extends Component {
     this.state = {
     };
   }
+
+  componentDidMount = () =>{
+    let route = window.localStorage.getItem("route");
+    if(!route){
+      route = "organic"
+    }
+    console.log(route)
+    const tagManagerArgs = {
+        dataLayer: {
+          event: "recruit_apply_view",
+          entry: route
+        },
+      };
+      TagManager.dataLayer(tagManagerArgs);
+}
+
 
   render() {
     return (

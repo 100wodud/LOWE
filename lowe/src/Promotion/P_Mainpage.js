@@ -2,7 +2,8 @@ import { Component } from "react";
 import Header from "../nav/SubHeader";
 import Lowe5th from "./Lowe5th";
 import Footer from "../nav/Footer";
-import Timer from "../nav/Timer2";
+import Timer from "../nav/Timer3";
+import TagManager from "react-gtm-module";
 
 
 class P_Mainpage extends Component {
@@ -12,6 +13,15 @@ class P_Mainpage extends Component {
         };
     }
 
+    componentDidMount = () => {
+        const tagManagerArgs = {
+            dataLayer: {
+              event: "branch_apply_view",
+              entry: "강남"
+            },
+          };
+          TagManager.dataLayer(tagManagerArgs);
+    }
 
     render() {
         return (
