@@ -18,6 +18,9 @@ class I_Secondsec extends Component {
       <section className="Info_second_section">
       <ScrollContainer className="Info_second_section_scroll">
         <div className="Info_second_section_div">
+          <button data-tag-index="Branchstatus" data-tag-cate="branch_menu" data-tag-title="방배점" className={(this.props.location === '방배점' ? "Info_second_button forcus" : 'Info_second_button')} onClick={this.props.onClicklocation("방배점")}>
+            방배점
+          </button>
           <button data-tag-index="Branchstatus" data-tag-cate="branch_menu" data-tag-title="성수점" className={(this.props.location === '성수점' ? "Info_second_button forcus" : 'Info_second_button')} onClick={this.props.onClicklocation("성수점")}>
             성수점
           </button>
@@ -55,7 +58,9 @@ class I_Secondsec extends Component {
                     <IStore data={store[5]} /> :
                     this.props.location === '성수점' ?
                     <IStore data={store[6]} />:
-                <IStore data={store[6]} />
+                    this.props.location === '방배점' ?
+                <IStore data={store[7]} />:
+                <IStore data={store[7]} />
         }
       </section>
     )

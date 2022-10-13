@@ -27,39 +27,27 @@ class Header extends Component {
   }
 
   componentDidMount = () => {
-    if (window.innerWidth > 1000) {
-      let reviews = document.getElementById("review-area");
-      let review = document.getElementById("menu-review");
+    // let header = document.getElementById("scroll");
+    // header.addEventListener('mouseover', (event) => {
+    //   header.classList.add("add-background");
+    //   self.setState({ navColor: true })
+    // });
+    // var self = this
+    // document.addEventListener('scroll', function () {
+    //   var target = document.getElementById("header_trigger");
+    //   var abBottom = window.pageYOffset + target.getBoundingClientRect().top
+    //   var currentScrollValue = document.documentElement.scrollTop;
+    //   let header = document.getElementById("scroll");
 
-      reviews.addEventListener('mouseover', function () {
-        review.classList.add("mouse_event");
-      });
+    //   if (currentScrollValue > abBottom) {
+    //     header.classList.add("add-background");
+    //     self.setState({ navColor: true })
+    //   } else {
+    //     header.classList.remove("add-background");
+    //     self.setState({ navColor: false })
 
-      reviews.addEventListener('mouseleave', function () {
-        review.classList.remove("mouse_event");
-      });
-    }
-    let header = document.getElementById("scroll");
-    header.addEventListener('mouseover', (event) => {
-      header.classList.add("add-background");
-      self.setState({ navColor: true })
-    });
-    var self = this
-    document.addEventListener('scroll', function () {
-      var target = document.getElementById("header_trigger");
-      var abBottom = window.pageYOffset + target.getBoundingClientRect().top
-      var currentScrollValue = document.documentElement.scrollTop;
-      let header = document.getElementById("scroll");
-
-      if (currentScrollValue > abBottom) {
-        header.classList.add("add-background");
-        self.setState({ navColor: true })
-      } else {
-        header.classList.remove("add-background");
-        self.setState({ navColor: false })
-
-      }
-    });
+    //   }
+    // });
 
   }
 
@@ -89,14 +77,30 @@ class Header extends Component {
     return (
       <>
         <Desktop>
-          <header id="scroll" className="smooth">
+          <header id="scroll" className="smooth add-background">
             <a href='/care'>
               <div className="header_banner">
                 지원혜택 보러가기 🥳
               </div>
             </a>
             <div>
+              <a href="/" >
+                <div className="logo">
+                  {this.state.navColor ?
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img> :
+                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
+                </div>
+              </a>
               <div className="menu1" >
+                <div className="menu-item">
+                  <a data-tag-index="Nav" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기"); }} data-tag-title="지원하기" className='menu-button munuList_request' href="/requests/recruitment"><span className="emoji">✂️</span> 지원하기</a>
+                </div>
+                <div className="menu-item">
+                  <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
+                </div>
+                <div className="menu-item">
+                  <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' href="/faq">자주 묻는 질문</a>
+                </div>
                 <div className="menu-item" style={{ cursor: "default" }}>
                   <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
                     <ul>
@@ -189,39 +193,21 @@ class Header extends Component {
                     </ul>
                   </div>
                 </div>
-
                 <div className="menu-item">
                   <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' href="/care">디자이너 혜택</a>
                 </div>
                 <div className="menu-item">
                   <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' href="/info">지점현황</a>
                 </div>
-              </div>
-              <a href="/" style={{ margin: "0 auto", }}>
-                <div className="logo">
-                  {this.state.navColor ?
-                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img> :
-                    <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
-                </div>
-              </a>
-              <div className="menu2">
                 <div className="menu-item">
-                  <a data-tag-index="Nav" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기"); }} data-tag-title="지원하기" className='menu-button' href="/requests/recruitment">지원하기</a>
-                </div>
-
-                <div className="menu-item">
-                  <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
-                </div>
-                <div className="menu-item" style={{ cursor: "default" }}>
-                  <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
-                  </div>
+                  <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' href="/brandstory">브랜드 이야기</a>
                 </div>
               </div>
             </div>
           </header>
         </Desktop>
         <Mobile>
-          <header id="scroll" className="smooth" style={this.state.hamburger && window.innerWidth > 1000 ? null : { height: "100px" }}>
+          <header id="scroll" className="smooth add-background" style={this.state.hamburger && window.innerWidth > 1000 ? null : { height: "100px" }}>
             <a href='/care'>
               <div className="header_banner">
                 지원혜택 보러가기 🥳
@@ -248,15 +234,18 @@ class Header extends Component {
                           <a href="/" style={{ width: "100%", height: "60px", paddingLeft: "12px" }}>
                             <img style={{ marginTop: "14px", width: "32px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
                           </a>
-                          <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
-                            <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                            <a data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_버튼"); }} style={{ color: "#ffffff", textAlign: "center" }} >
-                              <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
-                                <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
+                          <div style={{ color: "#ffffff", fontSize: "16px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
+                            <div style={{ width: "85%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
+                            <a data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_버튼"); }} style={{ color: "#0f7043", textAlign: "center" }} >
+                              <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#fff", borderRadius: "23px", lineHeight: "46px", textAlign: "center" }}>
+                                <span style={{ fontWeight: 'bold', fontSize: "16px" }}><span className="emoji">✂️</span> 지원하기</span>
                               </div>
                             </a>
                           </div>
                         </div>
+                        <li>
+                          <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/brandstory">브랜드 이야기</a>
+                        </li>
                         <li>
                           <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/info">지점현황</a>
                         </li>
@@ -267,10 +256,10 @@ class Header extends Component {
                           <a data-tag-index="Nav" data-tag-title="디자이너 리뷰" className="changeColor" href="/review/yujine">디자이너 리뷰</a>
                         </li>
                         <li>
-                          <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="https://lowehair.kr/">로위몰</a>
+                          <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="/faq">자주 묻는 질문</a>
                         </li>
                         <li>
-                          <a data-tag-index="Nav" data-tag-title="지원하기" className="changeColor" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_메뉴"); }}>지원하기</a>
+                          <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="https://lowehair.kr/">로위몰</a>
                         </li>
                       </ul>
                     </div>

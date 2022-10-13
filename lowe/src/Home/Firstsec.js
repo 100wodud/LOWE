@@ -117,7 +117,7 @@ class Firstsec extends Component {
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       touchMove: true,
       draggable: true,
       arrows: false,
@@ -127,12 +127,28 @@ class Firstsec extends Component {
         <Desktop>
           <Slider {...settings}>
             <div className="Mainpage_banner_div">
+              <a href="/requests/recruitment" data-tag-index="Main" data-tag-cate="top_apply">
+                <div className="Mainpage_banner_box">
+                  <div className="Mainpage_banner_text" >
+                    <div style={{ fontWeight: "700", fontSize: "72px" }} >로위 방배점</div>
+                    <div style={{ fontSize: "72px" }} >10월 오픈 예정</div>
+                    <div style={{ fontSize: "42px", marginBottom: "80px", marginTop: "28px", fontWeight: "400" }}>방배점 디자이너 모집중</div>
+                    <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px", color: "#333333" }}>
+                      지원하기
+                    </div>
+                  </div>
+                </div>
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/main1_5.png"} alt="Lowe main" />
+
+              </a>
+            </div>
+            <div className="Mainpage_banner_div">
               <a href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "메인배너"); }} data-tag-index="Main" data-tag-cate="top_apply">
                 <div className="Mainpage_banner_box">
                   <div className="Mainpage_banner_text" >
                     <div style={{ fontWeight: "400", fontSize: "72px" }} >로위헤어</div>
                     <div style={{ fontSize: "72px" }} >디자이너 채용</div>
-                    <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px", fontWeight: "400" }}>성수점/이수역점/L7홍대점/강남점/방배점</div>
+                    <div style={{ fontSize: "30px", marginBottom: "48px", marginTop: "28px", fontWeight: "400" }}><strong>살롱형 지점</strong> | 성수점/이수역점/L7홍대점/방배점</div>
                     <div className="Mainpage_banner_button" style={{ borderColor: "#9c9c9c", width: "263px", color: "#333333" }}>
                       지원하기
                     </div>
@@ -195,11 +211,26 @@ class Firstsec extends Component {
           <Slider ref={slider => (this.slider = slider)} {...settings}>
             <div className="Mainpage_banner_div">
               <a href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "메인배너"); }} data-tag-index="Main" data-tag-cate="top_apply">
-                <div className="Mainpage_banner_box" style={{ top: "40%" }}>
+                <div className="Mainpage_banner_box" style={{ top: "45%" }}>
+                  <div className="Mainpage_banner_text" >
+                    <div><strong>로위 방배점</strong></div>
+                    <div><strong>10월 오픈 예정</strong></div>
+                    <div style={{ font: "400 5.6vw 'Noto Sans'", marginTop: "3.2vw", marginBottom: "7.46666666vw" }}>방배점 디자이너 모집중</div>
+                    <div className="Mainpage_banner_button" style={{ fontSize: "5.33333vw", width: "26.9333vw", textAlign: "center" }}>
+                      지원하기
+                    </div>
+                  </div>
+                </div>
+                <img className="Mainpage_banner_img" src={process.env.PUBLIC_URL + "/image/mainpage/M_main1_5.png"} alt="Lowe main" />
+              </a>
+            </div>
+            <div className="Mainpage_banner_div">
+              <a href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "메인배너"); }} data-tag-index="Main" data-tag-cate="top_apply">
+                <div className="Mainpage_banner_box" style={{ top: "45%" }}>
                   <div className="Mainpage_banner_text" >
                     <div>로위헤어</div>
                     <div><strong>디자이너 채용</strong></div>
-                    <div style={{ font: "400 4vw 'Noto Sans'", marginTop: "3.2vw" }}>성수점/이수역점/L7홍대점/강남점/방배점</div>
+                    <div style={{ font: "400 4vw 'Noto Sans'", marginTop: "3.2vw" }}><strong>살롱형 지점</strong> | 성수점/이수역점/L7홍대점/방배점</div>
                     <div className="Mainpage_banner_button" style={{ fontSize: "5.33333vw" }}>
                       ㅤ ㅤ지원하기ㅤ ㅤ
                     </div>

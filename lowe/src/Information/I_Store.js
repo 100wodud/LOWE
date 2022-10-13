@@ -57,7 +57,8 @@ class I_Store extends Component {
                 </Slider>
                 <div className="store_info_content">
                     <div className="store_info_content_info" >
-                        <p className="store_info_content_title" style={{width: "9.5vw"}}>규모</p>
+                        <p className="store_info_content_title" style={{width: "9.5vw"}}>특징</p>
+                        <div className="store_info_content_salon"><strong>{this.props.data.salon}</strong></div>
                         {this.props.data.area.map((e) => (
                             <div key={e}>
                                 <div>{e}</div>
@@ -79,7 +80,7 @@ class I_Store extends Component {
                     </div>
                     <div className="store_info_content_info">
                         <p className="store_info_content_title">주차</p>
-                        <div>{this.props.data.parking}</div>
+                        <div style={{whiteSpace: "pre"}}>{this.props.data.parking}</div>
                     </div>
                 </div>
                 {this.props.data.reservation ?

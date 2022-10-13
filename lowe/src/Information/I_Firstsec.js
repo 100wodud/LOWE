@@ -36,8 +36,8 @@ class I_Firstsec extends Component {
                                 <div>나만의 미용 공간</div>
                             </div>
                             <div style={{ fontSize: "1.041667vw", fontWeight: "500", lineHeight: "1.77083vw" }}>
-                                <div>나와 고객이 먼저인 나만의 미용 공간, </div>
-                                <div>대표 공유미용실 로위의 전 지점 위치와 소개를 한눈에 확인하세요. </div>
+                                <div>나와 고객이 먼저인 나만의 미용공간,</div>
+                                <div>로위의 공유형, 살롱형 미용실 전 지점의 위치와 소개를 한눈에 확인하세요.</div>
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@ class I_Firstsec extends Component {
                         <img src={process.env.PUBLIC_URL + "/image/info/info1_1.png"} alt="lowe Info" />
                         <div className="Info_first_text">
                             <div>
-                                <div>대표 공유미용실 로위의 전 지점 위치와</div>
-                                <div>소개를 한 눈에 확인해보세요! </div>
+                                <div>로위의 공유형, 살롱형 미용실</div>
+                                <div>전 지점의 위치와 소개를 한눈에 확인하세요.</div>
                             </div>
                         </div>
                     </div>

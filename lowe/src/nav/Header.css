@@ -1,3 +1,21 @@
+.emoji {
+  font-family: Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Android Emoji,EmojiSymbols,EmojiOne Mozilla,Twemoji Mozilla,Segoe UI Symbol;
+    font-weight: 700;
+    font-size: 0.729166vw;
+}
+
+.munuList_request {
+  display: block;
+  width: 6.718vw;  
+  border-radius: 26px;
+  background-color: #fff;
+  height: 2.08333vw;
+  line-height: 2.08333vw !important;
+  margin-top: -0.3vw;
+  color: #0f7043 !important;
+  font-weight: 700 !important;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -16,11 +34,10 @@ header {
 }
 
 header > div {
-  text-align: center;
-  width: 62.5%;
+  text-align: right;
   height: 4.16666666667vw;
-  margin: 0 auto;
   align-content: center;
+  margin-right: 16.6666vw;
 }
 
 .black-backgrond {
@@ -34,13 +51,13 @@ header > div {
 
 .add-background > div > div > div > a {
   color: #ffffff;
-  font: bold 0.9375vw "Noto Sans";
+  font: 400 0.9375vw "Noto Sans";
 }
 
 
 .add-background > div > div > div > div {
   color: #ffffff;
-  font: bold 0.9375vw "Noto Sans";
+  font: 400 0.9375vw "Noto Sans";
 }
 
 .add-background > div > div > div > div > ul {
@@ -68,7 +85,6 @@ header > div > div > div > div > ul >li >p >a:hover {
 .mouse_event{
   text-decoration: underline;
   text-underline-position: under;
-  text-decoration-thickness: 2px;
 }
 .mouse_event > p {
   color: #333333;
@@ -77,7 +93,7 @@ header > div > div > div > div > ul >li >p >a:hover {
 
 .logo{
   position: absolute;
-  left: 45.5%;
+  left: 18.75%;
 }
 .logoView{
   padding: 1.2vw 0 1.25vw 0;
@@ -85,7 +101,7 @@ header > div > div > div > div > ul >li >p >a:hover {
 }
 
 .menu1 {
-  float: left;
+  float: right;
   padding-top: 1.5365vw;
 
 }
@@ -105,15 +121,9 @@ header > div > div > div > div > ul >li >p >a:hover {
 
 .menu-button {
   color: #FFFFFF;
-  font: bold 0.9375vw "Noto Sans";
+  font: 400 0.9375vw "Noto Sans";
 }
 
-.menu-button:hover{
-  color: #FFFFFF;
-  text-decoration: underline;
-  text-underline-position: under;
-  text-decoration-thickness: 2px;
-}
 
 
 .menu-item ul {
@@ -186,6 +196,12 @@ header > div > div > div > div > ul >li >p >a:hover {
   }
   
   @media screen and (max-width:  999px) {
+    .emoji {
+      font-family: Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Android Emoji,EmojiSymbols,EmojiOne Mozilla,Twemoji Mozilla,Segoe UI Symbol;
+        font-weight: 700;
+        font-size: 13px;
+    }
+
     header {
       position: fixed;
       width: 100vw;
@@ -395,7 +411,7 @@ header > div > div > div > div > ul >li >p >a:hover {
         padding-bottom: 20px;
     }
     .menuLisk_black {
-      background-color: #333333;
+      background-color: #0f7043;
       height: 190px;
       line-height: 100%;
       width: 100%;
@@ -414,22 +430,23 @@ header > div > div > div > div > ul >li >p >a:hover {
     
     .menuList >li {
       margin-top: 35px;
-      font: bold 16px "Noto Sans";
+      font: 400 16px "Noto Sans";
       padding-left: 20px;
 
     }
 
     ul>li>a{
-    text-decoration: none;
-    color: #333333;
+      text-decoration: none;
+      color: #333333;
     }
     
     ul>li>a:hover{  
-      color: rgba(0, 0, 0, 0.4)
+      color: #0f7043;
+      font-weight: 700;
     }
     
     ul>li>div{
-    color: #333333
+      color: #333333
     }
 
     ul>li>div:focus{
@@ -437,7 +454,6 @@ header > div > div > div > div > ul >li >p >a:hover {
     }
     
     div > div > a {
-    
       text-decoration: none;
     }
     .nav_bottom > div {

@@ -194,7 +194,7 @@ a {
 
 .Mainpage_banner_button{
     margin: 0;
-    margin-top: 8.533333vw;
+    margin-top: 5.5333vw;
     font: bold 4.26666vw "Noto Sans";
     padding: 3.2vw 10.4vw 3.2vw 10.4vw;
     width: fit-content;
@@ -208,8 +208,8 @@ a {
 
 .Mainpage_banner_box{
     position: absolute;
-    width: 75%;
-    left: 45%;
+    width: 90%;
+    left: 52%;
     margin: 0;
     padding: 0;
     transform: translate(-50%, -50%);

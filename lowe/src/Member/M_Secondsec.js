@@ -27,7 +27,7 @@ class M_Secondsec extends Component {
                 <Desktop>
                     <div>
                         <div className="Member_second_content">
-                            <div style={{ float: "left", marginRight: "20.3125vw" }}>
+                            <div style={{ float: "left", marginRight: "18.9vw" }}>
                                 <div className="Member_second_title">BENEFIT + 01</div>
                                 <div className="Member_second_title_text">
                                     <div >로위</div>

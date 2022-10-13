@@ -78,18 +78,35 @@ class Header extends Component {
 
 
   render() {
+    let path = window.location.pathname.split('/')[1]
     return (
-      <header id="scroll" className={this.props.promotion ?"smooth black-backgrond" : "smooth add-background"}>
+      <header id="scroll" className={this.props.promotion ? "smooth black-backgrond" : "smooth add-background"}>
         <Desktop>
-          <div style={{ textAlign: "center", width: "62.5%", margin: "0 auto", alignContent: "center" }}>
-          <div className="menu1" >
-            <div className="menu-item" style={{ cursor: "default" }}>
+          <div>
+            <a href="/" >
+              <div className="logo">
+                {this.state.navColor ?
+                  <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img> :
+                  <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img>}
+              </div>
+            </a>
+            <div className="menu1" >
+              <div className="menu-item">
+                <a data-tag-index="Nav" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기"); }} data-tag-title="지원하기" className='menu-button munuList_request' href="/requests/recruitment"><span className="emoji">✂️</span> 지원하기</a>
+              </div>
+              <div className="menu-item">
+                <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
+              </div>
+              <div className="menu-item">
+                <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button'  style={path === "faq"? {fontWeight: "700"}: null} href="/faq">자주 묻는 질문</a>
+              </div>
+              <div className="menu-item" style={{ cursor: "default" }}>
                 <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>디자이너 리뷰
                   <ul>
                     <li style={{ marginLeft: "18.05vw", marginRight: "6vw" }} >
                       <p style={{ marginRight: "2.34375vw", fontSize: "0.72916vw", paddingTop: "0.5vw" }}>디자이너 리뷰</p>
                     </li>
-                    <li style={{ marginRight: "7.54375vw", paddingTop: "0.13vw" }}>
+                    <li style={{ marginRight: "7.54375vw" }}>
                       <p><a style={{ fontSize: "0.72916vw" }} href="/designers"> </a></p>
                     </li>
                     <div id="review-area" style={{ marginRight: "20.65vw" }}>
@@ -175,33 +192,14 @@ class Header extends Component {
                   </ul>
                 </div>
               </div>
-              
               <div className="menu-item">
-                <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' href="/care">디자이너 혜택</a>
+                <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className='menu-button' style={path === "care"? {fontWeight: "700"}: null} href="/care">디자이너 혜택</a>
               </div>
               <div className="menu-item">
-                <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' href="/info">지점현황</a>
+                <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' style={path === "info"? {fontWeight: "700"}: null} href="/info">지점현황</a>
               </div>
-            </div>
-            <a href="/" style={{ margin: "0 auto", }}>
-              <div className="logo">
-                { this.props.promotion ?
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img> :
-                <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img>
-                }
-              </div>
-            </a>
-            <div className="menu2">
               <div className="menu-item">
-                <a data-tag-index="Nav" data-tag-title="지원하기" className='menu-button'onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기");}} href="/requests/recruitment">지원하기</a>
-              </div>
-              
-              <div className="menu-item">
-                <a data-tag-index="Nav" data-tag-title="로위몰" className='menu-button' href="https://lowehair.kr/">로위몰</a>
-              </div>
-              <div className="menu-item" style={{ cursor: "default" }}>
-                <div className='menu-button' style={{ display: "inline-block", paddingBottom: "1.5365vw" }}>
-                </div>
+                <a data-tag-index="Nav" data-tag-title="지점현황" className='menu-button' style={path === "brandstory"? {fontWeight: "700"}: null} href="/brandstory">브랜드 이야기</a>
               </div>
             </div>
           </div>
@@ -209,10 +207,10 @@ class Header extends Component {
         <Mobile>
           <a href="/" style={{ margin: "0 auto", }}>
             <div className="logo">
-                { this.props.promotion ?
+              {this.props.promotion ?
                 <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo white"></img> :
                 <img src={process.env.PUBLIC_URL + "/image/Nav/logo_white.svg"} className="logoView" alt="logo black"></img>
-                }
+              }
             </div>
           </a>
           <div className="menu-wrap">
@@ -228,29 +226,32 @@ class Header extends Component {
                       <a href="/" style={{ width: "100%", height: "60px", paddingLeft: "12px" }}>
                         <img style={{ marginTop: "14px", width: "32px" }} src={process.env.PUBLIC_URL + "/image/Nav/home.svg"} alt="홈으로" />
                       </a>
-                      <div style={{ color: "#ffffff", fontSize: "14px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
-                        <div style={{ width: "80%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
-                        <a  data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment"onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기_버튼");}} style={{ color: "#ffffff", textAlign: "center" }} >
-                          <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#008b53", lineHeight: "46px", textAlign: "center" }}>
-                            <span style={{ fontWeight: 'bold', fontSize: "16px" }}>지원하기</span>
+                      <div style={{ color: "#ffffff", fontSize: "16px", textAlign: "center", marginTop: "32px", fontWeight: "500", marginBottom: "16px" }}>
+                        <div style={{ width: "85%", marginBottom: "16px", height: "16px" }}>지금 바로 <span style={{ fontWeight: "bold" }}>로위와 함께</span>하세요!</div>
+                        <a data-tag-index="Nav" data-tag-cate="mobile_apply" href="/requests/recruitment" onClick={() => { return window.localStorage.setItem("route", "네비_지원하기_버튼"); }} style={{ color: "#0f7043", textAlign: "center" }} >
+                          <div style={{ width: "229px", marginLeft: "35.5px", height: "46px", backgroundColor: "#fff", borderRadius: "23px", lineHeight: "46px", textAlign: "center" }}>
+                            <span style={{ fontWeight: 'bold', fontSize: "16px" }}><span className="emoji">✂️</span> 지원하기</span>
                           </div>
                         </a>
                       </div>
                     </div>
                     <li>
-                      <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/info">지점현황</a>
+                      <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/brandstory" style={path === "brandstory"? {fontWeight: "700", color: "#0f7043"}: null}>브랜드 이야기</a>
                     </li>
                     <li>
-                      <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className="changeColor" href="/care">디자이너 혜택</a>
+                      <a data-tag-index="Nav" data-tag-title="지점현황" className="changeColor" href="/info"  style={path === "info"? {fontWeight: "700", color: "#0f7043"}: null}>지점현황</a>
                     </li>
                     <li>
-                      <a data-tag-index="Nav" data-tag-title="디자이너 리뷰" className="changeColor" href="/review/yujine">디자이너 리뷰</a>
+                      <a data-tag-index="Nav" data-tag-title="디자이너 혜택" className="changeColor" href="/care" style={path === "care"? {fontWeight: "700", color: "#0f7043"}: null}>디자이너 혜택</a>
+                    </li>
+                    <li>
+                      <a data-tag-index="Nav" data-tag-title="디자이너 리뷰" className="changeColor" href="/review/yujine" style={path === "review"? {fontWeight: "700", color: "#0f7043"}: null}>디자이너 리뷰</a>
+                    </li>
+                    <li>
+                      <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="/faq" style={path === "faq"? {fontWeight: "700", color: "#0f7043"}: null}>자주 묻는 질문</a>
                     </li>
                     <li>
                       <a data-tag-index="Nav" data-tag-title="로위몰" className="changeColor" href="https://lowehair.kr/">로위몰</a>
-                    </li>
-                    <li>
-                      <a data-tag-index="Nav" data-tag-title="지원하기" className="changeColor" href="/requests/recruitment" onClick={()=>{return window.localStorage.setItem("route", "네비_지원하기_메뉴");}}>지원하기</a>
                     </li>
                   </ul>
                 </div>

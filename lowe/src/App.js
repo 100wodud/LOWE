@@ -24,6 +24,8 @@ import Promotion3 from "./Promotion/P_Mainpage3";
 import Promotion4 from "./Promotion/P_Mainpage4";
 import Recruitment from "./Request/Recruitment";
 import Enterstore from "./Request/Enterstore";
+import Brand from "./Brand/Brand";
+import FAQ from "./Faq/FAQ";
 import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
@@ -40,7 +42,7 @@ class App extends Component {
     };
   }
   componentDidMount = () => {
-
+    
   }
   render() {
     return (
@@ -59,6 +61,7 @@ class App extends Component {
           <Route path="/events" component={Events} />
           <Route path="/testserver" component={Owner} />
           <Route path="/designers" component={Designer} />
+          <Route path="/faq" component={FAQ} />
           <Route path="/review/woody" component={Woody} />
           <Route path="/review/kijoon" component={Kijoon} />
           <Route path="/review/sia" component={Sia} />
@@ -67,6 +70,7 @@ class App extends Component {
           <Route path="/review/gyuhyun" component={Gyuhyun} />
           <Route path="/review/2roon" component={Eroon} />
           <Route path="/review/hyeri" component={Hyeri} />
+          <Route path="/brandstory" component={Brand} />
           <Route path="/promotion/lowe5th" component={Promotion} />
           <Route path="/promotion/lowe6th" component={Promotion2} />
           <Route path="/promotion/lowe7th" component={Promotion3} />

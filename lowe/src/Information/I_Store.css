@@ -20,7 +20,8 @@
 
 
 .store_info_content_info div {
-    font: 500 1.04166vw "Noto Sans";
+    font-size: 1.04166vw;
+    font-weight: 500;
     color: #333333;
     line-height: 150%;
 }
@@ -54,6 +55,10 @@
     background-color: #a3a3a3;
 }
 
+.store_info_content_salon{
+    margin-bottom: 0.625vw;
+}
+
 
 @media screen and (max-width:  999px) {
     .store_info {
@@ -80,7 +85,8 @@
     
     
     .store_info_content_info div {
-        font: 500 4vw "Noto Sans";
+        font-weight: 500;
+        font-size: 4vw;
         color: #333333;
         line-height: 150%;
         width: 90%;
@@ -101,5 +107,8 @@
         margin-bottom: 19.5vw;
     }
 
+    .store_info_content_salon{
+        margin-bottom: 3.2vw;
+    }
 
 }

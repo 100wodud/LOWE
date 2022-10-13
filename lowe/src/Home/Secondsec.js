@@ -63,7 +63,7 @@ class Secondsec extends Component {
                 <div>
                 로위(LOWE)의 미션은<br />
                 <strong>“헤어 디자이너가 만족하는 환경을 지원하고, 지속 가능한 미용 생태계를 만들어,<br />
-                더 많은 사람 이 더 좋은 미용 경험을 하도록 돕는 것”</strong> 입니다.
+                더 많은 사람이 더 좋은 미용 경험을 하도록 돕는 것”</strong> 입니다.
                 </div>
                 <div style={{ marginTop: "1.25vw" }}>
                   비합리적이고, 멈춰있는 기존 미용환경이 아닌, 누구에게나 합리적이고<br />
